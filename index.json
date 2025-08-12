@@ -1,0 +1,337 @@
+﻿[
+	{
+		"link": "README.md",
+		"char_ofs": 0,
+		"byte_ofs": 0
+	},
+	{
+		"link": "about-this-manual/README.md",
+		"char_ofs": 261,
+		"byte_ofs": 508
+	},
+	{
+		"link": "about-this-manual/copyright.md",
+		"char_ofs": 738,
+		"byte_ofs": 1597
+	},
+	{
+		"link": "about-this-manual/notation.md",
+		"char_ofs": 935,
+		"byte_ofs": 1992
+	},
+	{
+		"link": "about-this-manual/safety-notice.md",
+		"char_ofs": 2023,
+		"byte_ofs": 4072
+	},
+	{
+		"link": "1-cobot-safety-function/README.md",
+		"char_ofs": 4756,
+		"byte_ofs": 10195
+	},
+	{
+		"link": "1-cobot-safety-function/1-2-collaborative-operation-mode/README.md",
+		"char_ofs": 4773,
+		"byte_ofs": 10230
+	},
+	{
+		"link": "1-cobot-safety-function/1-2-collaborative-operation-mode/1-safety-rated-monitored-stop.md",
+		"char_ofs": 4951,
+		"byte_ofs": 10619
+	},
+	{
+		"link": "1-cobot-safety-function/1-2-collaborative-operation-mode/2-hand-guide.md",
+		"char_ofs": 5420,
+		"byte_ofs": 11551
+	},
+	{
+		"link": "1-cobot-safety-function/1-2-collaborative-operation-mode/3-speed-separation-monitoring.md",
+		"char_ofs": 5627,
+		"byte_ofs": 11993
+	},
+	{
+		"link": "1-cobot-safety-function/1-2-collaborative-operation-mode/4-power-force-limit.md",
+		"char_ofs": 6037,
+		"byte_ofs": 12826
+	},
+	{
+		"link": "1-cobot-safety-function/1-4-check-replacing-safety-devices.md",
+		"char_ofs": 6378,
+		"byte_ofs": 13536
+	},
+	{
+		"link": "1-cobot-safety-function/1-5-check-before-using-the-safety-function/README.md",
+		"char_ofs": 10368,
+		"byte_ofs": 18070
+	},
+	{
+		"link": "1-cobot-safety-function/1-5-check-before-using-the-safety-function/1-encoder-offset.md",
+		"char_ofs": 10392,
+		"byte_ofs": 18118
+	},
+	{
+		"link": "1-cobot-safety-function/1-5-check-before-using-the-safety-function/2-torque-sensor/README.md",
+		"char_ofs": 11349,
+		"byte_ofs": 19794
+	},
+	{
+		"link": "1-cobot-safety-function/1-5-check-before-using-the-safety-function/2-torque-sensor/2-1-torque-sensor-offset.md",
+		"char_ofs": 12617,
+		"byte_ofs": 22041
+	},
+	{
+		"link": "1-cobot-safety-function/1-5-check-before-using-the-safety-function/3-tool-data-setting.md",
+		"char_ofs": 13832,
+		"byte_ofs": 24177
+	},
+	{
+		"link": "1-cobot-safety-function/1-5-check-before-using-the-safety-function/4-password-setting.md",
+		"char_ofs": 14861,
+		"byte_ofs": 26259
+	},
+	{
+		"link": "1-cobot-safety-function/1-6-robot-safety-condition/README.md",
+		"char_ofs": 15269,
+		"byte_ofs": 27107
+	},
+	{
+		"link": "1-cobot-safety-function/1-6-robot-safety-condition/1-robot-limit-parameter.md",
+		"char_ofs": 18017,
+		"byte_ofs": 31199
+	},
+	{
+		"link": "1-cobot-safety-function/1-6-robot-safety-condition/2-joint-limit-parameter.md",
+		"char_ofs": 19371,
+		"byte_ofs": 33480
+	},
+	{
+		"link": "1-cobot-safety-function/1-7-safety-layout/README.md",
+		"char_ofs": 20303,
+		"byte_ofs": 35107
+	},
+	{
+		"link": "1-cobot-safety-function/1-7-safety-layout/1-safety-space-setting/README.md",
+		"char_ofs": 20350,
+		"byte_ofs": 35211
+	},
+	{
+		"link": "1-cobot-safety-function/1-7-safety-layout/1-safety-space-setting/1-1-safety-space-parameter-setting-info.md",
+		"char_ofs": 23602,
+		"byte_ofs": 40068
+	},
+	{
+		"link": "1-cobot-safety-function/1-7-safety-layout/2-safety-tool-modeling.md",
+		"char_ofs": 23827,
+		"byte_ofs": 40481
+	},
+	{
+		"link": "1-cobot-safety-function/1-7-safety-layout/3-safety-robot-modeling.md",
+		"char_ofs": 25323,
+		"byte_ofs": 43391
+	},
+	{
+		"link": "1-cobot-safety-function/1-7-safety-layout/4-workcell-3d.md",
+		"char_ofs": 26089,
+		"byte_ofs": 44722
+	},
+	{
+		"link": "1-cobot-safety-function/1.8-safety-io-signal.md",
+		"char_ofs": 27172,
+		"byte_ofs": 46650
+	},
+	{
+		"link": "1-cobot-safety-function/1-9-safety-stop-function.md",
+		"char_ofs": 29774,
+		"byte_ofs": 49993
+	},
+	{
+		"link": "1-cobot-safety-function/1-10-safety-condition-monitoring/README.md",
+		"char_ofs": 31331,
+		"byte_ofs": 52632
+	},
+	{
+		"link": "1-cobot-safety-function/1-10-safety-condition-monitoring/1-robot-limit-parameter-monitoring.md",
+		"char_ofs": 32871,
+		"byte_ofs": 54670
+	},
+	{
+		"link": "1-cobot-safety-function/1-10-safety-condition-monitoring/2-joint-limit-function-monitoring.md",
+		"char_ofs": 33518,
+		"byte_ofs": 55889
+	},
+	{
+		"link": "1-cobot-safety-function/1-10-safety-condition-monitoring/3-scm-board-status-monitoring.md",
+		"char_ofs": 33975,
+		"byte_ofs": 56803
+	},
+	{
+		"link": "1-cobot-safety-function/1-10-safety-condition-monitoring/4-safety-io-status-monitoring.md",
+		"char_ofs": 34707,
+		"byte_ofs": 57938
+	},
+	{
+		"link": "1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/README.md",
+		"char_ofs": 35025,
+		"byte_ofs": 58498
+	},
+	{
+		"link": "1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/1-recovery-robot-position-violation.md",
+		"char_ofs": 35764,
+		"byte_ofs": 60028
+	},
+	{
+		"link": "1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/2-recovery-robot-speed-violation.md",
+		"char_ofs": 36258,
+		"byte_ofs": 61066
+	},
+	{
+		"link": "1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/3-recovery-robot-force-violation.md",
+		"char_ofs": 36749,
+		"byte_ofs": 62109
+	},
+	{
+		"link": "1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/4-recovery-sos-violation.md",
+		"char_ofs": 37806,
+		"byte_ofs": 64241
+	},
+	{
+		"link": "1-cobot-safety-function/1-11-cobot-collision-detection-mode.md",
+		"char_ofs": 38308,
+		"byte_ofs": 65300
+	},
+	{
+		"link": "1-cobot-safety-function/1-1-description-term.md",
+		"char_ofs": 39077,
+		"byte_ofs": 66947
+	},
+	{
+		"link": "1-cobot-safety-function/1-3-safety-function/README.md",
+		"char_ofs": 41296,
+		"byte_ofs": 71371
+	},
+	{
+		"link": "1-cobot-safety-function/1-3-safety-function/1-robot-limit-function.md",
+		"char_ofs": 41986,
+		"byte_ofs": 72961
+	},
+	{
+		"link": "1-cobot-safety-function/1-3-safety-function/2-joint-limit-function.md",
+		"char_ofs": 42427,
+		"byte_ofs": 73875
+	},
+	{
+		"link": "2-direct-teaching/README.md",
+		"char_ofs": 42954,
+		"byte_ofs": 75033
+	},
+	{
+		"link": "2-direct-teaching/2-1-direct-teaching-switch-assignment.md",
+		"char_ofs": 43204,
+		"byte_ofs": 75636
+	},
+	{
+		"link": "2-direct-teaching/2-2-driving-robot-by-direct-teaching.md",
+		"char_ofs": 44747,
+		"byte_ofs": 77715
+	},
+	{
+		"link": "2-direct-teaching/2-3-direct-teaching-mode-setting.md",
+		"char_ofs": 45550,
+		"byte_ofs": 79475
+	},
+	{
+		"link": "2-direct-teaching/2-4-constraint-motion.md",
+		"char_ofs": 45888,
+		"byte_ofs": 80172
+	},
+	{
+		"link": "3-io-setting/README.md",
+		"char_ofs": 46175,
+		"byte_ofs": 80742
+	},
+	{
+		"link": "3-io-setting/3-1-io-map.md",
+		"char_ofs": 46188,
+		"byte_ofs": 80761
+	},
+	{
+		"link": "3-io-setting/3-2-tool-io/README.md",
+		"char_ofs": 46459,
+		"byte_ofs": 81157
+	},
+	{
+		"link": "3-io-setting/3-2-tool-io/1-tool-io-default-spec.md",
+		"char_ofs": 46526,
+		"byte_ofs": 81301
+	},
+	{
+		"link": "3-io-setting/3-2-tool-io/2-tool-io-setting.md",
+		"char_ofs": 52626,
+		"byte_ofs": 87958
+	},
+	{
+		"link": "3-io-setting/3-3-analog-io/README.md",
+		"char_ofs": 52938,
+		"byte_ofs": 88513
+	},
+	{
+		"link": "3-io-setting/3-3-analog-io/1-analog-io-default-spec.md",
+		"char_ofs": 53016,
+		"byte_ofs": 88678
+	},
+	{
+		"link": "3-io-setting/3-3-analog-io/2-analog-io-setting.md",
+		"char_ofs": 54668,
+		"byte_ofs": 90573
+	},
+	{
+		"link": "4-error-message/README.md",
+		"char_ofs": 55117,
+		"byte_ofs": 91414
+	},
+	{
+		"link": "4-error-message/e7001-e7066.md",
+		"char_ofs": 55159,
+		"byte_ofs": 91511
+	},
+	{
+		"link": "4-error-message/e7101-e7120.md",
+		"char_ofs": 72075,
+		"byte_ofs": 113080
+	},
+	{
+		"link": "4-error-message/e7170-e7213.md",
+		"char_ofs": 77041,
+		"byte_ofs": 120614
+	},
+	{
+		"link": "4-error-message/e7250-e7348.md",
+		"char_ofs": 85552,
+		"byte_ofs": 132939
+	},
+	{
+		"link": "4-error-message/e7403-e7711.md",
+		"char_ofs": 94346,
+		"byte_ofs": 145217
+	},
+	{
+		"link": "4-error-message/e7731-e7905.md",
+		"char_ofs": 102642,
+		"byte_ofs": 158031
+	},
+	{
+		"link": "attachment/README.md",
+		"char_ofs": 114458,
+		"byte_ofs": 174989
+	},
+	{
+		"link": "attachment/rules-criteria-and-public-notice.md",
+		"char_ofs": 114464,
+		"byte_ofs": 175001
+	},
+	{
+		"link": "warranty.md",
+		"char_ofs": 114597,
+		"byte_ofs": 175177
+	}
+]
