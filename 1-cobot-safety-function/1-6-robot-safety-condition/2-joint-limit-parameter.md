@@ -1,19 +1,19 @@
-﻿# 1.6.2 조인트 제한 파라미터
+# 1.6.2 Joint limiting parameters
 
-조인트 제한 파라미터는 로봇의 조인트 공간에서 안전 기능을 모니터링하기 위한 한계값입니다. 각 카테시안 스페이스에서 조인트 제한 파라미터가 활성화되어 있으면 항상 모니터링하며 감속 모드가 활성화된 경우에는 조건0을 기준으로 모니터링합니다. 모니터링 위반 시에는 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+These parameters are the limit values for monitoring the safety functions relating to the space in which the robot’s joints move. If a joint limiting parameter is enabled in a Cartesian space, monitoring will be done at all times, and if the deceleration mode is enabled, monitoring will be done based on Condition0. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-![그림 4 조인트 제한 설정 예(S축)](<../../_assets/image_2.png>)
+You can set the parameter values in the **\[Joint limit]** tab of the **\[Set up > 4: Application parameter > 21: Cobot setup > 1: Cobot Safety Function > 1: Safety condition]** menu.
 
-**\[설정 > 4: 응용 파라미터 > 21: 협동로봇 설정 > 1: 안전 기능 > 1: 안전 조건]** 메뉴의 **\[조인트 제한]** 탭에서 파라미터 값을 설정할 수 있습니다.
+![Figure 4 An example of joint limiting setting (S-axis)](<../../_assets/image_20.png>)
 
-![그림 5 조인트 제한 파라미터 설정 화면](../../_assets/image28.jpeg)
+![Figure 5 Window for setting joint limiting parameters](<../../_assets/image_27.png>)
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
-| :-------: | :------------------------------------------------: | :----------: |
-| 조인트 각도 제한 |  <p>각 관절의 각도 제한값</p><p>(-360.0 ~ 360.0 (deg))</p>  | 로봇 소프트리밋과 동일 |
-| 조인트 속도 제한 | <p>각 관절의 각속도 제한값</p><p>(1.0 ~ 500.0 (deg/sec))</p> |   축 최고속과 동일  |
-| 조인트 토크 제한 |   <p>각 관절의 토크 제한값</p><p>(-500.0 ~ 500.0 (Nm))</p>  |  축 최대 토크와 동일 |
+|    **Parameter**   | 　　　　　　　　**Description**                                              |              **Default setting value**             |
+| :----------------: | -------------------------------------------------------------------- | :------------------------------------------------: |
+|  Joint angle limit | <p>The angle limit value of a joint </p><p>(-360.0°–360.0°)</p>      |       It is identical to a robot soft limit.       |
+|  Joint speed limit | <p>The angular speed limit value of a joint </p><p>(1.0°–500.0°)</p> |  It is identical to the highest speed of the axis. |
+| Joint torque limit | <p>The torque limit value of a joint </p><p>(-500.0–500.0 Nm)</p>    | It is identical to the highest torque of the axis. |
 
 {% hint style="warning" %}
-**\[주의]**: 속도 한계 구성 시에는 반드시 STO 반응 시간을 고려하고 커버를 덮어 충돌 및 부상을 예방하십시오.
+**\[Caution]**: In configuring a speed limit, you must consider the STOP reaction time and put a cover on the target to prevent collisions and injuries.
 {% endhint %}

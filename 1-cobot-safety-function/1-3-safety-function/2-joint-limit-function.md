@@ -1,18 +1,18 @@
-﻿# 1.3.2 조인트 제한 기능
+# 1.3.2 Joint limit functions
 
-조인트 제한 기능은 조인트 공간 상에서의 로봇의 움직임을 제한하는 기능으로 지원 기능은 다음과 같습니다.
+The joint limiting functions, which restrict the robot’s motion in the joint space, include the following:
 
-* **조인트 위치**: 로봇이 축별로 특정 범위 내에서만 동작할 수 있도록 범위를 제한
-* **조인트 속도**: 축별 제한된 속도 이상으로 구동하지 못하게 하여 로봇의 운동량을 제한
-* **조인트 토크**: 축별 토크의 제한을 통해 로봇의 파워, 힘을 줄여 충돌 시 작업자에게 가해지는 힘과 압력을 제한
+* **Joint position**: This limits the robot’s joint positions so that its axes can move only within the specified ranges.
+* **Joint speed**: This limits the robot’s momentum so that its axes cannot move beyond the specified speeds.
+* **Joint torque**: This limits the robot’s power and force by restricting the torques of the axes to reduce the force and pressure applied on the operator in case of a collision with the robot.
 
 {% hint style="warning" %}
-**\[주의]** : 작업자 및 사용자는 로봇 주위의 인원 및 장비의 안전을 보장하기 위해 로봇 안전 기능을 구성하기 전에 위험성 평가를 수행해야 하며 평가 결과에 따라 다음 사항을 설정하십시오.
+**\[Caution]** : To ensure the safety of personnel and equipment around the robot, operators and users should perform a risk assessment before configuring the robot’s safety function and set the following details according to the assessment result:
 
-* 비밀번호 등을 설정하여 허가받지 않은 사람의 안전 구성 변경 방지
-* 안전 관련 기능 및 인터페이스 설정
-* 로봇 가동 전 설정 내용의 정확성 확인
-* 모든 안전 기능의 구성 및 설정의 위험성 평가 준수 여부 확인
+* Set passwords and the like so that the safety configuration cannot be modified by unauthorized persons.
+* Set safety-related functions and interfaces.
+* Check if the settings are correct before running the robot.
+* Check if all the safety functions are configured and if the settings conform to the result of the risk assessment.
 {% endhint %}
 
 

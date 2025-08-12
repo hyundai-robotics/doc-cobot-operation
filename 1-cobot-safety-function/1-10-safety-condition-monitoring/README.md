@@ -1,16 +1,15 @@
-﻿# 1.10 안전 상태 모니터링
+# 1.10 Safety condition monitoring
 
-안전 기능 위반 및 안전 제어 모듈(SCM: Safety Control Module) 보드의 상태를 모니터링합니다. 로봇 제한 기능과 조인트 제한 기능, SCM의 상태를 확인할 수 있습니다.
+This monitors safety function violations and the status of the SCM board. You can view the statuses of the robot limiting functions, joint limiting functions, and the SCM board.
 
-1.  **\[설정]** 버튼 > **\[4: 응용 파라미터 > 21: 협동로봇 설정 > 1: 안전 기능 > 5: 안전 상태 모니터링]** 메뉴를 터치하십시오.
+1. &#x20;**** Select the **\[Configure]** button > **\[4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 5: Cobot Safety Status]** menu.
+2. Check the safety conditions and the statuses of the safety functions of the collaborative robot.
 
+![](<../../_assets/image_41.png>)
 
-2. &#x20;협동로봇의 안전 상태와 안전 기능별 상태를 확인하십시오.
-
-![](../../_assets/image49.jpeg)
-
-|               **번호**               | 　　　　　　　　　　　**설명**                                                                                                                                                                                                    |
-| :--------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  ![](../../_assets/1.png)  | 협동로봇의 안전 상태를 확인합니다.                                                                                                                                                                                                  |
-|  ![](../../_assets/2.png)  | <p>안전 기능 탭을 선택하여 안전 기능별 상태를 확인합니다.</p><ul><li><strong>OFF</strong>: 안전 영역 비활성화</li><li><strong>SAFE</strong>: 안전 기능 준수</li><li><strong>UNSAFE</strong>: 안전 기능 위반</li><li><strong>ERROR</strong>: SCM 상태 에러</li></ul> |
-|  ![](../../_assets/3.png)  | <ul><li><strong>[I/O]</strong>: 안전 I/O 상태를 확인할 수 있습니다.</li><li><strong>[복구 모드]</strong>: 안전 기능 모니터링 위반 시, 에러를 해제하여 복구할 수 있습니다.</li></ul>                                                                             |
+|                No.                | Description                                                                                                                                                                                                                                                                                                             |
+| :-------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|              **No.**              | 　　　　　　　　　**Description**                                                                                                                                                                                                                                                                                                |
+|  ![](../../_assets/1.png) | View the safety conditions of the collaborative robot.                                                                                                                                                                                                                                                                  |
+|  ![](../../_assets/2.png) | <p>Select the Safety Functions tab, and view the statuses of the safety functions.</p><ul><li><strong>OFF</strong>: Safety space disabled </li><li><strong>SAFE</strong>: Safety function observed</li><li><strong>UNSAFE</strong>: Safety function violated</li><li><strong>ERROR</strong>: SCM status error</li></ul> |
+| ![](../../_assets/3.png)  | <ul><li><strong>[I/O]</strong>: You can view the statuses of the safety I/Os.</li><li><strong>[Status Recovery]</strong>: In case of safety violations during monitoring, you can clear errors and recover the status.</li></ul>                                                                                        |

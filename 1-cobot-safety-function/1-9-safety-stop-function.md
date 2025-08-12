@@ -1,38 +1,38 @@
-﻿# 1.9 안전 정지 기능
+# 1.9Safety Stop Function
 
-안전 기능별로 적절한 안전 정지 유형을 설정합니다. 안전 정지 기능은 안전에 위반이 되는 경우 안전한 상태로 만들기 위해 로봇을 정지시키는 것으로 다음의 세 유형이 있습니다. 모든 유형의 안전 정지 기능은 IEC 61800-5-2의 4.2.2.4 요건을 충족합니다.
+Set an adequate safety stop type for each safety stop function. The safety stop functions, which stop the robot under a safe condition in case of a safety violation, include the following three types. All types of safety stop functions meet the requirements of Clause 4.2.2.4 of IEC 61800-5-2.
 
-* **정지0**: 모든 조인트 모듈의 모터 전원을 즉시 제거하고 정지
-* **정지1**: 모든 조인트 모듈의 모터가 감속 후 정지. 이후에 모터의 전원 제거
-* **정지2**: 모든 조인트 모듈의 모터가 감속 후 SOS (Safe Operating Stop)가 동작. 모든 모터의 전원 공급 유지 상태
+* **Stop0**: The power of the motors of all the joint modules will disconnect immediately, and the motors will stop.
+* **Stop1**: The power of the motors of all the joint modules will decelerate, and the motors will stop. Then, the power of the motors will be disconnected.
+* **Stop2**: The motors of all the joint modules will decelerate, and the safe operating stop (SOS) function will take effect. The power supply status of all the motors will be retained.
 
-기능별 안전 정지 유형을 설정하는 방법은 다음과 같습니다.
+The method for setting the safety stop types of the safety functions is as follows:
 
-1\. **\[설정]** 버튼 > **\[4: 응용 파라미터 > 21: 협동로봇 설정 > 1: 안전 기능 > 4: 안전 정지 기능]** 메뉴를 터치하십시오.
+1\. Select the **\[Configure]** button > **\[4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 4: Safety Stop Function]** menu.
 
-2\. 드롭다운 메뉴를 터치하여 정지 유형을 설정한 후 **\[적용]** 버튼을 터치하십시오.
+2\. Click the drop-down menu, set the stop type, and click the **\[Apply]** button.
 
-![](../_assets/image48.jpeg)
+![](<../_assets/image_44.png>)
 
-| **번호** |      **안전 기능**      |     **정지 기능**     |
-| :----: | :-----------------: | :---------------: |
-|   #1   |         SOS         |   기본값: 정지0 (고정값)  |
-|   #2   | TCP 위치 위반(안전 영역 위반) |    기본 설정값: 정지0    |
-|   #3   |      조인트 위치 위반      |    기본 설정값: 정지0    |
-|   #4   |      TCP 속도 위반      |    기본 설정값: 정지0    |
-|   #5   |      조인트 속도 위반      |    기본 설정값: 정지0    |
-|   #6   |      조인트 토크 위반      |    기본 설정값: 정지0    |
-|   #7   |       TCP 힘 위반      |    기본 설정값: 정지0    |
-|   #8   |      TCP 방향 위반      |    기본 설정값: 정지0    |
-|   #9   |       파워 위반 기본      |    기본 설정값: 정지0    |
-|   #10  |        모멘텀 위반       |    기본 설정값: 정지0    |
-|   #11  |        충돌 검지        |    기본 설정값: 정지0    |
-|   #12  |        비상 정지        |    기본 설정값: 정지0    |
-|   #13  |       외부 비상 정지      |    기본 설정값: 정지0    |
-|   #14  |       안전가드 정지       | 기본 설정값: 정지1 (고정값) |
+| **No.** |               **Safety function**               |              **Stop function**             |
+| :-----: | :---------------------------------------------: | :----------------------------------------: |
+|    1    |                       SOS                       | Default setting value: Stop0 (fixed value) |
+|    2    | TCP position violation (safety space violation) |        Default setting value: Stop0        |
+|    3    |             Joint position violation            |        Default setting value: Stop0        |
+|    4    |               TCP speed violation               |        Default setting value: Stop0        |
+|    5    |              Joint speed violation              |        Default setting value: Stop0        |
+|    6    |              Joint torque violation             |        Default setting value: Stop0        |
+|    7    |               TCP force violation               |        Default setting value: Stop0        |
+|    8    |            TCP orientation violation            |        Default setting value: Stop0        |
+|    9    |                 Power violation                 |        Default setting value: Stop0        |
+|    10   |                Momentum violation               |        Default setting value: Stop0        |
+|    11   |               Collision detection               |        Default setting value: Stop0        |
+|    12   |                  Emergency stop                 |        Default setting value: Stop0        |
+|    13   |             External emergency stop             |        Default setting value: Stop0        |
+|    14   |                  Safeguard stop                 | Default setting value: Stop1 (fixed value) |
 
-3\. 파라미터 값을 확인한 후 **\[X]** 버튼을 터치하거나 티치 펜던트의 **\<esc>** 키를 눌러 설정을 종료하십시오.
+3\. After checking the parameter values, finish the setting by clicking the **\[X]** button or by clicking the **\<esc>** key of the teach pendant.
 
 {% hint style="warning" %}
-**\[주의]**: 위험성 평가를 통해 기능별로 적절한 정지 방법을 설정해야 합니다.
+**\[Caution]**: You should set an adequate stopping method for each function based on the result of the risk assessment.
 {% endhint %}

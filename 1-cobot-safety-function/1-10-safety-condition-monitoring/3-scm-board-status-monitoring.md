@@ -1,17 +1,17 @@
-﻿# 1.10.3 안전보드 상태 모니터링
+# 1.10.3 SCM board status monitoring
 
-**\[설정 > 4: 응용 파라미터 > 21: 협동로봇 설정 > 1: 안전 기능 > 5: 안전 상태 모니터링]** 메뉴의 **\[SCM 상태]** 탭을 선택하여 안전보드의 상태를 확인하십시오.
+Select the **\[SCM Status]** tab of **\[Configure > 4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 5: Cobot Safety Status]** to view the status of the SCM board.
 
-![그림 15 협동로봇 안전 상태: SCM 상태](../../_assets/image52.jpeg)
+![Figure 15 Safety conditions of the collaborative robot: SCM status](<../../_assets/image_19.png>)
 
-*   **\[상태]**: 안전 상태를 확인합니다.
+*   **\[Status]**: You can view the safety conditions.
 
-    협동로봇 안전 기능의 상태를 모니터링할 수 있습니다. 정상이면 **Normal**이 출력되고 안전 기능 에러 또는 위반 시에는 해당 에러 코드를 확인할 수 있습니다.
+    You can monitor the statuses of the safety functions of the collaborative robot. In a normal condition, Normal will be displayed. If an error or violation of a safety function occurs, the pertaining error code will be displayed.
 
 
-* 안전보드의 상태를 확인합니다.
-  *   **\[Main]**: SCM의 듀얼 MCU (MCU A, MCU B) 상태 출력
+* You can view the status of the SCM board.
+  *   **\[Main]**: This is a status display of the dual MCUs (MCU A, MCU B).
 
       POWER\_ON, INIT\_STATE, WAIT\_KIENMATICS\_INFO, WAIT\_DYNAMICS\_INFO, WAIT\_SAFE\_PARAMETER, INITIAL\_MONITORING, NORMAL\_OPERATION, , STO\_STATE\_BY\_PARAM, STO\_STATE\_BY\_SI, SS1\_STATE, SS2\_STATE, SOS\_STATE, FAULT\_STATE
-  * **\[엔코더]**: 축별 듀얼 엔코더 상태 출력(Normal, Error, Off)
-  * **\[조인트 토크센서]**: 축별 듀얼 JTS 상태 출력(Normal, Error, Off)
+  * **\[Encoder]**: This is a status display of the axial dual encoders (Normal, Error, Off).
+  * **\[Joint torque sensor]**: This is a status display of the axial dual JTSs (Normal, Error, Off).

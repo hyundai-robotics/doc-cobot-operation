@@ -1,2 +1,2 @@
-﻿# 1.5 안전 기능 사용 전 점검 사항
+# 1.5 Matters to be checked before using the safety functions
 

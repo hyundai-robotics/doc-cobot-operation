@@ -1,15 +1,15 @@
-﻿# 1.10.2 조인트 제한 기능 모니터링
+# 1.10.2Joint limiting function monitoring
 
-**\[설정 > 4: 응용 파라미터 > 21: 협동로봇 설정 > 1: 안전 기능 > 5: 안전 상태 모니터링]** 메뉴의 **\[조인트 제한]** 탭을 선택하여 조인트 제한 기능의 상태를 확인하십시오.
+Select the **\[Joint limit]** tab of **\[Configure > 4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 5: Cobot Safety Status]** to view the statuses of the joint limiting functions.
 
-![그림 14 협동로봇 안전 상태: 조인트 제한](../../_assets/image51.jpeg)
+![Figure 14 Safety conditions of the collaborative robot: Joint limiting](<../../_assets/image_38.png>)
 
-*   **\[상태]**: 안전 상태를 확인합니다.
+*   **\[Status]**: You can view the safety conditions.
 
-    협동로봇 안전 기능의 상태를 모니터링할 수 있습니다. 정상이면 **Normal**이 출력되고 안전 기능 에러 또는 위반 시에는 해당 에러 코드를 확인할 수 있습니다.
+    You can monitor the statuses of the safety functions of the collaborative robot. In a normal condition, Normal will be displayed. If an error or violation of a safety function occurs, the pertaining error code will be displayed.
 
 
-* 조인트 제한 기능의 상태를 확인합니다.
-  * **\[위치]**: 축별 조인트 위치 모니터링 위반 여부
-  * **\[속도]**: 축별 조인트 속도 모니터링 위반 여부
-  * **\[토크]**: 축별 조인트 토크 모니터링 위반 여부
+* You can view the statuses of the joint limiting functions.
+  * **\[Position]**: This indicates whether an axial joint position violation has occurred during the monitoring.
+  * **\[Speed]**: This indicates whether an axial joint speed violation has occurred during the monitoring.
+  * **\[Torque]**: This indicates whether an axial joint torque violation has occurred during the monitoring.

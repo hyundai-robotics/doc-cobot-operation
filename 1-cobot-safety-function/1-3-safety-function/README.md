@@ -1,20 +1,20 @@
-﻿# 1.3 안전 기능
+# 1.3 Safety functions
 
-협동로봇의 안전 기능은 로봇과 작업자가 협업 중 충돌 시 작업자에게 가해지는 충격을 줄이기 위해 사용하는 기능입니다.
+The purpose of the safety functions of the collaborative robot is to reduce the impact on the operator in the case of a collision between the operator and the robot during collaborative operation.
 
-협동로봇의 안전 기능에는 로봇 관절의 움직임을 제한하는 “조인트 제한 기능”과 안전 영역 공간에서의 로봇의 움직임을 제한하는 “로봇 제한 기능”이 있습니다. 이 기능들은 안전 기능의 설정을 통해 구성할 수 있으며 작업자가 수행한 위험성 평가에서 선별된 위험의 대처 방안으로 사용합니다.
+The safety functions include the “axis limiting function,” which restricts the motion of the robot’s joints, and the “robot limiting function,” which restricts the robot’s motion in the safety space. These functions can be configured in the setting menu and are used as measures to respond to the risks selected in the risk assessment performed by the operator.
 
-각 안전 기능을 실행하기 위해 다음 항목을 설정해야 합니다.
+In executing the safety functions, the following items should be configured:
 
-*   **안전 영역**: 로봇의 움직임을 제한하기 위한 작업 영역 및 보호 영역 설정
-
-
-*   **툴 모델링**: 로봇의 툴 위치가 특정 영역을 침범 혹은 이탈하는 것에 대한 툴 위치 모니터링에 사용
+*   **Safety space**: Set the working space and the protected space to restrict the robot’s motion.
 
 
-*   **로봇 모델링**: 로봇의 엘보우 위치가 특정 영역을 침범 혹은 이탈하는 것에 대한 엘보우 위치 모니터링에 사용
+*   **Tool modeling**: This is used to check whether the robot’s tool position intrudes or exceeds specific spaces.
 
 
-* **안전 제한 조건**: 안전 기능을 위한 모니터링 기준값 설정
+*   **Robot modeling**: This is used to check whether the robot’s elbow position intrudes or exceeds specific spaces.
 
-안전 조건은 안전 영역별로 하나씩 설정할 수 있으며, 이를 설정하지 않으면 Level1 (기본 설정 모드)이 기본 조건으로 설정됩니다. 제한 조건은 최대 5 개, 툴은 최대 16 개, 안전 영역은 최대 12 개까지 추가할 수 있습니다. 안전 기능 관련 파라미터는 수동 모드에서 모터가 꺼진 상태에서만 설정, 변경 및 반영할 수 있습니다.
+
+* **Safety limiting conditions**: Set monitoring criteria value for the safety functions.
+
+One safety condition can be configured for each safety space; if not configured, Level1 (default setting mode) will be set as the default condition. You can add up to 5 limiting conditions, 16 tools, and 12 safety spaces. You can set, modify, or enable the parameters relating to the safety function only when the motors are turned off in the manual mode.

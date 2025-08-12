@@ -1,12 +1,12 @@
-﻿# 1.5.4 암호 설정
+# 1.5.4 Password setting
 
-협동로봇 안전 기능의 파라미터는 반드시 지정된 담당자가 설정하고 관리해야 합니다. 관리자로 지정된 사용자는 관리자 권한과 시스템 설정용 암호를 부여받습니다. 시스템 설정용 암호는 안전 기능 파라미터 설정 시 필수 입력 항목으로 암호가 틀리면 파라미터를 변경 및 설정할 수 없습니다.
+The parameters for the safety functions of the collaborative robot must be set and managed by a designated person. A user designated as the administrator will be given the administrator authority and password for system setting. The password for system setting should be input when setting the parameters for the safety functions. When a wrong password is input, the administrator cannot modify or set the parameters.
 
-1. **\[설정]** 버튼 > **\[5: 초기화 > 11: 시스템 암호 설정]** 메뉴를 터치하십시오. 비밀번호 설정창이 나타납니다.
-2. 비밀번호를 입력한 후 **\[확인]** 버튼을 터치하십시오.
+1. Select the **\[Configure]** button > **\[5: Initialize > 11: system password setting]** menu. The password setting window will appear.
+2. Enter the password, and click the **\[OK]** button.
 
-![](../../_assets/image21.jpeg)
+![](<../../_assets/image_34.png>)
 
-* 안전 기능의 파라미터 설정 시 반드시 시스템 설정 암호를 입력해야 변경 내용이 저장됩니다.
+* In setting the parameters of the safety functions, the system setting password must be input for saving changes.
 
-![](../../_assets/image22.jpeg)
+![](<../../_assets/image_29.png>)

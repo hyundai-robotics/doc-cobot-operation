@@ -1,96 +1,92 @@
-﻿# 1.1 용어 설명
+# 1.1 Description of terms
 
-### <mark style="color:green;">로봇 제한 파라미터</mark>&#xD;
+### <mark style="color:green;">Robot limiting parameters</mark>&#xD;
 
-로봇의 속도, 힘 운동량을 감시하기 위해 기준이 되는 파라미터입니다.
+These are the parameters that constitute the criteria for monitoring the speed, force, and momentum of the robot.
 
-*   **TCP 위치 감시**
+*   **Tool center point (TCP) position monitoring**
 
-    안전 툴 모델이 안전 영역을 위반하는지 감시. 영역을 침범하는 경우 사용자가 설정한 안전 정지 수행
-    ****
-*   **TCP 방향 감시**
+    This monitors whether the safety tool model violates the safety space. In cases when the safety space is intruded into, the safety stop set by the user will be actuated.
+*   **TCP orientation monitoring**
 
-    툴의 방향이 지정된 범위를 벗어나지 않는지 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
-    ****
-*   **TCP 속도 감시**
+    This monitors whether the tool orientation is out of the specified range. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+*   **TCP speed monitoring**
 
-    툴 끝의 속도를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
-    ****
-*   **TCP 힘 감시**
+    This monitors the speed of the tool tip. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+*   **TCP force monitoring**
 
-    툴 끝의 힘을 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
-    ****
-*   **파워 감시**
+    This monitors the force of the tool tip. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+*   **Power monitoring**
 
-    로봇의 파워를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
-    ****
-*   **모멘텀 감시**
+    This monitors the power of the robot. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+*   **Momentum monitoring**
 
-    로봇의 모멘텀을 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
-    ****
-*   **충돌 검지**
+    This monitors the momentum of the robot. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+*   **Collision detection**
 
-    로봇에 외력이 가해져 허용치를 초과하는 경우 사용자가 설정한 안전 정지 수행
-    ****
-*   **안전 정지 감시(SOS, Safe Operating Stop)**
+    In cases when the allowable value is exceeded because of an external force applied to the robot, the safety stop set by the user will be actuated.
+*   **Safe operating stop (SOS) monitoring**
 
-    로봇이 슬립 발생 없이 정지 상태를 유지하는지 감시. 기준값을 초과하는 경우 정지0을 수행. 자동 모드에서 정지 상태가 되면 기능이 자동으로 동작
+    This monitors whether the robot stops without any slips. In cases when the specified value is exceeded, Stop0 will be actuated. Meanwhile, when a stop condition is met while the robot is in the automatic mode, this function will be actuated automatically.
 
-### <mark style="color:green;">조인트 제한 파라미터</mark>&#xD;
+### <mark style="color:green;">Joint limiting parameters</mark>&#xD;
 
-로봇 각 조인트의 위치, 속도, 토크를 감시하기 위해 기준이 되는 파라미터입니다.
+These are the parameters that form the reference for monitoring the position, speed, and torque of each robot joint.
 
-*   **조인트 각도 감시**
+*   **Joint angle monitoring**
 
-    각 축 조인트의 위치를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
-*   **조인트 속도 감시**
+    This monitors the position of each axial joint. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+*   **Joint speed monitoring**
 
-    각 축 조인트의 속도를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
-*   **조인트 토크 감시**
+    This monitors the speed of each axial joint. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+*   **Joint torque monitoring**
 
-    각 축 조인트의 토크를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors the torque of each axial joint. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
 
 
 
-### <mark style="color:green;">안전 레이아웃</mark>&#xD;
+### <mark style="color:green;">Safety layout</mark>&#xD;
 
-TCP 위치와 방향 감시를 위해 기준이 되는 안전 영역과 툴 영역의 파라미터입니다.
+These are the parameters for the safe space and the tool space that form the criteria for monitoring the TCP position and orientation.
 
-*   **안전 영역**
+*   **Safety space**
 
-    툴의 작업 영역과 보호 영역의 통칭
-*   **작업 영역**
+    This refers to the working space and the protected space of the tool.
+*   **Working space**
 
-    로봇이 작업을 수행하는 영역. 툴 및 로봇 엘보우 모델이 작업 영역을 벗어나는 경우 안전 정지 수행
-*   **보호 영역**
+    This refers to the space in which the robot carries out work. If the tool or the robot’s elbow model goes out of the working space, the safety stop function will be actuated.
+*   **Protected space**
 
-    로봇으로부터 보호되어야 하는 영역. 툴 및 로봇 엘보우 모델이 보호 영역을 침범하는 경우 안전 정지 수행
-*   **안전 툴 모델링**
+    This refers to the space where the operator should be safeguarded from the robot. If the tool or the robot’s elbow model goes out of the protected space, the safety stop function will be actuated.
+*   **Safety tool modeling**
 
-    TCP 위치와 방향 감시를 위해 로봇에 부착된 툴을 구와 원뿔로 모델링
-*   **안전 로봇 모델링**
+    The tool attached to the robot is modeled in spheres and cones to monitor the TCP position and orientation.
+*   **Safety robot modeling**
 
-    로봇 엘보우를 구로 모델링하여 안전 영역과의 거리를 감시
-
-
-
-### <mark style="color:green;">안전 정지</mark>&#xD;
-
-안전에 위반이 되는 경우 안전한 상태로 만들기 위해 로봇을 정지시키는 것으로 정지 방법에는 3 가지가 있습니다. 각 정지 방법에 대한 자세한 정보는 “ISO 13850” 또는 “IEC 60204-1”를 참조하십시오.
-
-*   **정지0**
-
-    모든 조인트 모듈의 모터 전원을 즉시 제거하고 정지(제어되지 않은 정지)
-*   **정지1**
-
-    모든 조인트 모듈의 모터가 감속 후 정지하고 이후에 모터의 전원을 제거(제어 정지). 로봇은 프로그램 경로를 계속 따라가며 감속 정지하고 로봇이 정지하자마자 전원 차단
-*   **정지2**
-
-    모든 조인트 모듈의 모터가 감속 후 안전 정지 감시(SOS, Safe Operating Stop) 동작. 모든 모터의 전원 공급 유지 상태
+    The robot’s elbow is modeled in spheres to monitor its distance from the safety space.
 
 
 
-### <mark style="color:green;">복구 모드</mark>&#xD;
+### <mark style="color:green;">Safety space</mark>&#xD;
 
-안전 기능 위반으로 로봇이 정지했을 경우, 복구 모드를 통해 에러를 해제시켜 로봇을 안전한 영역으로 이동합니다. 단, 안전 보드가 FAULT 상태일 경우에는 복구 모드로 에러를 해제시킬 수 없고 재부팅해야 합니다.
+This is the function that stops the robot if any safety conditions are violated. There are three methods for the safety stop. For more details on the methods, refer to ISO 13850 or IEC 60204-1.
 
+*   **Stop0**
+
+    The power of the motors of all the joint modules will disconnect immediately, and the motors will stop (uncontrolled stop).
+*   **Stop1**
+
+    The motors of all the joint modules will decelerate and stop, and the power of the motors will disconnect (controlled stop). The robot will decelerate as it continues to move along the programmed path, and then it will stop. As soon as the robot stops, its power will be disconnected.
+*   **Stop2**
+
+    The motors of all the joint modules will decelerate, and the safe operating stop (SOS) will take effect. The power supply status of all the motors will be retained.
+
+### <mark style="color:green;">Recovery mode</mark>&#xD;
+
+When the robot stops because of the safety function, you can clear the error and position the robot in the safe space while it is in recovery mode. However, when the safety board is in the FAULT state, the error cannot be cleared in recovery mode, and the system should be rebooted.
+
+
+
+### <mark style="color:green;">Direct teaching</mark>&#xD;
+
+This is a method in which teaching is performed by moving the robot directly. This function is actuated by a switch that is mounted on the robot.

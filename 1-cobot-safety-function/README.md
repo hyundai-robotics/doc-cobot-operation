@@ -1,2 +1,2 @@
-﻿# 1. 협동로봇 안전 기능
+# 1. Safety functions of the collaborative robot
 

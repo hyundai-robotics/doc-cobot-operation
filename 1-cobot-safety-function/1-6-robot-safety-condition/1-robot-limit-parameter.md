@@ -1,23 +1,23 @@
-﻿# 1.6.1 로봇 제한 파라미터
+# 1.6.1 Robot limiting parameters
 
-로봇 제한 파라미터는 안전 영역에서 로봇의 구동에 대한 안전 기능을 모니터링하기 위한 한계값입니다. 각 카테시안 스페이스에서 로봇 제한 파라미터가 활성화되어 있으면 항상 모니터링하며 감속 모드가 활성화된 경우에는 조건0을 기준으로 모니터링 합니다. 모니터링 위반 시에는 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+These parameters are the limit values for monitoring the safety functions relating to the robot’s driving in the safety space. If a robot limiting parameter is enabled in a Cartesian space, monitoring will be done at all times, and if the deceleration mode is enabled, monitoring will be done based on Condition0. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-**\[설정 > 4: 응용 파라미터 > 21: 협동로봇 설정 > 1: 안전 기능 > 1: 안전 조건]** 메뉴의 **\[로봇 제한]** 탭에서 파라미터 값을 설정할 수 있습니다.
+You can set parameter values in the **\[Robot limit]** tab of the **\[Set up > 4: Application parameter > 21: Cobot setup > 1: Cobot Safety Function > 1: Safety condition]** menu.
 
-![그림 3 로봇 제한 파라미터 설정 화면](../../_assets/image26.jpeg)
+![](<../../_assets/image_24.png>)
 
-| **파라미터** | 　　　　　　　　　**설명**                                                  |  **기본 설정값** |
-| :------: | ---------------------------------------------------------------- | :---------: |
-|  TCP 속도  | <p>로봇 좌표계에서의 TCP 속도 제한값</p><p>(1 ~ 5,000 (mm/sec))</p>           |  1500 mm/s  |
-|   TCP 힘  | <p>공구 중심점(TCP)에 가해지는 힘 제한값</p><p>(50 ~ 1,000 (N))</p>            |    150 N    |
-|    파워    | <p>로봇의 기계적 동력 제한값</p><p>(80 ~ 1,000 (W))</p>                     |    350 W    |
-|    모멘텀   | <p>로봇의 운동량 제한값(페이로드 제외)</p><p>(50 ~ 1,000 (kg·m/sec))</p>        | 50 kg·m/sec |
-|   충돌 검지  | 충돌 검지 기능 민감도(0 \~ 200(%))                                        |     100%    |
-|    감속비   | <p>감속 모드(조건0)에서 설정한 속도</p><p>(TCP, Joint)의 감속 비율(0 ~ 100(%))</p> |     20%     |
+|    **Parameter**    | 　　　　　　　　　**Description**                                                                               | **Default setting value** |
+| :-----------------: | ------------------------------------------------------------------------------------------------------ | :-----------------------: |
+|      TCP speed      | The TCP speed limiting value in the robot’s coordinate system (1–5,000 mm/s)                           |         1,500 mm/s        |
+|      TCP force      | <p>The force limiting value applied to the TCP </p><p>(50–1,000 N)</p>                                 |           150 N           |
+|        Power        | The mechanical power limiting value of the robot (80–1,000 W)                                          |           350 W           |
+|       Momentum      | The momentum limiting value of the robot (excluding payload) (50–1,000 kg·m/s)                         |         50 kg·m/s         |
+| Collision detection | The sensitivity of the collision detection function (0%–200%)                                          |            100%           |
+| Reduced speed ratio | The reduced speed ratio of the speeds (TCP and joint speeds) set in the deceleration mode (Condition0) |            20%            |
 
 {% hint style="warning" %}
-**]**
+**\[Caution]**&#x20;
 
-* 속도 한계 구성 시에는 반드시 STO 반응 시간을 고려하고 커버를 덮어 충돌 및 부상을 예방하십시오.
-* 운동 에너지에 비례하여 속도가 높고 가반 하중이 큰 경우 로봇의 충격량이 커질 수 있으므로 로봇이 외부의 물체와 충돌하는 경우 상당한 수준의 충격이 발생할 수 있습니다. 협동 공간에서는 안전한 속도와 가반 하중을 유지하여 운전하십시오.
+* In configuring a speed limit, you must consider the stop reaction time and put a cover on the target to prevent collisions and injuries.
+* Because the speed increases in proportion to kinetic energy and a high payload may increase the robot’s momentum, the collision of the robot with an external object may generate significant impact. In the collaborative operation space, operate the robot while maintaining a safe speed and payload.
 {% endhint %}

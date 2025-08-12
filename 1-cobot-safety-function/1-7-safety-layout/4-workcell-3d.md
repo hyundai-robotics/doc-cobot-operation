@@ -1,29 +1,29 @@
-﻿# 1.7.4 워크셀 3D
+# 1.7.4WorkCell 3D
 
-안전 레이아웃에서 설정한 파라미터를 워크셀 3D에서 직접 모니터링합니다. 워크셀 3D는 안전 레이아웃에서 설정한 안전 영역, 툴 모델링, 로봇 모델링을 3D로 시각화하여 설정을 확인할 수 있습니다. 또한 로봇의 위치를 실시간으로 반영하여 로봇의 안전 위반 여부를 확인할 수 있습니다.
+This directly monitors the parameters specified in the safety layout by using WorkCell 3D. WorkCell 3D can 3D visualize the safety spaces, tool models, and robot models specified in the safety layout so that the operator can view the settings. In addition, the robot’s position is identified in real time so that the operator can check whether the robot violates any safety spaces.
 
-워크셀 3D 기능은 작업 프로그램 작업 영역의 패널 선택창에서 활성화합니다.
+You can enable the WorkCell 3D function on the panel selection window of the operation program for the working space.
 
-1\. 작업 영역의 패널 스택 우측 상단의 **\[+]** 버튼을 터치하십시오.
+1\. Click the **\[+]** button that is at the top-right part of the panel stack of the working space.
 
-![](../../_assets/image41.jpeg)
+![](<../../_assets/image_47.png>)
 
-2\. 패널 선택창에서 **\[workcell]**을 터치하십시오. 로봇의 현재 자세가 3D 화면에 나타납니다.
+2\. On the panel selection window, select **\[WorkCell]**. Then, the robot’s current posture will appear on the 3D window.
 
-![](../../_assets/image42.jpeg)
+![](<../../_assets/image_12.png>)
 
 {% hint style="info" %}
-* 패널 선택창에 모니터링 가능한 모든 항목이 나타납니다.
-* 모니터링 가능한 항목은 제어기 설정에 따라 다르게 나타납니다.
+* On the panel selection window, all the items that can be monitored will appear.
+* The items that can be monitored will vary depending on controller settings.
 {% endhint %}
 
-3\. 작업 영역(![](../../_assets/1.png))과 툴 영역(![](../../_assets/2.png)), 툴 방향 제약(![](../../_assets/3.png)), 로봇 엘보우 영역 영역(![](../../_assets/4.png)), 금지 영역(![](../../_assets/5.png))의 설정 상태를 확인하십시오.
+3\. Check the settings of the working space (![](../../_assets/1.png)), tool space (![](../../_assets/2.png)), tool orientation limiting (![](../../_assets/3.png)), robot elbow space (![](../../_assets/4.png)), and limiting space (![](../../_assets/5.png)).
 
-![](../../_assets/image43.jpeg)
+![](<../../_assets/image_33.png>)
 
-* 카메라를 조정하려면 3D 화면 우측 하단의 **\[확대/축소]** 아이콘(![](../../_assets/image44.png)), **\[이동]** 아이콘(![](../../_assets/image45.png)), 또는 **\[회전]** 아이콘(![](../../_assets/image46.png))을 선택한 후 화면을 드래그하십시오.
-* 설정을 변경하고 설정값을 적용하려면, workcell 창을 닫은 후 다시 여십시오.
+* To adjust the camera, select the **\[Expand/Shrink]** icon (![](../../_assets/image44.png)), the **\[Move]** icon (![](../../_assets/image45.png)), or the **\[Rotate]** icon (![](../../_assets/image46.png)), and drag the screen.
+* To modify the setting and apply the set values, close and reopen the WorkCell window.
 
 {% hint style="warning" %}
-**\[주의]**: 워크셀 시뮬레이션과 실제 로봇의 위치를 비교하고 주위의 장애물을 파악하여 로봇을 안전하게 구동하십시오.
+**\[Caution]**: Compare the robot’s WorkCell simulation position and its actual position, and identify any adjacent obstacles in operating the robot safely.
 {% endhint %}

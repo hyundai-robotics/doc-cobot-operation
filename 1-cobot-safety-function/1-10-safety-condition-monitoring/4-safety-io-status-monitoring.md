@@ -1,8 +1,8 @@
-﻿# 1.10.4 안전 I/O 상태 모니터링
+# 1.10.4 Safety I/O status monitoring
 
-**\[설정 > 4: 응용 파라미터 > 21: 협동로봇 설정 > 1: 안전 기능 > 5: 안전 상태 모니터링]** 메뉴 화면의 우측 **\[I/O]** 버튼을 터치하여 안전 I/O 상태를 확인하십시오.
+Select the **\[I/O]** button at the right side of the window of **\[Configure > 4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 5: Cobot Safety Status]** to view the statuses of the safety I/Os.
 
-![그림 16 협동로봇 안전 상태: 안전 I/O](../../_assets/image53.jpeg)
+![Figure 16 Safety conditions of the collaborative robot: Safety I/O](<../../_assets/image_25.png>)
 
-* **\[입력 신호 할당]**: 입력 신호(#I1\~#I4)의 할당 상태와 활성화 상태(On/Off) 출력
-* **\[출력 신호 할당]**: 출력 신호(#I1\~#I4)의 할당 상태와 활성화 상태(On/Off) 출력
+* **\[Input signal assignment]**: This displays the statuses of assignment and activation (On/Off) of the input signals (nos. 11–14)
+* **\[Output signal assignment]**: This displays the statuses of assignment and activation (On/Off) of the output signals (nos. 11–14)

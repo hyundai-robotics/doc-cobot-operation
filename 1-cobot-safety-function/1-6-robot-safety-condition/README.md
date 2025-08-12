@@ -1,28 +1,23 @@
-﻿# 1.6 로봇 안전 조건
+# 1.6 Robot safety conditions
 
-로봇 안전 조건은 안전 기능을 모니터링하기 위한 한계값으로 로봇 제한 파라미터와 조인트 제한 파라미터로 구성됩니다.
+The robot safety conditions, which are the limit values for monitoring the safety functions, consist of the robot limiting parameters and the joint limiting parameters.
 
-각 안전 공간에서 원하는 안전 조건을 활성화할 수 있습니다. 특정한 조건이 지정되지 않은 공간이나 활성화되지 않은 공간에서는 기본적으로 조건1(기본 설정 모드)을 기준으로 모니터링합니다. 또한 감속 모드가 활성화된 경우 조건0을 기준으로 모니터링합니다.
+You can enable the desired safety conditions for each safe space. In a space for which no specific conditions are designated or a space that is not enabled, the monitoring will be done based on Condition1 (default setting mode). When the deceleration mode is enabled, the monitoring will be done based on Condition0.
 
-안전 조건을 설정하는 방법은 다음과 같습니다.
+The method for setting safety conditions is as follows:
 
-1\. **\[설정]** 버튼 > **\[4: 응용 파라미터 > 21: 협동로봇 설정 > 1: 안전 기능 > 1: 안전 조건]** 메뉴를 터치하십시오. 안전 조건 설정 화면이 나타납니다.
+1\. Select the **\[Configure]** button > **\[4: Application parameter > 21: Cobot setup > 1: Cobot Safety function > 1: Safety condition]** menu. The safety condition setting window will appear.
+
+2\. Check and set the parameter values of the safety conditions, and save them by clicking the **\[Apply]** button.
+
+
 ****
+_assets
+![](<../../.gitbook/assets/image_49.png>)
 
-2\. 안전 조건 파라미터 값을 확인하고 설정한 후 **\[적용]** 버튼을 터치하여 저장하십시오.
-****_assets
+|              **No.**              | 　　　　　　　　　　**Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| :---------_assets-------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](../../_assets/1.png)  | <p>These are the details of the safety condition. You can view and set the condition name and the parameter values.</p><ul><li><strong>[Name]/[Description]</strong>: These are the name and description of the safety condition.</li><li><strong>[Robot limit]</strong>: This is the setting information on the robot limiting parameters of the safety condition. For more details, see “1.6.1 Robot limiting parameters”</li><li><strong>[Joint limit]</strong>: This is the setting information on the joint limiting parameters of the safety condition. For more details, see “1.6.2 Joint limiting parameters.”</li></ul>                                                                                                                                                                                                                    |
+| ![](../../.gitbook/assets/2.png)  | <ul><li><strong>[Apply]</strong>: This saves changes.</li><li><strong>[+]/[-]</strong>: “+” adds a new safety condition, and “-” deletes an existing safety condition. You can add up to five safety conditions.</li><li>This is the list of safety conditions. If you select a condition name, you can view and modify its details.</li><li><p><strong>[Copy page]/[Paste page]</strong>: “Copy page” copies the information on a safety condition, and “Paste page” pastes it to another.</p><p>In the list of safety conditions, select the name of a condition, click the <strong>[Copy page]</strong> button, select the name of another condition to which the condition will be applied, and click the <strong>[Paste page]</strong> button.</p></li><li><strong>[Reset all]</strong>: This initializes all the safety conditions.</li></ul> |
 
-![](../../.gitbook/assets/image23.jpeg)
-
-|            _assets         | 　　　　　　　　　　　**설명**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| :----------_assets-------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  ![](../../.gitbook/assets/1.png)  | <p>안전 조건의 상세 정보입니다. 조건의 이름과 파라미터 값을 확인 및 설정할 수 있습니다.</p><ul><li><strong>[이름]</strong>/<strong>[설명]</strong>: 안전 조건의 이름과 설명입니다.</li><li><strong>[로봇 제한]</strong>: 안전 조건의 로봇 제한 파라미터 설정 정보입니다. 자세한 내용은 “<a href="1-robot-limit-parameter.md"><strong>1.6.1 로봇 제한 파라미터</strong></a>”를 참조하십시오.</li><li><strong>[조인트 제한]</strong>: 안전 조건의 조인트 제한 파라미터 설정 정보입니다. 자세한 내용은 “<a href="2-joint-limit-parameter.md"><strong>1.6.2 조인트 제한 파라미터</strong></a>”를 참조하십시오.</li></ul>                                                              |
-|  ![](../../.gitbook/assets/2.png)  | <ul><li><strong>[적용]</strong>: 변경 내용을 저장합니다.
-</li><li><strong>[+]</strong>/<strong>[-]</strong>: 새로운 안전 조건을 추가하거나 안전 조건을 삭제합니다. 안전 조건은 최대 5 개까지 추가할 수 있습니다.
-</li><li>안전 조건 목록입니다. 조건 이름을 선택하면 상세 정보를 확인 및 수정할 수 있습니다.
-</li><li><p><strong>[페이지 복사]</strong>/<strong>[페이지 붙여넣기]</strong>: 안전 조건 정보를 복사하여 다른 조건에 붙여 넣습니다.
-</p><p>목록에서 복사할 조건 정보의 이름을 선택하고 <strong>[페이지 복사]</strong> 버튼을 터치한 후 값을 적용할 조건의 이름을 선택하고 <strong>[페이지 붙여넣기]</strong> 버튼을 터치하십시오.
-</p></li><li><strong>[ALL 초기화]</strong>: 모든 안전 조건 정보를 초기화합니다.
-</li></ul> |
-
-3\. 파라미터 값을 확인한 후 **\[X]** 버튼을 터치하거나 티치 펜던트의 **\<esc>** 키를 눌러 설정을 종료하십시오.
+3\. After checking the parameter values, finish the setting by clicking the **\[X]** button or by clicking the **\<esc>** key of the teach pendant.

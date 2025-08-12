@@ -1,10 +1,10 @@
-﻿# 1.7.1.1 안전 영역 파라미터 설정 정보
+# 1.7.1.1 Setting information on safety space parameters
 
-![](<../../../_assets/image_5.png>)
+![](<../../../_assets/image_22.png>)
 
 {% hint style="warning" %}
-**\[주의]**
+**\[Caution]**
 
-* 로봇 모니터링 기능은 구성된 공간 및 모델링된 툴에 기초하여 수행합니다. 공간과 툴에 정지 거리를 비롯한 모든 구성 요소가 포함되어야 합니다.
-* 커버를 덮어 충돌 및 부상을 예방하십시오.
+* The robot monitoring function is carried out based on the configured spaces and modeled tools. The spaces and tools should include all the components including distance.
+* Put a cover on the robot to prevent collisions and injuries.
 {% endhint %}

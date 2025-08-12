@@ -1,17 +1,17 @@
-﻿# 1.3.1 로봇 제한 기능
+# 1.3.1 Robot limit functions
 
-로봇 제한 기능은 안전 영역에서의 로봇의 움직임을 제한하는 기능으로 지원 기능은 다음과 같습니다.
+The robot limiting functions, which restrict the robot’s motion in the safety space, include the following:
 
-*   **TCP 위치**: 로봇의 툴 또는 엘보우를 구로 모델링한 형상이 설정한 영역으로 침범하거나 벗어나는 것을 제한
-
-    ****
-*   **TCP 방향**: 로봇의 엔드 이펙터와 툴이 향하는 방향이 설정한 방향의 범위를 벗어나는 것을 제한
+*   **TCP position**: This restricts the tool or the elbow shapes of the robot modeled in spheres from intruding or exceeding a set space.
 
     ****
-*   **TCP 속도**: 로봇과 작업자의 충돌을 피할 시간을 확보하도록 로봇의 속도를 저속으로 제한(수동 모드에서는 최대 250 ㎜/sec 이하로 동작)
+*   **TCP orientation**: This restricts the orientation of the robot’s end effector and the tool from deviating from a set orientation.
 
     ****
-*   **TCP 힘, 파워, 충돌 검지**: 로봇과 작업자의 충돌 발생 시의 힘과 압력을 제한
+*   **TCP speed**: This restricts the robot’s speed to a low speed so that the operator can escape in case of a collision with the robot (the robot moves at a maximum speed of 250 mm/s in the manual mode and the direct teaching mode).
 
     ****
-* **모멘텀**: 로봇과 작업자의 충돌 발생 시의 에너지와 충격 하중을 제한
+*   **TCP force, power, and collision detection**: This limits the force and pressure in case of a collision between the robot and the operator.
+
+    ****
+* **Momentum**: This limits the energy and impact load in case of a collision between the robot and the operator.

@@ -1,15 +1,18 @@
-﻿# 1.7.3 안전 로봇 모델링
+# 1.7.3 Safety robot modeling
 
-안전 공간 모니터링에 사용하는 로봇 모델입니다. 안전 로봇 모델링은 하나뿐이며 하나의 구체로 구성됩니다.
+This is the robot model used for safety space monitoring. There is only one safety robot model, and the model consists of a sphere.
 
-안전 로봇 모델링에 사용되는 구는 중심과 반지름으로 구성됩니다. 모델링의 구 중심은 로봇 엘보우(축 3: V축)의 위치이고 반지름은 현재 엘보우의 크기 및 최대 TCP 속도에서의 정지 거리를 포함할 수 있을 만큼 커야 합니다.
+The sphere used for safety robot modeling is specified by its center and radius. The sphere center of the model is the position of the robot’s elbow (axis 3: V axis), and the radius should be large enough to include the current size of the elbow and its stopping distance at the maximum TCP speed.
 
-**\[설정 > 4: 응용 파라미터 > 21: 협동로봇 설정 > 1: 안전 기능 > 2: 안전 레이아웃]** 메뉴의 **\[로봇]** 버튼을 터치하면 파라미터 값을 설정할 수 있습니다.
+To set the parameter values, click the **\[Robot]** button in the **\[Configure > 4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 2: Safety layout]** menu.
 
-![그림 12 안전 로봇 모델링 설정 화면](../../_assets/image40.jpeg)
 
-| **파라미터** | 　　　　　　　　　**설명**                                     | **기본 설정값** |
-| :------: | --------------------------------------------------- | :--------: |
-|    이름    | <p>현재 선택된 안전 로봇 모델링의 이름</p><p>(명칭 문자열, 수정 불가)</p>   |    Robot   |
-|  On/Off  | <p>모니터링 활성화 여부</p><p>(Off= 모니터링하지 않음, On=모니터링함)</p> |     Off    |
-|    반경    | 구체의 반지름(0 \~ 10,000 (mm))                           |    0 mm    |
+
+![Figure 12 Safety robot modeling setting window](<../../_assets/image_11.png>)
+
+|   Parameter   | Description                                                                         |   Default setting value   |
+| :-----------: | ----------------------------------------------------------------------------------- | :-----------------------: |
+| **Parameter** | 　　　　　　　　**Description**                                                             | **Default setting value** |
+|      Name     | The name of the selected safety robot model (name character string, not modifiable) |           Robot           |
+|     On/Off    | <p>Whether to enable monitoring </p><p>(Off = no monitoring, On = monitoring)</p>   |            Off            |
+|     Radius    | Radius of the sphere (0–10,000 mm)                                                  |            0 mm           |

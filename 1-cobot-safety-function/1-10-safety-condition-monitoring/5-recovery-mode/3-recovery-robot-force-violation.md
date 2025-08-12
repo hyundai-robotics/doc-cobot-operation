@@ -1,43 +1,29 @@
-﻿# 1.10.5.3	로봇 힘 위반 시 복구
+# 1.10.5.3 Recovery in case of robot force violations
 
-로봇 힘 위반은 외부의 힘이 가해지거나 로봇 내부에서 사용하는 힘의 크기가 안전 기준을 초과하는 것으로 TCP 힘, 충돌 검지, 조인트 토크, 파워 및 모멘텀 모니터링 위반이 있습니다. 위반 발생 원인에 따라 에러를 해제할 수 있습니다.
+Robot force violations are situations in which external force is applied on the robot or in which the amount of the force used by the robot internally exceeds a safety limit, and these include TCP force, collision detection, joint torque, power, and momentum monitoring violations. You can clear errors depending on the causes of the violations.
 
-<mark style="color:green;">**로봇에 외부로부터 힘이 가해져 위반이 발생한 경우**</mark>
+#### <mark style="color:green;">Violation caused by external force applied on the robot</mark>&#xD;
 
-1.  로봇에 힘을 가하는 외부 요인 제거하십시오.
-
-
-2.  안전 상태 모니터링 화면에서 **\[복구 모드]** 버튼을 터치하여 복구 모드로 전환하십시오.
-
-
-3.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
-
-
-4. 복구 완료 시, **\[복구 모드]** 버튼을 터치하여 복구 모드를 해제하십시오.
+1. Remove the external factor that is applying force on the robot.
+2. On the safety condition monitoring window, click the **\[Status Recovery]** button to enter recovery mode.
+3. On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
+4. After the recovery is completed, click the **\[Status Recovery]** button to clear the recovery mode.
 
 {% hint style="warning" %}
-**\[주의]**: 복구 모드 해제 후 안전 레이아웃 설정 및 작업 프로그램의 티칭 위치를 다시 확인하십시오.
+**\[Caution]**: After clearing the recovery mode, recheck the safety layout setting and the teaching position of the operating program.
 {% endhint %}
 
-#### &#xD;<mark style="color:green;">로봇 내부에서 사용하는 힘의 크기가 안전 기준을 초과하여 위반이 발생한 경우</mark>&#xD;
+#### &#xD;<mark style="color:green;">Violation caused by the amount of force used by the robot internally exceeding a safety limit</mark>&#xD;
 
-1.  안전 상태 모니터링 화면에서 **\[복구 모드]** 버튼을 터치하여 복구 모드로 전환하십시오.
-
-
-2.  티치 펜던트의 인에이블링 스위치를 이용해 모터를 켜십시오.
-
-
-3.  교시 장치를 이용해 로봇을 저부하 자세로 움직이십시오.
-
-
-4.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
-
-
-5. 복구 완료 시, **\[복구 모드]** 버튼을 터치하여 복구 모드를 해제하십시오.
+1. On the safety condition monitoring window, click the **\[Status Recovery]** button to enter recovery mode.
+2. &#x20;**** Turn on the motor using the enabling switch on the teach pendant.
+3. Use the teaching device to move the robot to a low-load posture.
+4. On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
+5. After the recovery is completed, click the **\[Status Recovery]** button to clear the recovery mode.
 
 {% hint style="warning" %}
-**\[주의]**
+**\[Caution]**
 
-* 복구 모드 해제 후 로봇 안전 조건 설정, 툴 데이터, 작업 프로그램의 티칭 위치, 토크센서 옵셋을 다시 확인하십시오.
-* 에러가 해제되지 않으면 툴 데이터, 툴번호, 안전 조건 설정 및 토크센서 옵셋을 확인한 후 1 \~ 5번 절차를 다시 실행하십시오.
+* After clearing the recovery mode, recheck the robot’s safety condition setting, tool data, the teaching position of the operating program, and the torque sensor offset.
+* If the error is not cleared, check the tool data, tool number, safety condition setting, and torque sensor offset, and repeat procedures 1 through 5.
 {% endhint %}

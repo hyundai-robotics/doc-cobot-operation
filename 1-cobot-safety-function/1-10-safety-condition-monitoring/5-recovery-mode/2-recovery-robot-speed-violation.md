@@ -1,18 +1,18 @@
-﻿# 1.10.5.2	로봇 속도 위반 시 복구
+# 1.10.5.2 Recovery in case of robot speed violations
 
-로봇 속도 위반은 로봇의 속도가 안전 기준을 초과하는 것으로 TCP 속도, 조인트 속도, 파워 및 모멘텀 모니터링 위반이 있습니다. 로봇 속도 위반 시에는 로봇이 순간적인 속도를 감지하고 정지하므로 로봇의 위치를 이동하지 않고 에러를 해제할 수 있습니다.
+Robot speed violations are situations in which the robot’s speed exceeds a safety limit, and these include TCP speed, joint speed, power, and momentum monitoring violations. Because the robot detects the instantaneous speed in the case of robot speed violations, you can clear the error without moving the robot’s position.
 
-1.  안전 상태 모니터링 화면에서 **\[복구 모드]** 버튼을 터치하여 복구 모드로 전환하십시오.
-
-
-2.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
+1.  &#x20;**** On the safety condition monitoring window, click the **\[Status Recovery]** button to enter recovery mode.
 
 
-3. 복구 완료 시, **\[복구 모드]** 버튼을 터치하여 복구 모드를 해제하십시오.
+2.  On the safety condition monitoring window, check if the status of each space is displayed as SAFE.
+
+
+3. After the recovery is completed, click the **\[Status Recovery]** button to clear the recovery mode.
 
 {% hint style="warning" %}
-**\[주의]**
+**\[Caution]**
 
-* 에러 해제 후 속도 관련 안전 파라미터 및 작업 프로그램의 속도를 반드시 확인하십시오.
-* 복구 모드 해제 후 안전 레이아웃 설정 및 작업 프로그램의 티칭 위치를 다시 확인하십시오.
+* After clearing the error, make sure to recheck all speed-related safety parameters and the speed displayed on the operating program.
+* After clearing the recovery mode, recheck the safety layout setting and the teaching position of the operating program.
 {% endhint %}

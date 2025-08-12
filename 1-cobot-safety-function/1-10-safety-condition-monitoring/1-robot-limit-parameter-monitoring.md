@@ -1,20 +1,20 @@
-﻿# 1.10.1 로봇 제한 파라미터 모니터링
+# 1.10.1 Robot limiting parameter monitoring
 
-**\[설정 > 4: 응용 파라미터 > 21: 협동로봇 설정 > 1: 안전 기능 > 5: 안전 상태 모니터링]** 메뉴의 **\[로봇 제한]** 탭을 선택하여 로봇 제한 기능의 상태를 확인하십시오.
+Select the **\[Robot limit]** tab of **\[Configure > 4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 5: Cobot Safety Status]** to view the statuses of the robot limiting functions.
 
-![그림 13 협동로봇 안전 상태: 로봇 제한](../../_assets/image50.jpeg)
+![Figure 13 Safety conditions of the collaborative robot: Robot limiting](<../../_assets/image_40.png>)
 
-*   **\[상태]**: 안전 상태를 확인합니다.
+*   **\[Status]**: You can view the safety conditions.
 
-    협동로봇 안전 기능의 상태를 모니터링할 수 있습니다. 정상이면 **Normal**이 출력되고 안전 기능 에러 또는 위반 시에는 해당 에러 코드를 확인할 수 있습니다.
+    You can monitor the statuses of the safety functions of the collaborative robot. In a normal condition, Normal will be displayed. If an error or violation of a safety function occurs, the pertaining error code will be displayed.
 
 
-* 로봇 제한 기능의 상태를 확인합니다.
-  * **\[TCP 위치]**: 각 카테시안 공간(#1\~#12)의 상태 및 TCP 위치 모니터링 위반 여부
-  * **\[TCP 속도]**: TCP 속도 모니터링 위반 여부
-  * **\[TCP 힘]**: TCP힘 모니터링 위반 여부
-  * **\[TCP 방향]**: TCP 방향 모니터링 위반 여부
-  * **\[파워]**: 파워 모니터링 위반 여부
-  * **\[모멘텀]**: 모멘텀 모니터링 위반 여부
-  * **\[충돌]**: 충돌 모니터링 위반 여부
-  * **\[SOS]**: (안전 정지 감시) SOS 모니터링 위반 여부
+* You can view the statuses of the robot limiting functions.
+  * **\[TCP position]**: This indicates the statuses of the Cartesian spaces (nos. 1–12) and whether a TCP position violation has occurred during the monitoring.
+  * **\[TCP speed]**: This indicates whether a TCP speed violation has occurred during the monitoring.
+  * **\[TCP force]**: This indicates whether a TCP force violation has occurred during the monitoring.
+  * **\[TCP orientation]**: This indicates whether a TCP orientation violation has occurred during the monitoring.
+  * **\[Power]**: This indicates whether a power violation has occurred during the monitoring.
+  * **\[Momentum]**: This indicates whether a momentum violation has occurred during the monitoring.
+  * **\[Collision]**: This indicates whether a collision has been detected during the monitoring.
+  * **\[SOS]** (Safe operating stop monitoring): This indicates whether an SOS violation has occurred during the monitoring.

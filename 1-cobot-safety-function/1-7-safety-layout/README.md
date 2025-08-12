@@ -1,3 +1,3 @@
-﻿# 1.7 안전 레이아웃
+# 1.7 Safety layout
 
-안전 영역, 안전 툴 및 안전 로봇 엘보우를 설정합니다.
+This sets the safety space, safety tools, and safety robot elbow.
