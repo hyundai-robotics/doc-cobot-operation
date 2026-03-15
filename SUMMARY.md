@@ -1,4 +1,4 @@
-# Table of contents
+﻿# Table of contents
 
 * [협동로봇 안전 기능 설명서](README.md)
 * [이 설명서에 대하여](about-this-manual/README.md)
@@ -42,12 +42,9 @@
       * [1.10.5.2	로봇 속도 위반 시 복구](1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/2-recovery-robot-speed-violation.md)
       * [1.10.5.3	로봇 힘 위반 시 복구](1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/3-recovery-robot-force-violation.md)
       * [1.10.5.4	안전 정지 감시(SOS) 위반 시 복구](1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/4-recovery-sos-violation.md)
-  * [1.11 협동로봇 충돌감지 모드](1-cobot-safety-function/1-11-cobot-collision-detection-mode/README.md)
-    * [1.11.1 충돌감지 제어기 설정](1-cobot-safety-function/1-11-cobot-collision-detection-mode/1-cobot-collision-detection-setup.md)
-    * [1.11.2 충돌감지 로봇 명령어(cobot_coldet)](1-cobot-safety-function/1-11-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
-  * [1.12 협동로봇 직접교시 모드](1-cobot-safety-function/1-11-cobot-direct-teaching-mode/README.md)
-    * [1.12.1 직접교시 제어기 설정](1-cobot-safety-function/1-11-cobot-direct-teaching-mode/1-cobot-direct-teaching-setup.md)
-
+  * [1.11 협동로봇 충돌검지 모드](1-cobot-safety-function/1-11-cobot-collision-detection-mode/README.md)
+    * [1.11.1 충돌검지 제어기 설정](1-cobot-safety-function/1-11-cobot-collision-detection-mode/1-cobot-collision-detection-setup.md)
+    * [1.11.2 충돌검지 로봇 명령어(cobot_coldet)](1-cobot-safety-function/1-11-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
 * [2. I/O 설정](2-io-setting/README.md)
   * [2.1 I/O 맵](2-io-setting/2-1-io-map.md)
   * [2.2 툴 I/O](2-io-setting/2-2-tool-io/README.md)
