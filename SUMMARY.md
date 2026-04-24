@@ -47,6 +47,9 @@
     * [1.11.2 충돌감지 로봇 명령어(cobot_coldet)](1-cobot-safety-function/1-11-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
   * [1.12 협동로봇 직접교시 모드](1-cobot-safety-function/1-11-cobot-direct-teaching-mode/README.md)
     * [1.12.1 직접교시 제어기 설정](1-cobot-safety-function/1-11-cobot-direct-teaching-mode/1-cobot-direct-teaching-setup.md)
+  * [1.13 간편 엔코더 옵셋](1-cobot-safety-function/1-13-simple-encoder-offset/README.md)
+    * [1.13.1 간편 마스터링 위치 설정](1-cobot-safety-function/1-13-simple-encoder-offset/1-update-mastering-position.md)
+    * [1.13.2 간편 마스터링](1-cobot-safety-function/1-13-simple-encoder-offset/2-update-encoder-offset.md)
 
 * [2. I/O 설정](2-io-setting/README.md)
   * [2.1 I/O 맵](2-io-setting/2-1-io-map.md)
