@@ -3,15 +3,14 @@
 1.  운전 방식을 수동 모드로 설정하십시오.
 
 
-2.  **\[설정]** 버튼 > **\[4: 응용 파라미터 > 21: 협동로봇 설정 > 직접교시]** 메뉴를 터치하십시오.
+2.  **\[설정]** 버튼 > **\[11: 협동로봇 시스템  > 직접교시]** 메뉴를 터치하십시오.
 
 
 3. 협동로봇의 직접교시 기능의 사용 여부와 옵션을 설정한 후 **\[OK]** 버튼을 터치하십시오.
 
 ![](../../_assets/image57.png)
 
-* **직접 교시(Direct teaching On/ Off)**: 직접교시 기능의 사용여부를 결정합니다.
-* **직접 교시 상시 활성화(Direct teaching always-on mode)**: 모터온 시 바로 직접교시로 동작합니다.(SHIFT + MOT. ON + deadman switch)
+* **직접 교시(Direct teaching seletive-on mode)**: 모터온 시 바로 직접교시로 동작합니다.(SHIFT + MOT. ON + deadman switch) deadman switch가 눌러져 있어야만 모터온이며, 직접교시가 구동된다. 다시 조그나 자동으로 로봇을 원할 경우 설정내 '직접 교시 선택 활성화(Direct teaching seletive-on mode)'를 OFF 해야함 
 * **구속 모션(Constraint motion)**: '직접 교시 상시 활성화'나 '콕핏 M 버튼 '이 직접교시 모드에서 버튼 클릭시 실행되는 모드를 결정합니다. 
 
 ![](../../_assets/image60.png) 
@@ -30,7 +29,7 @@
 
 '콕핏 M 버튼'은 아래 보기와 같은 메뉴를 갖습니다.
 '포즈 저장' = 로봇의 현재 위치를 현재 TP상 열려있는 잡파일에 기록합니다. 
-'직접 교시' = 직접교시를 실행합니다. 실행 모드는 '구속 모션(Constraint motion)'에서 설정한 모드입니다. 이 방법으로 실행할 경우 버튼을 누르고 있는 경우에만 직접교시 모드가 실행됩니다.
+
 
 * **축 잠금(Axis locked)**:조인트 모션에서 특정 축의 가동을 막을 수 있음 - 활성화시 축 구동
 
@@ -38,10 +37,11 @@
 **\[주의]**
 
 * 툴 데이터가 실제 값과 오차가 클 경우 직접교시가 실행되지 않을 수 있습니다. 직접교시가 계속 실행되지 않을 경우 로봇을 멈추고 툴 데이터 입력값을 확인하기 바랍니다.
-* 'Direct teaching always-on mode'이 On인 경우 motor on/deadman switch/shift를 동시에 눌러주시기 바랍니다.
-* 'Direct teaching always-on mode'를 이용하여 직접교시를 실행한 경우 motor off를 원하시면 'Direct teaching always-on mode' 버튼을 off로 변경하시면 됩니다. 
+* 'Direct teaching always-on mode'나 'Direct teaching seletive-on mode'가 On인 경우 motor on/deadman switch/shift를 동시에 눌러주시기 바랍니다.
+* 'Direct teaching always-on mode'를 이용하여 직접교시를 실행한 경우 motor off를 원하시면 'Direct teaching always-on mode' 버튼을 off로 변경하시면 됩니다.
+* 'Direct teaching seletive-on mode'를 이용하여 직접교시를 실행한 후 'Direct teaching always-on mode' 버튼을 off로 변경하시면 직접교시가 정지 됩니다.
 * 직접교시 실행시 로봇 주변 사물이나 사람을 확인후 동작해주시기 바랍니다.
 * 두개 이상의 버튼이 동시에 눌러질 경우 처음 누른 버튼만 인식합니다.
 * M버튼을 이용하여 직접교시를 실행할 경우 버튼에서 손을 땐 경우 직접교시 모드가 OFF됩니다.
-* 
+* 직접교시 중 TP를 이용하여 로봇을 자동으로 돌릴 경우 로봇이 바로 정지합니다. 이 경우 긴급 정리이기 때문에 위험합니다.
 {% endhint %}
