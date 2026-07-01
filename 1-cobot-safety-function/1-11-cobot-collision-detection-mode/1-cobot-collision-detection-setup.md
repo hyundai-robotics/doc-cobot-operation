@@ -19,3 +19,8 @@
 
 * If there is a significant discrepancy between the tool data and actual values, collisions may be incorrectly detected. Please accurately configure tool-related information, such as length, weight, and the center of gravity. Additionally, be sure to verify the robot's installation angle and the direction of gravity. If false detections persist despite accurate tool data configuration, please inspect the encoders and acceleration sensors.
 {% endhint %}
+
+{% hint style="warning" %}
+**\[Warning]**
+* En cas d'écart important entre les données de l'outil et les valeurs réelles, des collisions pourraient être détectées à tort. Veuillez configurer avec précision les informations relatives à l'outil, telles que la longueur, le poids et le centre de gravité. De plus, veillez à vérifier l'angle d'installation du robot ainsi que la direction de la gravité. Si des détections erronées persistent malgré une configuration précise des données de l'outil, veuillez inspecter les codeurs et les capteurs d'accélération.
+{% endhint %}

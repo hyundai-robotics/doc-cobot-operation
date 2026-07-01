@@ -46,3 +46,15 @@
 * If you attempt to move the robot automatically using the TP during direct teaching, the robot will stop immediately. This constitutes an emergency stop and poses a safety risk.
 
 {% endhint %}
+
+{% hint style="warning" %}
+**\[warning]**
+
+* L'apprentissage direct peut ne pas s'exécuter en cas d'écart important entre les données de l'outil et les valeurs réelles. Si l'apprentissage direct ne se lance pas, veuillez arrêter le robot et vérifier les valeurs saisies pour les données de l'outil.
+* Pour lancer l'apprentissage direct, appuyez simultanément sur le bouton « Motor On » (Moteur activé), le dispositif d'homme mort (Enable Switch) et la touche « Shift ».
+* Vous devez maintenir le dispositif d'homme mort enfoncé après la mise en marche du moteur pour conserver le mode d'apprentissage direct.
+* L'apprentissage direct s'arrête si vous désactivez la fonction (« Direct teaching On ») ou si vous relâchez le dispositif d'homme mort alors que la fonction est active.
+* Veuillez vérifier la présence d'objets ou de personnes à proximité avant de faire fonctionner le robot en mode d'apprentissage direct.
+* Si plusieurs boutons sont enfoncés simultanément, seul le premier bouton actionné est pris en compte.
+* Si vous tentez de déplacer le robot automatiquement à l'aide de la TP (console d'apprentissage) pendant l'apprentissage direct, le robot s'arrêtera immédiatement. Cela constitue un arrêt d'urgence et présente un risque pour la sécurité.
+{% endhint %}

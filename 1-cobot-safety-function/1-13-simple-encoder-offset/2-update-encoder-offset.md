@@ -15,8 +15,16 @@ This section explains how to initialize (master) the encoder offset after the ro
 
 {% hint style="warning" %}
 **\[Warning]**
-    - A mastering position must be registered to use the Quick Mastering function.
+    - A mastering position must be registered to use the simple Mastering function.
     - Touching the 'Reset All' button without moving to the mastering position will not reset the encoder offset.
     - You must save the settings after performing the encoder offset to update it.
-    - Frequent use of the Quick Encoder Offset function degrades mastering performance; please use it only when necessary.
+    - Frequent use of the simple Encoder Offset function degrades mastering performance; please use it only when necessary.
+{% endhint %}    
+
+{% hint style="warning" %}
+**\[Warning]**
+- Une position de mastering doit être enregistrée pour utiliser la fonction de mastering simple.
+    - Appuyer sur le bouton « Réinitialiser tout » sans se placer au préalable sur la position de mastering ne réinitialisera pas le décalage de l'encodeur.
+    - Vous devez enregistrer les paramètres après avoir effectué le réglage du décalage de l'encodeur pour le mettre à jour.
+    - Une utilisation fréquente de la fonction simple de décalage de l'encodeur dégrade les performances de mastering ; veuillez ne l'utiliser qu'en cas de nécessité.
 {% endhint %}    

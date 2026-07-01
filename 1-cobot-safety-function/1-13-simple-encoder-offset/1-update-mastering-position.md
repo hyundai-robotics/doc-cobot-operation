@@ -20,3 +20,13 @@ The robot requires mastering at a specific position; this section explains how t
     - Secondary encoder replacement
     - Encoder initialization in the  **\[system]** > **\[3: Robot Parameters]** > **\[4: Encoder Offset]** menu
 {% endhint %}
+
+
+{% hint style="warning" %}
+**\[Warning]**
+* Appuyer sur le bouton « Update Position » (Mettre à jour la position) sans se déplacer jusqu'à la position de mastering ne mettra pas à jour ladite position.
+* Vous devez vous déplacer jusqu'à la position de mastering, appuyer sur le bouton « Update Position » et enregistrer le paramètre pour définir la nouvelle position de mastering.
+* Vous devez définir une nouvelle position de mastering dans les cas suivants. L'utilisation de la position de mastering précédemment enregistrée peut entraîner un mastering incorrect ou des accidents.
+    - Remplacement du codeur secondaire
+    - Initialisation du codeur dans le menu **[system]** > **[3: Robot Parameters]** > **[4: Encoder Offset]**
+{% endhint %}
