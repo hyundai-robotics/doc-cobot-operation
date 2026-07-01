@@ -19,3 +19,4 @@ This section explains how to initialize (master) the encoder offset after the ro
     - Touching the 'Reset All' button without moving to the mastering position will not reset the encoder offset.
     - You must save the settings after performing the encoder offset to update it.
     - Frequent use of the Quick Encoder Offset function degrades mastering performance; please use it only when necessary.
+{% endhint %}    

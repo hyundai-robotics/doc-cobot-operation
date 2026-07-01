@@ -18,4 +18,5 @@ The robot requires mastering at a specific position; this section explains how t
 * You must move to the mastering position, tap the 'Update Position' button, and save the setting to establish the new mastering position.
 * You must set a new mastering position in the following cases. Using the previously registered mastering position may result in improper mastering or accidents.
     - Secondary encoder replacement
-    - Encoder initialization in the **\[3: Robot Parameters]** > **\[4: Encoder Offset]** menu
+    - Encoder initialization in the  **\[system]** > **\[3: Robot Parameters]** > **\[4: Encoder Offset]** menu
+{% endhint %}
