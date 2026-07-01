@@ -11,7 +11,7 @@
 ![](../../_assets/image57.png)
 
 * **직접 교시(Direct teaching On)**: 모터온 시 바로 직접교시로 동작합니다.(SHIFT + MOT. ON + Enable Switch) Enable Switch가 눌러져 있어야만 모터온이며, 직접교시가 구동된다. 다시 조그나 자동으로 로봇을 원할 경우 설정내 '직접 교시 선택 활성화(Direct teaching On)'를 OFF 해야함 
-* **구속 모션(Constraint motion)**: '직접 교시 상시 활성화'나 '콕핏 M 버튼 '이 직접교시 모드에서 버튼 클릭시 실행되는 모드를 결정합니다. 
+* **구속 모션(Constraint motion)**: 직접교시가 실행될때 기본 모드를 결정합니다. '없음'을 선택했을 경우 다른 모드로 바꾸지 못하지만 그 외 다른 모드에서간에는 직접교시 실행 중 변경이 가능합니다.
 
 ![](../../_assets/image60.png) 
 
