@@ -1,47 +1,48 @@
-# 1.12.1 협동로봇 직접교시 제어기 설정
+# 1.12.1 Direct Teaching Controller Configuration
 
-1.  운전 방식을 수동 모드로 설정하십시오.
-
-
-2.  **\[설정]** 버튼 > **\[11: 협동로봇 시스템]** 버튼 > **\[직접교시]** 메뉴를 터치하십시오.
+1.  Please set the driving mode to manual.
 
 
-3. 협동로봇의 직접교시 기능의 사용 여부와 옵션을 설정한 후 **\[OK]** 버튼을 터치하십시오.
+2.  **\[System]** > **\[11: Cbbot System]** > **\[Direct Teaching]** Please touch the menu.
+
+
+3. After configuring the settings and options for the collaborative robot's direct teaching function, touch the **[OK]** button.
 
 ![](../../_assets/image57.png)
 
-* **직접 교시(Direct teaching On)**: 모터온 시 바로 직접교시로 동작합니다.(SHIFT + MOT. ON + Enable Switch) Enable Switch가 눌러져 있어야만 모터온이며, 직접교시가 구동된다. 다시 조그나 자동으로 로봇을 원할 경우 설정내 '직접 교시 선택 활성화(Direct teaching On)'를 OFF 해야함 
-* **구속 모션(Constraint motion)**: '직접 교시 상시 활성화'나 '콕핏 M 버튼 '이 직접교시 모드에서 버튼 클릭시 실행되는 모드를 결정합니다. 
+* **Direct teaching On**: Direct teaching mode activates immediately upon motor-on (SHIFT + MOT. ON + Enable Switch). The motor remains on and direct teaching operates only while the Enable Switch is pressed. To switch the robot back to Jog or Auto mode, you must disable the "Direct teaching On" setting.
+* **Constraint motion**: Determines the default mode when direct teaching is executed. If 'None' is selected, you cannot switch to another mode; however, switching between other modes is possible while direct teaching is in progress.
 
 ![](../../_assets/image60.png) 
 
-4. 위 사진은 협동로봇 시리즈 HDC에 부착된 콕핏 버튼을 형상황한 그림입니다. 참고하여 아래 콕핏 설정을 읽어주시기 바랍니다.
-* **콕핏 설정(Cockpit setting)**: 콕핏 버튼(Cockpit)의 모드를 결정합니다. 
-- 각각의 '콕핏 A, B, C 버튼'은 아래의 보기중 하나의 기능을 가질 수 있습니다.
-    - 'XYZ' = X, Y, Z 제외 cartesian 구속 모션으로 직접교시 모드를 변경합니다.(직접교시 구속모션 중에만 가능)
-    - 'XY'  = X, Y 제외 cartesian 구속 모션으로 직접교시 모드를 변경합니다.(직접교시 구속모션 중에만 가능) 
-    - 'X'   = X 제외 cartesian 구속 모션으로 직접교시 모드를 변경합니다.(직접교시 구속모션 중에만 가능)
-    - 'Y'   = Y 제외 cartesian 구속 모션으로 직접교시 모드를 변경합니다.(직접교시 구속모션 중에만 가능)
-    - 'Z'   = Z 제외 cartesian 구속 모션으로 직접교시 모드를 변경합니다.(직접교시 구속모션 중에만 가능)
-    - 'Rx'  = Rx 제외 cartesian 구속 모션으로 직접교시 모드를 변경합니다.(직접교시 구속모션 중에만 가능)
-    - 'Ry'  = Ry 제외 cartesian 구속 모션으로 직접교시 모드를 변경합니다.(직접교시 구속모션 중에만 가능)
-    - 'Rz'  = Rz 제외 cartesian 구속 모션으로 직접교시 모드를 변경합니다.(직접교시 구속모션 중에만 가능)
-    - '없음(None)'= 눌러도 변화가 없습니다.
+4. The image above illustrates the cockpit buttons attached to the HDC series of collaborative robots. Please refer to this image when reading the cockpit settings below.
+* **Cockpit setting**: Determines the cockpit button mode.
+- Each of the 'Cockpit A, B, and C buttons' can be assigned one of the functions listed below.
+    - 'XYZ' = Changes the direct teaching mode to Cartesian constrained motion excluding X, Y, and Z (available only during Cartesian constrained motion).
+    - 'XY'  = Changes the direct teaching mode to Cartesian constrained motion excluding X and Y (available only during Cartesian constrained motion).
+    - 'X'   = Changes the direct teaching mode to Cartesian constrained motion excluding X (available only during Cartesian constrained motion).
+    - 'Y'   = Changes the direct teaching mode to Cartesian constrained motion excluding Y (available only during Cartesian constrained motion).
+    - 'Z'   = Changes the direct teaching mode to Cartesian constrained motion excluding Z (available only during Cartesian constrained motion).
+    - 'Rx'  = Changes the direct teaching mode to Cartesian constrained motion excluding Rx (available only during Cartesian constrained motion).
+    - 'Ry'  = Changes the direct teaching mode to Cartesian constrained motion excluding Ry (available only during Cartesian constrained motion).
+    - 'Rz'  = Changes the direct teaching mode to Cartesian constrained motion excluding Rz (available only during Cartesian constrained motion).
+    - 'None' = No change occurs when pressed.
 
-- '콕핏 M 버튼'은 아래 보기와 같은 메뉴를 갖습니다.
-    - '포즈 저장' = 로봇의 현재 위치를 현재 TP상 열려있는 잡파일에 기록합니다. 
+- The 'Cockpit M Button' features the menu shown below.
+    - 'Save Pose' = Records the robot's current position into the job file currently open on the TP.
 
 
-* **자유 직접교시 축 활성화(Joint Direct Teaching Axis Activate)**:자율 직접교시 중 활성화시에만 선택한 축 구동가능
+* **Joint Direct Teaching Axis Activate**:The selected axis can be driven only when activated during autonomous direct teaching.
 
 {% hint style="warning" %}
-**\[주의]**
+**\[warning]**
 
-* 툴 데이터가 실제 값과 오차가 클 경우 직접교시가 실행되지 않을 수 있습니다. 직접교시가 계속 실행되지 않을 경우 로봇을 멈추고 툴 데이터 입력값을 확인하기 바랍니다.
-* 직접교시를 실행하고 할때 motor on/Enable Switch/shift를 동시에 눌러주시기 바랍니다.
-* 모터온 후 Enable Switch를 누르고 계셔야만 직접교시가 계속 실행됩니다.
-* 직접교시 실행 중 'Direct teaching On'을 off로 변경하시거나 Enable Switch에서 손을 때시면 직접교시가 정지 됩니다.
-* 직접교시 실행시 로봇 주변 사물이나 사람을 확인후 동작해주시기 바랍니다.
-* 두개 이상의 버튼이 동시에 눌러질 경우 처음 누른 버튼만 인식합니다.
-* 직접교시 중 TP를 이용하여 로봇을 자동으로 돌릴 경우 로봇이 바로 정지합니다. 이 경우 긴급 정리이기 때문에 위험합니다.
+* Direct teaching may not execute if there is a significant discrepancy between the tool data and actual values. If direct teaching fails to run, please stop the robot and verify the tool data input values.
+* To initiate direct teaching, simultaneously press the Motor On button, the Enable Switch, and the Shift key.
+* You must keep the Enable Switch pressed after turning on the motor to maintain direct teaching mode.
+* Direct teaching will stop if you turn off 'Direct teaching On' or release the Enable Switch while the function is active.
+* Please check for nearby objects or people before operating the robot during direct teaching.
+* If two or more buttons are pressed simultaneously, only the first button pressed is recognized.
+* If you attempt to move the robot automatically using the TP during direct teaching, the robot will stop immediately. This constitutes an emergency stop and poses a safety risk.
+
 {% endhint %}

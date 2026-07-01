@@ -1,30 +1,27 @@
-﻿# 1.11.3 협동로봇 충돌감지 자동 튜닝 모드
+﻿# 1.11.3 Collaborative Robot Collision Detection Auto-Tuning Mode
 
-1.  운전 방식을 수동 모드로 설정하십시오.
-
-
-2.  **\[설정]** 버튼 > **\[9: 협동 로봇 시스템 > 5: 충돌감지 임계값** 메뉴를 터치하십시오.
+1.  Please set the driving mode to manual.
 
 
-3.  **\[임계 값 초기화]** 버튼을 터치하십시오.
+2.  **\[system]**  > **\[11: Cobot System ]** > **\[5: Collision Dectection Threshold]** Please touch the menu.
 
-4. 협동로봇의 충돌감지 임계값 자동 튜닝 기능의 실행 여부와 실행 횟수를 설정한 후 **\[저장]** 버튼을 터치하십시오.
+
+3.  **\[Threshold Init]**  Please touch the button.
+
+4. After configuring whether to enable the automatic tuning function for the collaborative robot's collision detection threshold and setting the number of execution cycles, touch the **\[Save]** button.
 
 ![](../../_assets/image65.jpg)
 
-* **\[자동 튜닝]**: 충돌감지 자동 튜닝 기능 실행 여부를 설정합니다.
-* **\[튜닝 횟수]**: 충돌감지 자동 튜닝을 수행할 job 실행 횟수를 설정합니다.
-* **\[임계값 초기화]**: 충돌 감지 임계값을 초기화 합니다.
-* **\[공장값 초기화]**: 충돌 감지 임계값을 공장 출하 값으로 초기화 합니다.
+* **\[Auto tuning]**: Configure whether to enable the collision detection auto-tuning function.
+* **\[Tuning count]**: Set the number of job executions for performing automatic collision detection tuning.
+* **\[Threshold Init]**: Resets the collision detection threshold.
+* **\[Factory Reset]**: Resets the collision detection threshold to the factory default value.
 
 
 {% hint style="warning" %}
-**\[주의]**
+**\[warning]**
 
-* 자동 튜닝 기능 수행 중에는 로봇에 외부적 충격이 가해지지 않도록 주의하십시오. 만약에 기능 실행 중 외부 충격이 가해졌다면 자동 
-튜닝을 초기화하여 재실행해주십시오. 
-자동 튜닝 횟수를 너무 작게 설정하면 최적화가 완료되기 전 자동 튜닝이 완료되어 오감지가 다발 발생할 수 있으며 반대로 자동 튜닝
-횟수를 너무 크게 설정하면 실행 job의 시간에 따라 너무 오랜 시간 자동 튜닝을 실행하여 완료가 늦어질 수 있습니다. 실행 시간이 1분인
-job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다. 
-이 기능은 자동 모드에 한정하여 수행하며 수동 모드에서는 공장 출하 값으로 충돌감지 기능이 수행됨을 참조 바랍니다. 
+* Ensure that the robot is not subjected to external impacts while the auto-tuning function is running. If an external impact occurs during execution, please reset and restart the auto-tuning process. 
+If the number of auto-tuning iterations is set too low, the process may finish before optimization is complete, potentially leading to frequent false detections; conversely, if the number is set too high, the process may take an excessive amount of time to complete, depending on the execution job's duration. We recommend setting the number of iterations between 100 and 200 for a job with a one-minute execution time. 
+Please note that this function operates only in Auto mode; in Manual mode, the collision detection function operates using factory default settings.
 {% endhint %}

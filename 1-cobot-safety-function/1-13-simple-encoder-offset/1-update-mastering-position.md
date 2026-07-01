@@ -1,20 +1,21 @@
-﻿# 1.13.1 간편 마스터링 위치 설정
+﻿# 1.13.1 Simple Mastering Position Setting
 
-로봇은 특정 위치에서 마스터링을 해야하며, 그 위치를 지정하는 방법을 설명합니다. 마스터링 위치를 지정할 때 로봇이 움직이므로, 로봇 주변에 사람, 물건 등과 충돌하지 않도록 주의해야 합니다. 참고로, 마스터링이 가능한 위치는 다양하게 있는데, 현재 로봇 자세에서 가까운 곳으로 설정됩니다.
+The robot requires mastering at a specific position; this section explains how to designate that position. Since the robot moves when the mastering position is set, care must be taken to avoid collisions with people or objects in the vicinity. Note that while there are various possible mastering positions, the system selects a position close to the robot's current posture.
 
-- [시스템] - [11: 협동로봇 시스템] - [간편 엔코더 옵셋] 메뉴를 터치하십시오.
-- '마스터링 위치'에 '2차 엔코더', '1차 엔코더'가 있는데, 로봇이 마스터링 위치에 있을때의 각 관절별 엔코더 값을 나타냅니다.
-- 새 마스터링 위치를 등록하기 위해 하단에 있는 '새 위치 이동' 버튼을 터치합니다.
-    - 버튼이 터치되었을 때 로봇이 현재 위치에서 가까운 마스터링 위치로 이동합니다. 
-    - 이동 완료가 될 때까지 버튼을 계속 터치합니다. 버튼을 터치하지 않으면 로봇은 정지합니다.
-    - 이동 완료가 되면 '위치 최신화' 버튼을 터치합니다.
-    - '저장하기' 버튼을 터치합니다.
+-  **\[system]** > **\[11: Cobot System ]** > **\[11: Simple Encoder Offest ]** Please touch the menu.
+- The 'Mastering Position' section displays 'Secondary Encoder' and 'Primary Encoder' values, representing the encoder readings for each joint when the robot is at the mastering position.
+- To register a new mastering position, touch the 'Move to New Position' button at the bottom.
+    - When the button is touched, the robot moves from its current location to the mastering position.
+    - Keep touching the button until the movement is complete; the robot will stop if you release it.
+    - Once the movement is complete, touch the 'Update Position' button.
+    - Touch the 'Save' button.
 
     ![](../../_assets/simple_encoder_offset_1.png)
 
-- 주의
-    - 마스터링 위치로 이동하지 않고 '위치 최신화' 버튼을 터치하면 마스터링 위치가 갱신되지 않습니다.
-    - 마스터링 위치로 이동한 후 '위치 최신화' 버튼을 터치하고 저장까지 해야 새 마스터링 위치가 설정됩니다.
-    - 아래의 경우, 마스터링 위치를 새롭게 설정해야 합니다. 기존에 등록된 마스터링 위치를 그대로 사용할 경우, 정상적으로 마스터링이 되지 않거나 사고가 발생할 수 있습니다.
-        - 2차 엔코더 교체
-        - [3: 로봇 파라미터] - [4: 엔코더 옵셋] 메뉴에서 엔코더 초기화
+{% hint style="warning" %}
+**\[Warning]**
+* Tapping the 'Update Position' button without moving to the mastering position will not update the mastering position.
+* You must move to the mastering position, tap the 'Update Position' button, and save the setting to establish the new mastering position.
+* You must set a new mastering position in the following cases. Using the previously registered mastering position may result in improper mastering or accidents.
+    - Secondary encoder replacement
+    - Encoder initialization in the **\[3: Robot Parameters]** > **\[4: Encoder Offset]** menu

@@ -1,20 +1,21 @@
-# 1.13.2 간편 마스터링
+# 1.13.2 Simple Mastering
 
-설정된 마스터링 위치로 로봇이 이동한 후 엔코더 옵셋을 초기화(마스터링)하는 방법을 설명합니다. 마스터링 위치로 로봇이 이동하므로, 로봇 주변에 사람, 물건 등과 충돌하지 않도록 주의해야 합니다. 
+This section explains how to initialize (master) the encoder offset after the robot moves to the designated mastering position. Since the robot moves to the mastering position, take care to avoid collisions with people or objects in the surrounding area.
 
-- [시스템] - [11: 협동로봇 시스템] - [간편 엔코더 옵셋] 메뉴를 터치하십시오.
-- '현재 위치'에 '2차 엔코더', '1차 엔코더'가 있는데, 현재 로봇 위치에서 각 관절별 엔코더 값을 나타냅니다.
-- 로봇이 마스터링 위치로 이동하기 위해 하단에 있는 '위치 이동' 버튼을 터치합니다.
-    - 버튼이 터치되었을 때 로봇이 마스터링 위치로 이동합니다. 
-    - 이동 완료가 될 때까지 버튼을 계속 터치합니다. 버튼을 터치하지 않으면 로봇은 정지합니다.
-    - 이동 완료가 되면 '전체 초기화' 버튼을 터치합니다.
-    - 저장하기 버튼을 터치합니다.
-    - 제어기를 재부팅합니다.
+- **\[system]** > **\[11: Cobot System ]** > **\[11: Simple Encoder Offest ]** Please touch the menu.
+- The 'Current Position' section displays the 'Secondary Encoder' and 'Primary Encoder' values ​​for each joint at the robot's current location.
+- Touch the 'Move to Position' button at the bottom to move the robot to the mastering position.
+    - The robot moves to the mastering position when the button is touched.
+    - Keep touching the button until the movement is complete; the robot will stop if you release it.
+    - Once the movement is complete, touch the 'Full Reset' button.
+    - Touch the 'Save' button.
+    - Reboot the controller.
 
     ![](../../_assets/simple_encoder_offset_1.png)
 
-- 주의
-    - 등록된 마스터링 위치가 있어야 간편 마스터링 기능을 사용할 수 있습니다.
-    - 마스터링 위치로 이동하지 않고 '전체 초기화' 버튼을 터치하면 엔코더 옵셋이 초기화되지 않습니다.
-    - 엔코더 옵셋 후 저장까지 해야 엔코더 옵셋이 최신화됩니다.
-    - 간편 엔코더 옵셋 기능을 빈번하게 사용하면 마스터링 성능이 저하됩니다. 필요한 경우에만 사용하시기 바랍니다.
+{% hint style="warning" %}
+**\[Warning]**
+    - A mastering position must be registered to use the Quick Mastering function.
+    - Touching the 'Reset All' button without moving to the mastering position will not reset the encoder offset.
+    - You must save the settings after performing the encoder offset to update it.
+    - Frequent use of the Quick Encoder Offset function degrades mastering performance; please use it only when necessary.

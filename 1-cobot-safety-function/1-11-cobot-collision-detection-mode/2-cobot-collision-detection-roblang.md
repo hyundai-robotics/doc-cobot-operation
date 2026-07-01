@@ -1,18 +1,18 @@
-# 1.11.2 충돌검지 로봇 명령어(cobot_coldet)
+# 1.11.2 Collision-detection robot command(cobot_coldet)
 
-### 설명
+### explanation
 
-협동로봇의 충돌감지 수행 여부를 설정합니다.
+Configure whether the collaborative robot performs collision detection.
 
-해당 충돌감지 기능은 Hi7 제어기에서 감지하게 됩니다. 
+Collision detection is handled by the Hi7 controller.
 
-### 문법
+### grammar
 
 &lt;cobot_coldet&gt;.on </br>
 &lt;cobot_coldet&gt;.off 
 
 
-### 사용 예
+### example
 
 cobot_coldet.on
 cobot_coldet.off

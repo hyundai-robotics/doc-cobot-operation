@@ -1,7 +1,7 @@
-# 1.12 협동로봇 직접교시 모드
+# 1.12 Collaborative robot direct teaching mode
 
-로봇의 직접교시(Direct Teaching)는 로봇 프로그래밍에 대한 전문적인 지식이 없는 사용자도 로봇을 직접 움직여 원하는 동작을 가르칠 수 있는 직관적인 방식입니다. 이는 복잡한 티치 펜던트 조작 대신 작업자가 직접 로봇 팔 끝을 잡고 경로를 안내하여 작업 경로와 위치를 설정하는 것을 의미합니다.
+Direct teaching is an intuitive method that allows users without specialized robot programming knowledge to teach a robot desired movements by manually manipulating it. Instead of using a complex teach pendant, the operator directly guides the robot's end-effector to define the work path and positions.
 
-설정 방식으로는 제어기 설정과 코핏 버튼 설정이 있습니다. 
-1. 제어기 설정: 항상 적용되는 기본적인 설정 (default)
-2. 콕핏 버튼: 로봇 TP에서 설정한 직접교시 모드를 실행 
+Configuration methods include controller settings and cockpit button settings:
+1. Controller settings: Basic settings applied by default.
+2. Cockpit button: Activates the direct teaching mode configured on the robot's teach pendant (TP).

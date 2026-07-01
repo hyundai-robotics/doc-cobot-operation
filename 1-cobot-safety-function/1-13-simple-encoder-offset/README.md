@@ -1,6 +1,6 @@
-﻿# 1.13 간편 엔코더 옵셋
+﻿# 1.13 Simple Encoder Offset
 
-로봇에 내장된 장치로 마스터링하는 간편 엔코더 옵셋을 설명합니다. 
-본 기능은 크게 두 가지로 구성되어 있습니다.
-- 간편 마스터링 위치 설정
-- 간편 마스터링
+This section describes the simple encoder offset mastering function using a device built into the robot.
+This function consists of two main parts:
+- Simple Mastering Position Setting
+- Simple mastering
