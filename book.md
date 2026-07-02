@@ -1,4 +1,6 @@
-﻿# Safety Function Manual for Collaborative Robot
+﻿
+[__SOURCE](README.md)
+# Safety Function Manual for Collaborative Robot
 
 {% hint style="warning" %}
 The information presented in this manual is the property of Hyundai Robotics.
@@ -15,6 +17,8 @@ Hyundai Robotics reserves the right to modify this document without prior notifi
 
 **Copyright ⓒ 2020 by Hyundai Robotics**
 {% endhint %}
+
+[__SOURCE](about-this-manual/README.md)
 # About this manual
 
 이 설명서는 현대로보틱스 협동로봇의 안전 기능에 대해 설명합니다.
@@ -25,11 +29,15 @@ Hyundai Robotics reserves the right to modify this document without prior notifi
 
 이 설명서는 표준 사양을 기준으로 작성되었으므로 구입하신 제품의 모델에 따라 일부 내용이 다를 수 있습니다. 또한 이 설명서의 내용과 사양은 제품의 성능 향상을 위해 예고 없이 변경될 수 있으며 부정확한 내용이나 오탈자로 인해 발생하는 상황에 대해서 현대로보틱스는 책임이 없습니다. 개정에 관한 상세한 정보는 당사의 인터넷 웹사이트([www.hyundai-robotics.com](https://www.hyundai-robotics.com))를 방문하여 확인하시기 바랍니다.
 
+
+[__SOURCE](about-this-manual/copyright.md)
 # Copyright
 
 All the programs, files, and contents relating to this product and manual are protected by the Copyright Act and a confidentiality agreement. Any use, reproduction, and disclosure or distribution of this manual to third parties not explicitly permitted by Hyundai Robotics are strictly prohibited.
 
 Copyright ⓒ 2020 HYUNDAI ROBOTICS. All rights reserved.
+
+[__SOURCE](about-this-manual/notation.md)
 # Notation rules
 
 This manual utilizes the following expression rules and safety directions for easy understanding.
@@ -66,6 +74,8 @@ Useful or additional information on using the product will be provided as follow
 {% hint style="info" %}
 The blinking of the![](../_assets/engineer.png) icon in the status bar indicates the engineer mode.
 {% endhint %}
+
+[__SOURCE](about-this-manual/safety-notice.md)
 # Safety precautions
 
 To ensure proper product use and user safety and to prevent property damages, make sure to read and fully understand the following precautions before using the product.
@@ -159,8 +169,12 @@ To ensure proper product use and user safety and to prevent property damages, ma
 
 
 * Before moving the product, read and conform to the moving instructions specified in the manual. Hyundai Robotics will not take responsibility for product damages caused during transportation by the customer.
+
+[__SOURCE](1-cobot-safety-function/README.md)
 # 1. Safety functions of the collaborative robot
 
+
+[__SOURCE](1-cobot-safety-function/1-1-description-term.md)
 # 1.1 Description of terms
 
 ### <mark style="color:green;">Robot limiting parameters</mark>&#xD;
@@ -253,9 +267,13 @@ When the robot stops because of the safety function, you can clear the error and
 ### <mark style="color:green;">Direct teaching</mark>&#xD;
 
 This is a method in which teaching is performed by moving the robot directly. This function is actuated by a switch that is mounted on the robot.
+
+[__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/README.md)
 # 1.2 Collaborative operation mode
 
 ISO 10218-1 and ISO/TS 15066 describe four operating modes so that operators can practice work safety without being exposed to risks. The collaborative operation should meet a least one of these requirements, and a visual display should show that the system is in collaborative operation when it is in operation.
+
+[__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/1-safety-rated-monitored-stop.md)
 # 1.2.1 Safety-rated monitored stop
 
 When a person enters the working space, the robot operation will stop. Install an external monitoring device, and use it while connected to the safety control module (SCM).
@@ -267,11 +285,15 @@ The reference information on the setting of the related functions is as follows:
 
 * For more details on the setting of safety I/O signals, see “[1.8 Safety I/O signals.](../1.8-safety-io-signal.md)”
 * For more details on the setting of safety stop functions, see “[1.9 Safety Stop Function.](../1-9-safety-stop-function.md)”
+
+[__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/2-hand-guide.md)
 # 1.2.2 Hand guiding
 
 This is a method in which the operator holds and directly controls the robot’s manipulator. This method is available in the automatic operation mode.
 
 To move the robot’s manipulator directly in the manual mode, you can use free motion and specific constraint motion by direct teaching with an external switch. For more details on direct teaching, see “[2. Direct teaching.](../../2-direct-teaching/)”
+
+[__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/3-speed-separation-monitoring.md)
 # 1.2.3 Speed and separation monitoring
 
 The robot operates within a specified distance and speed.
@@ -282,6 +304,8 @@ The reference information on the use of the speed and separation monitoring mode
 
 * For more details on the setting of the robot’s safety condition level 0 (deceleration mode), see “[1.6 Robot safety conditions.](../1-6-robot-safety-condition/)”
 * For more details on the setting of safety I/O signals, see “[1.8 Safety I/O signals.](../1.8-safety-io-signal.md)”.
+
+[__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/4-power-force-limit.md)
 # 1.2.4 Power and force limiting
 
 This limits the impact on the human body in case of a collision. The collision detection function and the TCP force limiting function can limit the impact on the operator in case of a collision between the operator and the robot.
@@ -289,6 +313,8 @@ This limits the impact on the human body in case of a collision. The collision d
 The collision detection function detects collisions according to the set sensitivity (%), while the TCP force limiting function restricts external force (N) applied to the TCP. You can also restrict the robot’s driving power by setting the electric power (W) and momentum (kg·m/s).
 
 For more details on the setting of the robot’s safety conditions, see “[1.6 Robot safety conditions.](../1-6-robot-safety-condition/)”
+
+[__SOURCE](1-cobot-safety-function/1-3-safety-function/README.md)
 # 1.3 Safety functions
 
 The purpose of the safety functions of the collaborative robot is to reduce the impact on the operator in the case of a collision between the operator and the robot during collaborative operation.
@@ -309,6 +335,8 @@ In executing the safety functions, the following items should be configured:
 * **Safety limiting conditions**: Set monitoring criteria value for the safety functions.
 
 One safety condition can be configured for each safety space; if not configured, Level1 (default setting mode) will be set as the default condition. You can add up to 5 limiting conditions, 16 tools, and 12 safety spaces. You can set, modify, or enable the parameters relating to the safety function only when the motors are turned off in the manual mode.
+
+[__SOURCE](1-cobot-safety-function/1-3-safety-function/1-robot-limit-function.md)
 # 1.3.1 Robot limit functions
 
 The robot limiting functions, which restrict the robot’s motion in the safety space, include the following:
@@ -326,6 +354,8 @@ The robot limiting functions, which restrict the robot’s motion in the safety 
 
     ****
 * **Momentum**: This limits the energy and impact load in case of a collision between the robot and the operator.
+
+[__SOURCE](1-cobot-safety-function/1-3-safety-function/2-joint-limit-function.md)
 # 1.3.2 Joint limit functions
 
 The joint limiting functions, which restrict the robot’s motion in the joint space, include the following:
@@ -343,7 +373,9 @@ The joint limiting functions, which restrict the robot’s motion in the joint s
 * Check if all the safety functions are configured and if the settings conform to the result of the risk assessment.
 {% endhint %}
 
-# 1.4 Matters to be checked upon replacing safety devices
+
+[__SOURCE](1-cobot-safety-function/1-4-check-replacing-safety-devices.md)
+# 1.4 Matters to be checked upon replacing safety devices
 
 When the robot, controller, working tool, or an external device used for operating the collaborative robot is replaced, you should check the current settings and modify them as necessary. The safety functions that must be checked upon the replacement of a device include the following:
 
@@ -358,8 +390,12 @@ When the robot, controller, working tool, or an external device used for operati
 {% hint style="warning" %}
 **\[Caution]**: Check if the settings are correct before running the robot.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-5-check-before-using-the-safety-function/README.md)
 # 1.5 Matters to be checked before using the safety functions
 
+
+[__SOURCE](1-cobot-safety-function/1-5-check-before-using-the-safety-function/1-encoder-offset.md)
 # 1.5.1 Encoder offset
 
 The accuracy of encoder data is important because the safety functions of the collaborative robot detect the robot’s position and speed based on the data transmitted by the encoders attached to the axes. Therefore, before using the safety functions, check whether the encoder values match the actual values.
@@ -385,6 +421,8 @@ In recovery mode, move each axis with the jog if a stop occurs because of a safe
 {% hint style="info" %}
 For more details on the encoder offset, see “[7.4.4 Encoder offsets](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/7-setting/7-4-robot-parameter/encoder-offset)” of the “[Operation Manual for Hi6 Controllers.](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/)”
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-5-check-before-using-the-safety-function/2-torque-sensor/README.md)
 # 1.5.2 Checking the torque sensor
 
 You must set torque sensor offsets because the diagnosis of force/power, among the safety functions of the collaborative robot, is conducted based on the torque sensors attached to the axes. Although torque sensor offsets were set before the robot is delivered, you should set the torque sensor offsets if the current offset values are not correct.
@@ -410,6 +448,8 @@ For more details on step position recording and modification, see “[**2.3.2 St
 ![](<../../../_assets/image_50.png>)
 
 3\. Close the menu if the current torque sensor data value is smaller than 1 in the absolute value. Otherwise, carry out torque sensor offset if it is larger than 1.
+
+[__SOURCE](1-cobot-safety-function/1-5-check-before-using-the-safety-function/2-torque-sensor/2-1-torque-sensor-offset.md)
 # 1.5.2.1 Torque sensor offset
 
 1\. **** After recording and modifying the step positions, run the program, and move the robot axes to a position that does not allow them to be affected by gravity.
@@ -443,6 +483,8 @@ For more details on step position recording and modification, see “[**2.3.2 St
 5\. Check if the corrected torque sensor data value is close to 0, and save it by clicking the **\[OK]** button.
 
 6\. Reboot the system.
+
+[__SOURCE](1-cobot-safety-function/1-5-check-before-using-the-safety-function/3-tool-data-setting.md)
 # 1.5.3 Setting of tool data
 
 The safety functions of the collaborative robot monitor the entire robot system including the tool attached to the robot’s tool flange. Therefore, the smaller the difference between the tool data and its actual value, the more accurately the safety functions will work. Set the length and angle of the tool based on the flange coordinate system and input the information on the weight, center of gravity, and inertia of the tool in the applicable units.
@@ -464,6 +506,8 @@ The safety functions of the collaborative robot monitor the entire robot system 
 * When there is no information on the weight and center of gravity of a tool, you can estimate the values using the load estimation function. For more details, see “[**Operation Manual for Hi6 Controllers.**](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/)”
 * For more details on tool data setting, see “[**Operation Manual for Hi6 Controllers.**](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/)”
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-5-check-before-using-the-safety-function/4-password-setting.md)
 # 1.5.4 Password setting
 
 The parameters for the safety functions of the collaborative robot must be set and managed by a designated person. A user designated as the administrator will be given the administrator authority and password for system setting. The password for system setting should be input when setting the parameters for the safety functions. When a wrong password is input, the administrator cannot modify or set the parameters.
@@ -476,6 +520,8 @@ The parameters for the safety functions of the collaborative robot must be set a
 * In setting the parameters of the safety functions, the system setting password must be input for saving changes.
 
 ![](<../../_assets/image_29.png>)
+
+[__SOURCE](1-cobot-safety-function/1-6-robot-safety-condition/README.md)
 # 1.6 Robot safety conditions
 
 The robot safety conditions, which are the limit values for monitoring the safety functions, consist of the robot limiting parameters and the joint limiting parameters.
@@ -499,6 +545,8 @@ _assets
 | ![](../../.gitbook/assets/2.png)  | <ul><li><strong>[Apply]</strong>: This saves changes.</li><li><strong>[+]/[-]</strong>: “+” adds a new safety condition, and “-” deletes an existing safety condition. You can add up to five safety conditions.</li><li>This is the list of safety conditions. If you select a condition name, you can view and modify its details.</li><li><p><strong>[Copy page]/[Paste page]</strong>: “Copy page” copies the information on a safety condition, and “Paste page” pastes it to another.</p><p>In the list of safety conditions, select the name of a condition, click the <strong>[Copy page]</strong> button, select the name of another condition to which the condition will be applied, and click the <strong>[Paste page]</strong> button.</p></li><li><strong>[Reset all]</strong>: This initializes all the safety conditions.</li></ul> |
 
 3\. After checking the parameter values, finish the setting by clicking the **\[X]** button or by clicking the **\<esc>** key of the teach pendant.
+
+[__SOURCE](1-cobot-safety-function/1-6-robot-safety-condition/1-robot-limit-parameter.md)
 # 1.6.1 Robot limiting parameters
 
 These parameters are the limit values for monitoring the safety functions relating to the robot’s driving in the safety space. If a robot limiting parameter is enabled in a Cartesian space, monitoring will be done at all times, and if the deceleration mode is enabled, monitoring will be done based on Condition0. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
@@ -522,6 +570,8 @@ You can set parameter values in the **\[Robot limit]** tab of the **\[Set up > 4
 * In configuring a speed limit, you must consider the stop reaction time and put a cover on the target to prevent collisions and injuries.
 * Because the speed increases in proportion to kinetic energy and a high payload may increase the robot’s momentum, the collision of the robot with an external object may generate significant impact. In the collaborative operation space, operate the robot while maintaining a safe speed and payload.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-6-robot-safety-condition/2-joint-limit-parameter.md)
 # 1.6.2 Joint limiting parameters
 
 These parameters are the limit values for monitoring the safety functions relating to the space in which the robot’s joints move. If a joint limiting parameter is enabled in a Cartesian space, monitoring will be done at all times, and if the deceleration mode is enabled, monitoring will be done based on Condition0. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
@@ -541,9 +591,13 @@ You can set the parameter values in the **\[Joint limit]** tab of the **\[Set up
 {% hint style="warning" %}
 **\[Caution]**: In configuring a speed limit, you must consider the STOP reaction time and put a cover on the target to prevent collisions and injuries.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-7-safety-layout/README.md)
 # 1.7 Safety layout
 
 This sets the safety space, safety tools, and safety robot elbow.
+
+[__SOURCE](1-cobot-safety-function/1-7-safety-layout/1-safety-space-setting/README.md)
 # 1.7.1 Safety space setting
 
 The safety space is a working space or a protected space in which the range of the tool or the robot elbow is monitored. The working space is a limited space where the monitoring target can move freely but cannot exceed. In contrast, the protected space is a limited space in which the monitoring target cannot move when it intrudes into the space. If the safety space is a working space, you can enable it by assigning a safety condition number. In the working space, if the monitoring target moves and exceeds the limit value of a safety condition, a functional safety stop will be actuated.
@@ -571,6 +625,8 @@ The method for setting safety spaces is as follows:
 |  ![](../../../_assets/3.png) | <ul><li><strong>[Apply]</strong>: This saves changes.</li><li><strong>[+]/[-]</strong>: “+” adds a new safety space, and “-” deletes an existing safety space. You can add up to 12 safety spaces.</li><li>This is the list of safety spaces. If you select a space name, you can view and modify its details.</li><li><p><strong>[Copy page]/[Paste page]</strong>: “Copy page” copies the information on a safety space, and “Paste page” pastes it to another.</p><p>In the list of safety spaces, select the name of an space, click the <strong>[Copy page]</strong> button, select the name of another space to which the values will be applied, and click the <strong>[Paste page]</strong> button.</p></li></ul> |
 
 3\. After checking the parameter values, finish the setting by clicking the **\[X]** button or by clicking the **\[esc]** key of the teach pendant.
+
+[__SOURCE](1-cobot-safety-function/1-7-safety-layout/1-safety-space-setting/1-1-safety-space-parameter-setting-info.md)
 # 1.7.1.1 Setting information on safety space parameters
 
 ![](<../../../_assets/image_22.png>)
@@ -581,6 +637,8 @@ The method for setting safety spaces is as follows:
 * The robot monitoring function is carried out based on the configured spaces and modeled tools. The spaces and tools should include all the components including distance.
 * Put a cover on the robot to prevent collisions and injuries.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-7-safety-layout/2-safety-tool-modeling.md)
 # 1.7.2 Safety tool modeling
 
 Safety space monitoring detects whether the tool modeled in spheres intrudes into the safety spaces or exceeds the working space. You can set up to 16 safety tools and model a safety tool with a maximum of 6 spheres.
@@ -616,6 +674,8 @@ If you use the **\[Copy TCP]** button, the rotational angle values that can be s
 * Before changing a tool data, check if the parameters set in the tool modeling are correct. The tool data number and the safety tool modeling number of a tool should be equal to each other.
 * Because the definition of a robot layout setting applies to the elbow, the other parts of the robot may intrude into a safety space even if a safety space is set.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-7-safety-layout/3-safety-robot-modeling.md)
 # 1.7.3 Safety robot modeling
 
 This is the robot model used for safety space monitoring. There is only one safety robot model, and the model consists of a sphere.
@@ -634,6 +694,8 @@ To set the parameter values, click the **\[Robot]** button in the **\[Configure 
 |      Name     | The name of the selected safety robot model (name character string, not modifiable) |           Robot           |
 |     On/Off    | <p>Whether to enable monitoring </p><p>(Off = no monitoring, On = monitoring)</p>   |            Off            |
 |     Radius    | Radius of the sphere (0–10,000 mm)                                                  |            0 mm           |
+
+[__SOURCE](1-cobot-safety-function/1-7-safety-layout/4-workcell-3d.md)
 # 1.7.4WorkCell 3D
 
 This directly monitors the parameters specified in the safety layout by using WorkCell 3D. WorkCell 3D can 3D visualize the safety spaces, tool models, and robot models specified in the safety layout so that the operator can view the settings. In addition, the robot’s position is identified in real time so that the operator can check whether the robot violates any safety spaces.
@@ -663,6 +725,8 @@ You can enable the WorkCell 3D function on the panel selection window of the ope
 {% hint style="warning" %}
 **\[Caution]**: Compare the robot’s WorkCell simulation position and its actual position, and identify any adjacent obstacles in operating the robot safely.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1.8-safety-io-signal.md)
 # 1.8 Safety I/O signals
 
 This assigns safety I/Os in using the collaborative robot. Each safety I/O is of a dual channel. You can set up to four signals each for input and output.
@@ -688,6 +752,8 @@ This assigns safety I/Os in using the collaborative robot. Each safety I/O is of
 |   OUT0–OUT3   | <p>Monitoring signal assignment </p><p>(up to 4 signals, 0–43)</p><ul><li>0 = None </li><li>1 = STO activation status </li><li>2 = SOS activation status </li><li>3 = Reduced mode activation status </li><li>4 = Not reduced mode </li><li>5 = Robot moving </li><li>7 = Mode switch – manual </li><li>8 = Mode switch – auto</li><li>9 = Mode switch – remote </li><li>10–21 = Safety spaces #1 - #12 </li><li>22 = Violation alarm </li><li>23 = TCP speed violation </li><li>24 = TCP orientation violation </li><li>25 = TCP force violation </li><li>26 = Collision detection </li><li>27 = Momentum violation </li><li>28 = Power violation </li><li>29 = SOS violation </li><li>30 = Joint position violation </li><li>31 = Joint speed violation </li><li>32 = Joint torque violation </li><li>33-43 = Safety space violation #1 - #12</li></ul> |
 
 3\. After checking the parameter values, finish the setting by clicking the **\[X]** button or by clicking the **\<esc>** key of the teach pendant.
+
+[__SOURCE](1-cobot-safety-function/1-9-safety-stop-function.md)
 # 1.9Safety Stop Function
 
 Set an adequate safety stop type for each safety stop function. The safety stop functions, which stop the robot under a safe condition in case of a safety violation, include the following three types. All types of safety stop functions meet the requirements of Clause 4.2.2.4 of IEC 61800-5-2.
@@ -726,6 +792,8 @@ The method for setting the safety stop types of the safety functions is as follo
 {% hint style="warning" %}
 **\[Caution]**: You should set an adequate stopping method for each function based on the result of the risk assessment.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-10-safety-condition-monitoring/README.md)
 # 1.10 Safety condition monitoring
 
 This monitors safety function violations and the status of the SCM board. You can view the statuses of the robot limiting functions, joint limiting functions, and the SCM board.
@@ -741,6 +809,8 @@ This monitors safety function violations and the status of the SCM board. You ca
 |  ![](../../_assets/1.png) | View the safety conditions of the collaborative robot.                                                                                                                                                                                                                                                                  |
 |  ![](../../_assets/2.png) | <p>Select the Safety Functions tab, and view the statuses of the safety functions.</p><ul><li><strong>OFF</strong>: Safety space disabled </li><li><strong>SAFE</strong>: Safety function observed</li><li><strong>UNSAFE</strong>: Safety function violated</li><li><strong>ERROR</strong>: SCM status error</li></ul> |
 | ![](../../_assets/3.png)  | <ul><li><strong>[I/O]</strong>: You can view the statuses of the safety I/Os.</li><li><strong>[Status Recovery]</strong>: In case of safety violations during monitoring, you can clear errors and recover the status.</li></ul>                                                                                        |
+
+[__SOURCE](1-cobot-safety-function/1-10-safety-condition-monitoring/1-robot-limit-parameter-monitoring.md)
 # 1.10.1 Robot limiting parameter monitoring
 
 Select the **\[Robot limit]** tab of **\[Configure > 4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 5: Cobot Safety Status]** to view the statuses of the robot limiting functions.
@@ -761,6 +831,8 @@ Select the **\[Robot limit]** tab of **\[Configure > 4: Application parameter > 
   * **\[Momentum]**: This indicates whether a momentum violation has occurred during the monitoring.
   * **\[Collision]**: This indicates whether a collision has been detected during the monitoring.
   * **\[SOS]** (Safe operating stop monitoring): This indicates whether an SOS violation has occurred during the monitoring.
+
+[__SOURCE](1-cobot-safety-function/1-10-safety-condition-monitoring/2-joint-limit-function-monitoring.md)
 # 1.10.2Joint limiting function monitoring
 
 Select the **\[Joint limit]** tab of **\[Configure > 4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 5: Cobot Safety Status]** to view the statuses of the joint limiting functions.
@@ -776,6 +848,8 @@ Select the **\[Joint limit]** tab of **\[Configure > 4: Application parameter > 
   * **\[Position]**: This indicates whether an axial joint position violation has occurred during the monitoring.
   * **\[Speed]**: This indicates whether an axial joint speed violation has occurred during the monitoring.
   * **\[Torque]**: This indicates whether an axial joint torque violation has occurred during the monitoring.
+
+[__SOURCE](1-cobot-safety-function/1-10-safety-condition-monitoring/3-scm-board-status-monitoring.md)
 # 1.10.3 SCM board status monitoring
 
 Select the **\[SCM Status]** tab of **\[Configure > 4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 5: Cobot Safety Status]** to view the status of the SCM board.
@@ -793,6 +867,8 @@ Select the **\[SCM Status]** tab of **\[Configure > 4: Application parameter > 2
       POWER\_ON, INIT\_STATE, WAIT\_KIENMATICS\_INFO, WAIT\_DYNAMICS\_INFO, WAIT\_SAFE\_PARAMETER, INITIAL\_MONITORING, NORMAL\_OPERATION, , STO\_STATE\_BY\_PARAM, STO\_STATE\_BY\_SI, SS1\_STATE, SS2\_STATE, SOS\_STATE, FAULT\_STATE
   * **\[Encoder]**: This is a status display of the axial dual encoders (Normal, Error, Off).
   * **\[Joint torque sensor]**: This is a status display of the axial dual JTSs (Normal, Error, Off).
+
+[__SOURCE](1-cobot-safety-function/1-10-safety-condition-monitoring/4-safety-io-status-monitoring.md)
 # 1.10.4 Safety I/O status monitoring
 
 Select the **\[I/O]** button at the right side of the window of **\[Configure > 4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 5: Cobot Safety Status]** to view the statuses of the safety I/Os.
@@ -801,6 +877,8 @@ Select the **\[I/O]** button at the right side of the window of **\[Configure > 
 
 * **\[Input signal assignment]**: This displays the statuses of assignment and activation (On/Off) of the input signals (nos. 11–14)
 * **\[Output signal assignment]**: This displays the statuses of assignment and activation (On/Off) of the output signals (nos. 11–14)
+
+[__SOURCE](1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/README.md)
 # 1.10.5 Recovery mode
 
 In recovery mode, you can clear errors that occur because of the safety function violations during monitoring. Because position detection is temporarily disabled in recovery mode, you can drive the robot and adjust its angle and position without violating the safety functions.
@@ -828,6 +906,8 @@ If a safety function monitoring is violated, the robot will activate a safety st
 {% hint style="warning" %}
 **\[Caution]**: After clearing the recovery mode, recheck the safety layout setting and the teaching position of the operating program.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/1-recovery-robot-position-violation.md)
 # 1.10.5.1 Recovery in case of robot position violations
 
 Robot position violations are situations in which the robot’s position exceeds a safety space, and these include TCP position, TCP orientation, and joint monitoring violations. When a robot position violation occurs, you can only clear the error by moving the robot’s physical position.
@@ -849,6 +929,8 @@ Robot position violations are situations in which the robot’s position exceeds
 {% hint style="warning" %}
 **\[Caution]**: After clearing the recovery mode, recheck the safety layout setting and the teaching position of the operating program.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/2-recovery-robot-speed-violation.md)
 # 1.10.5.2 Recovery in case of robot speed violations
 
 Robot speed violations are situations in which the robot’s speed exceeds a safety limit, and these include TCP speed, joint speed, power, and momentum monitoring violations. Because the robot detects the instantaneous speed in the case of robot speed violations, you can clear the error without moving the robot’s position.
@@ -867,6 +949,8 @@ Robot speed violations are situations in which the robot’s speed exceeds a saf
 * After clearing the error, make sure to recheck all speed-related safety parameters and the speed displayed on the operating program.
 * After clearing the recovery mode, recheck the safety layout setting and the teaching position of the operating program.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/3-recovery-robot-force-violation.md)
 # 1.10.5.3 Recovery in case of robot force violations
 
 Robot force violations are situations in which external force is applied on the robot or in which the amount of the force used by the robot internally exceeds a safety limit, and these include TCP force, collision detection, joint torque, power, and momentum monitoring violations. You can clear errors depending on the causes of the violations.
@@ -896,6 +980,8 @@ Robot force violations are situations in which external force is applied on the 
 * After clearing the recovery mode, recheck the robot’s safety condition setting, tool data, the teaching position of the operating program, and the torque sensor offset.
 * If the error is not cleared, check the tool data, tool number, safety condition setting, and torque sensor offset, and repeat procedures 1 through 5.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-10-safety-condition-monitoring/5-recovery-mode/4-recovery-sos-violation.md)
 # 1.10.5.4 Recovery in cases of safe operating stop (SOS) violations
 
 SOS violations are situations in which the robot’s motion is detected while its motor is on and is supposed to be in a stop state. Because the robot detects the instantaneous speed in the case of robot speed violations, you can clear the error without moving the robot’s position.
@@ -911,535 +997,211 @@ SOS violations are situations in which the robot’s motion is detected while it
 * After clearing the recovery mode, turn on the motor in the automatic mode and check if the error does not persist.
 * If the same error recurs, check the driving module of the pertaining axis.
 {% endhint %}
+
+[__SOURCE](1-cobot-safety-function/1-11-cobot-collision-detection-mode/README.md)
 # 1.11 Collaborative robot collision detection mode
 
-The collision detection function is a safety mechanism for situations in which the robot operates in an abnormal condition or malfunctions. You can adjust the level of reaction to collisions by setting the detection mode and sensitivity.
+The collision detection function serves as a safety mechanism when the robot operates under abnormal conditions or exhibits irregular behavior. You can configure the detection mode and run auto-tuning to automatically set the optimal collision detection sensitivity for the current task.
 
-1.  Set the operating mode to the manual mode.
+Configuration methods include controller settings and robot language commands:
+1. Controller settings: Basic settings that are always applied (default).
+2. Robot language commands: Robot language commands are used to configure whether collision detection is active for specific segments during robot program execution.
+
+[__SOURCE](1-cobot-safety-function/1-11-cobot-collision-detection-mode/1-cobot-collision-detection-setup.md)
+# 1.11.1 Collision Detection Controller Settings
+
+1.  Please set the driving mode to manual.
 
 
-2.  Select the **\[Configure]** button > **\[4: Application parameter > 21: Cobot Setup > 1: Cobot Safety Function > 6: (Main) Cobot Collision Detection Mode]** menu.
+2.  **\[system]** Button > **\[11: Cobot System ]** > **\[Collision Detection]** Please touch the menu.
 
 
-3. Set whether to use the collaborative robot’s collision detection function, configure the options, and click the **\[OK]** button.
+3. After configuring the settings and options for the collaborative robot's collision detection function, touch the **\[OK]**  button.
+![](../../_assets/image64.jpg)
 
-![](<../_assets/image_28.png>)
+* **\[Collision detection]**: Configure whether to use the collision detection function.
+* **\[Body parts for collision detection]**: Select the body part to apply the robot's maximum speed capable of guaranteeing minimum safety against injury upon collision detection.
+* **\[Collision detection reaction]**: Select whether to execute an avoidance maneuver after a collision is detected.
 
-* **\[Collision detection]**: Set whether to use the collision detection function.
-* **\[Detection mode]**: Select the detection mode for collision detection.
-* **\[Sensitivity]**: Set the sensitivity for collision detection. The larger the value, the higher the sensitivity to impacts.
 
 {% hint style="warning" %}
-**\[Caution]**
+**\[Warning]**
 
-* False detection of collision may occur if the difference between the tool data and the actual value is large. In addition, make sure to check the installation angle and gravity direction of the robot. Then, check the encoder and torque sensor if false detection occurs after the correct setting of the tool data.
-* Setting the sensitivity value of collision detection at an overlarge value may lead to false detection. Therefore, set it at a proper value suitable for ensuring worker safety.
+* If there is a significant discrepancy between the tool data and actual values, collisions may be incorrectly detected. Please accurately configure tool-related information, such as length, weight, and the center of gravity. Additionally, be sure to verify the robot's installation angle and the direction of gravity. If false detections persist despite accurate tool data configuration, please inspect the encoders and acceleration sensors.
 {% endhint %}
-# 2. Direct teaching
 
-Direct teaching is a method of teaching the collaborative robot in which the teaching device attached to the manipulator is used for moving the robot directly. Because direct teaching specifies the robot’s position by moving it directly, you can teach the robot in an intuitive manner without specialized knowledge.
+[__SOURCE](1-cobot-safety-function/1-11-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
+# 1.11.2 Collision-detection robot command(cobot_coldet)
 
-Direct teaching methods include the free motion method, where all axes of the robot can be moved freely, and the constraint motion method, where the axes of the robot can be moved only in specific directions. The axial movement direction of the constraint motion method can be used by assigning it to the teaching switch of the robot manipulator.
-# 2.1 Direct teaching switch assignment
+### explanation
 
-The method for setting the switches of the teaching device attached to the robot manipulator is as follows:
+Configure whether the collaborative robot performs collision detection.
 
-1.  Select the **\[Configure]** button > **\[4: Application parameter > 21: Cobot Setup > 2: Direct Teaching Setup > 1: Direct Teaching Constrained Motion]** menu.
+Collision detection is handled by the Hi7 controller.
+
+### grammar
+
+&lt;cobot_coldet&gt;.on </br>
+&lt;cobot_coldet&gt;.off 
 
 
-2. Click the drop-down menu, set functions for the switches, and click the **\[OK]** button.
+### example
 
-![](<../_assets/image_21.png>)
+cobot_coldet.on
+cobot_coldet.off
+```
+[__SOURCE](1-cobot-safety-function/1-11-cobot-collision-detection-mode/3-cobot-collision-detection-autotune.md)
+# 1.11.3 Collaborative Robot Collision Detection Auto-Tuning Mode
 
-The functions that can be assigned to the direct teaching switches are as follows:
+1.  Please set the driving mode to manual.
 
-![Figure 17 Direct teaching switches](../_assets/image58.png)
 
-|                             No.                             | Function                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| :---------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|                           **No.**                           | 　　　　　　　　　　**Function**                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ![](../_assets/1.png)/![](../_assets/2.png) | Free motion: The axes move in all directions (fixed).                                                                                                                                                                                                                                                                                                                                                                                      |
-| ![](../_assets/3.png)/![](../_assets/5.png) | <p>Constraint motion: The axes move only in the assigned directions.</p><ul><li>X and Y directions based on the tool coordinate system (XY plane)</li><li>Z direction on the tool coordinate system</li><li>Angles fixed based on the tool coordinate system: Motion in all directions (RX, RY, and RZ angles are restricted.)</li><li>Points (positions) fixed based on the tool coordinate system: Only angles can be changed.</li></ul> |
-|                ![](../_assets/4.png)                | Record positions (fixed).                                                                                                                                                                                                                                                                                                                                                                                                                  |
-# 2.2	Driving the robot by direct teaching
+2.  **\[system]**  > **\[11: Cobot System ]** > **\[5: Collision Dectection Threshold]** Please touch the menu.
 
-1\. Set the operating mode to the manual mode.
 
-2\. Press the **\<Motor>** key on the teach pendant to supply servo power to the motor. The motor lamp will blink.
+3.  **\[Threshold Init]**  Please touch the button.
 
-3\. Press a direct teaching switch (1, 2, 3, or 5). The motor’s break will be released, and the direct teaching function will turn on. In the status display line of the operating program window, the operating method will be displayed as “**Direct teaching.**”
+4. After configuring whether to enable the automatic tuning function for the collaborative robot's collision detection threshold and setting the number of execution cycles, touch the **\[Save]** button.
 
-![](../_assets/image71.jpeg)
+![](../../_assets/image65.jpg)
 
-4\. While the direct teaching switch (1, 2, 3, or 5) is pressed, hold and move the robot to teach it the desired position.
+* **\[Auto tuning]**: Configure whether to enable the collision detection auto-tuning function.
+* **\[Tuning count]**: Set the number of job executions for performing automatic collision detection tuning.
+* **\[Threshold Init]**: Resets the collision detection threshold.
+* **\[Factory Reset]**: Resets the collision detection threshold to the factory default value.
 
-* To move all the axes of the robot freely, press a direct teaching switch (1 or 2).
-* To move all the axes of the robot in assigned directions only, press a direct teaching switch (3 or 5).
-* To record the position of the robot, press a direct teaching switch (4).
 
 {% hint style="warning" %}
-**\[Caution]**
+**\[warning]**
 
-* Use the direct teaching functions in a safe environment only. If the tool or a nearby structure has a sharp part or a part that can cause entanglement, do not use the direct teaching functions.
-* Before using the direct teaching functions, make sure to set the information on the tool, including the length, weight, and center of gravity. In addition, make sure to check the robot’s installation angle and direction of gravity.
-* Set the enabling or disabling of the direct teaching functions only when the robot is at a complete stop. Changing the status of a direct teaching function while the robot is moving may cause the robot to malfunction.
+* Ensure that the robot is not subjected to external impacts while the auto-tuning function is running. If an external impact occurs during execution, please reset and restart the auto-tuning process. 
+If the number of auto-tuning iterations is set too low, the process may finish before optimization is complete, potentially leading to frequent false detections; conversely, if the number is set too high, the process may take an excessive amount of time to complete, depending on the execution job's duration. We recommend setting the number of iterations between 100 and 200 for a job with a one-minute execution time. 
+Please note that this function operates only in Auto mode; in Manual mode, the collision detection function operates using factory default settings.
 {% endhint %}
-# 2.3 Direct teaching mode setting
 
-Direct teaching supports the sensorless mode and the torque sensor–based mode.
+[__SOURCE](1-cobot-safety-function/1-12-cobot-direct-teaching-mode/README.md)
+# 1.12 Collaborative robot direct teaching mode
 
-You can select the desired direct teaching mode and set the sensitivity of each axis. The higher the sensitivity, the smaller the force required to move the robot.
+Direct teaching is an intuitive method that allows users without specialized robot programming knowledge to teach a robot desired movements by manually manipulating it. Instead of using a complex teach pendant, the operator directly guides the robot's end-effector to define the work path and positions.
 
-1.  Set the operating mode to the manual mode.
+Configuration methods include controller settings and cockpit button settings:
+1. Controller settings: Basic settings applied by default.
+2. Cockpit button: Activates the direct teaching mode configured on the robot's teach pendant (TP).
 
+[__SOURCE](1-cobot-safety-function/1-12-cobot-direct-teaching-mode/1-cobot-direct-teaching-setup.md)
+# 1.12.1 Direct Teaching Controller Configuration
 
-2.  Select the **\[Configure] button > 4: Application parameter > 21: Cobot Setup > 2: Direct Teaching Setup> 2: Cobot Direct Teaching Mode]** menu.
-
-
-3. Select the direct teaching mode, set the sensitivity of each axis, and click the **\[OK]** button.
-
-![](<../_assets/image_42.png>)
-# 2.4 Constraint motion
-
-When you conduct direct teaching through the constraint motion method, you can set the sensitivity of constraint motion. The higher the sensitivity, the smaller the force required to move the robot.
-
-1.  Set the operating mode to the manual mode.
+1.  Please set the driving mode to manual.
 
 
-2.  Select the **\[Configure]** button > **\[4: Application parameter > 21: Cobot Setup > 2: Direct Teaching Setup > 3: Cobot Constraint Motion]** menu.
+2.  **\[System]** > **\[11: Cbbot System]** > **\[Direct Teaching]** Please touch the menu.
 
 
-3. Select a sensitivity, and click the **\[OK]** button.
+3. After configuring the settings and options for the collaborative robot's direct teaching function, touch the **[OK]** button.
 
-![](<../_assets/image_46.png>)
+![](../../_assets/image57.png)
 
+* **Direct teaching On**: Direct teaching mode activates immediately upon motor-on (SHIFT + MOT. ON + Enable Switch). The motor remains on and direct teaching operates only while the Enable Switch is pressed. To switch the robot back to Jog or Auto mode, you must disable the "Direct teaching On" setting.
+* **Constraint motion**: Determines the default mode when direct teaching is executed. If 'None' is selected, you cannot switch to another mode; however, switching between other modes is possible while direct teaching is in progress.
 
-# 3. I/O setting
+![](../../_assets/image60.png) 
 
-# 3.1 I/O map
+4. The image above illustrates the cockpit buttons attached to the HDC series of collaborative robots. Please refer to this image when reading the cockpit settings below.
+* **Cockpit setting**: Determines the cockpit button mode.
+- Each of the 'Cockpit A, B, and C buttons' can be assigned one of the functions listed below.
+    - 'XYZ' = Changes the direct teaching mode to Cartesian constrained motion excluding X, Y, and Z (available only during Cartesian constrained motion).
+    - 'XY'  = Changes the direct teaching mode to Cartesian constrained motion excluding X and Y (available only during Cartesian constrained motion).
+    - 'X'   = Changes the direct teaching mode to Cartesian constrained motion excluding X (available only during Cartesian constrained motion).
+    - 'Y'   = Changes the direct teaching mode to Cartesian constrained motion excluding Y (available only during Cartesian constrained motion).
+    - 'Z'   = Changes the direct teaching mode to Cartesian constrained motion excluding Z (available only during Cartesian constrained motion).
+    - 'Rx'  = Changes the direct teaching mode to Cartesian constrained motion excluding Rx (available only during Cartesian constrained motion).
+    - 'Ry'  = Changes the direct teaching mode to Cartesian constrained motion excluding Ry (available only during Cartesian constrained motion).
+    - 'Rz'  = Changes the direct teaching mode to Cartesian constrained motion excluding Rz (available only during Cartesian constrained motion).
+    - 'None' = No change occurs when pressed.
 
-The mapping between the safety control modules (SCMs) of the collaborative robot and the tool I/O of the system is as follows. Write the program by referring to this information.
-
-### <mark style="color:green;">Safety Control Module (SCM)</mark>
-
-![](<../_assets/image_45.png>)
-
-### <mark style="color:green;">Tool I/O</mark>
-
-![](<../_assets/image_31.png>)
-# 3.2 Tool I/O
-
-The tool I/O, which is a module mounted at the robot tip, supplies communication and power so that the robot can be connected to external devices.
-# 3.2.1 Default specifications of the tool I/O
-
-### <mark style="color:green;">Digital I/O</mark>
-
-|         **Division**        |                                                                 **Input**                                                                 |                                                                 **Output**                                                                |
-| :-------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: |
-|     **No. of channels**     |                                                                     4                                                                     |                                                                     4                                                                     |
-|         **I/O type**        | <ul><li>SMT-IO06-48PP-HD01: PNP</li><li>SMT-IO06-48NN-HD01: NPN</li><li>SMT-IO06-48PN-HD01: PNP</li><li>SMT-IO06-48NP-HD01: NPN</li></ul> | <ul><li>SMT-IO06-48PP-HD01: PNP</li><li>SMT-IO06-48NN-HD01: NPN</li><li>SMT-IO06-48PN-HD01: NPN</li><li>SMT-IO06-48NP-HD01: PNP</li></ul> |
-|      **Rated voltage**      |                                                                 12 or 24 V                                                                |                                                                 12 or 24 V                                                                |
-|      **Rated current**      |                                                                    1 mA                                                                   |                                                          1 A/Output, 1.5 A/Common                                                         |
-|      **Voltage at On**      |                                                                4 V DC max.                                                                |                                                                     -                                                                     |
-|      **Voltage at Off**     |                                                                3 V DC max.                                                                |                                                                     -                                                                     |
-|       **Delay in On**       |                                                                 1 ms max.                                                                 |                                                                 1 ms max.                                                                 |
-|       **Delay in Off**      |                                                                 1 ms max.                                                                 |                                                                 1 ms max.                                                                 |
-|     **Leakage current**     |                                                                     -                                                                     |                                                                0.1 mA max.                                                                |
-| **Absolute maximum output** |                                                                 -0.5–+26 V                                                                |                                                                 -0.5–+26 V                                                                |
-
-<mark style="color:green;"></mark>
-
-### <mark style="color:green;">Analog input</mark>
-
-|          Division          |       Voltage      |       Current      |
-| :------------------------: | :----------------: | :----------------: |
-|        **Division**        |     **Voltage**    |     **Current**    |
-|     **No. of channels**    |          2         |          2         |
-|       **Input range**      |       0–10 V       |       0–20 mA      |
-|  **AD/DA conversion data** |       0–1,000      |       0–2,000      |
-|     **Input impedance**    |        1 MΩ        |        250 Ω       |
-|        **Precision**       | ±1.0% FS (±100 mV) | ±1.0% FS (±200 uA) |
-|   **Ambient temperature**  |      0°C–55°C      |      0°C–55°C      |
-| **Absolute maximum input** |     -0.5­–+26 V    |     -2.5–+25 mA    |
+- The 'Cockpit M Button' features the menu shown below.
+    - 'Save Pose' = Records the robot's current position into the job file currently open on the TP.
 
 
+* **Joint Direct Teaching Axis Activate**:The selected axis can be driven only when activated during autonomous direct teaching.
 
-### <mark style="color:green;">I/O voltage</mark>
+{% hint style="warning" %}
+**\[warning]**
 
-* Output voltage
+* Direct teaching may not execute if there is a significant discrepancy between the tool data and actual values. If direct teaching fails to run, please stop the robot and verify the tool data input values.
+* To initiate direct teaching, simultaneously press the Motor On button, the Enable Switch, and the Shift key.
+* You must keep the Enable Switch pressed after turning on the motor to maintain direct teaching mode.
+* Direct teaching will stop if you turn off 'Direct teaching On' or release the Enable Switch while the function is active.
+* Please check for nearby objects or people before operating the robot during direct teaching.
+* If two or more buttons are pressed simultaneously, only the first button pressed is recognized.
+* If you attempt to move the robot automatically using the TP during direct teaching, the robot will stop immediately. This constitutes an emergency stop and poses a safety risk.
 
-|         **Division**        |        **Information**       |
-| :-------------------------: | :--------------------------: |
-|   **Supply voltage mode**   | 0, 12 or 24 VDC output (±5%) |
-|   **Rated supply current**  |             1.5 A            |
-| **Absolute supply current** |           1.6 A max          |
-
-* Input voltage
-
-|       **Division**      | **Information** |
-| :---------------------: | :-------------: |
-| **Input voltage range** |  +48 VDC (±10%) |
-| **Current consumption** |    800 mA max   |
-
-<mark style="color:green;"></mark>
-
-### <mark style="color:green;">General specifications</mark>
-
-* Communication interface
-
-|  **Division** |                         **Information**                        |
-| :-----------: | :------------------------------------------------------------: |
-|  **Protocol** |                            EtherCAT                            |
-| **Connector** | <p>Hirose connector × 2 </p><p>(EtherCAT input and output)</p> |
-
-* Product
-
-| **Division** | **Information** |
-| :----------: | :-------------: |
-|  **Weight**  |     30 g max    |
-| **Diameter** |       70 Ø      |
-
-* Environment
-
-|           **Division**           |            **Information**           |
-| :------------------------------: | :----------------------------------: |
-|    **Operating temperature**     |                 0-50℃                |
-| **Storage temperature/humidity** | -20°C–60°C / ≤90% RH (noncondensing) |
-# 3.2.2 Tool I/O setting
-
-1.  Select the **\[Configure]** button > **\[4: Application parameter > 21: Cobot Setup > 3: Cobot I/O Setting > 1: Tool I/O]** menu.
-
-
-2. Set the I/O voltage and current, and click the **\[OK]** button.
-
-![](<../../_assets/image_15.png>)
-
-* **\[Analog input]**: Select the voltage input and the current input of the two channels.
-* **\[Output power]**: Select one among 0 V (off), 12 V, and 24 V. The set values will be retained after the power is turned off and on.
-# 3.3 Analog I/O
-
-The analog I/O module, which is mounted on BD6F1 inside the controller, provides the I/O of analog voltage and current.
-# 3.3.1 Default specifications of the analog I/O
-
-### <mark style="color:green;">Analog input</mark>
-
-|        **Division**       |                              **Voltage**                              |        **Current**       |
-| :-----------------------: | :-------------------------------------------------------------------: | :----------------------: |
-|    **No. of channels**    |                                   2                                   |             2            |
-|      **Input range**      | <p>User-configured</p><p>(0–5 V, 0–10 V, </p><p>-5–5 V, -10–10 V)</p> |          4–20 mA         |
-| **AD/DA conversion data** |                        Expressed in the mV unit                       | Expressed in the uA unit |
-|       **Precision**       |                                ±5.0% FS                               |         ±5.0% FS         |
-|  **Ambient temperature**  |                              -40°C–125°C                              |        -40°C–125°C       |
-
-<mark style="color:green;"></mark>
-
-### <mark style="color:green;">Analog output</mark>
-
-|        **Division**       |                              **Voltage**                              |        **Current**       |
-| :-----------------------: | :-------------------------------------------------------------------: | :----------------------: |
-|    **No. of channel**s    |                                   2                                   |             2            |
-|      **Input range**      | <p>User-configured</p><p>(0–5 V, 0–10 V, </p><p>-5–5 V, -10–10 V)</p> |          4–20 mA         |
-| **AD/DA conversion data** |                        Expressed in the mV unit                       | Expressed in the uA unit |
-|       **Precision**       |                                ±5.0% FS                               |         ±5.0% FS         |
-|  **Ambient temperature**  |                              -40°C–125°C                              |        -40°C–125°C       |
-# 3.3.2 Analog I/O setting
-
-1.  Select the **\[Configure]** button > **\[4: Application parameter > 21: Cobot Setup > 3: Cobot I/O setting > 2: SCM Analog I/O]**.
-
-
-2. Set the I/O voltage, current, gain, and offset, and click the **\[OK]** button.
-
-![](<../../_assets/image_18.png>)
-
-* **\[Analog I/O range]**: Select the voltage or current range of the analog I/O channel.
-* **\[Analog I/O gain]**: Set the analog I/O gain (unit: %).
-* **\[Analog I/O offset]**: Set the analog I/O offset (unit: mV or uA).
-
-{% hint style="info" %}
-The specified values of voltage and current will apply to the system after the controller is rebooted.
 {% endhint %}
-# 4. Error messages
 
-The safety function error messages of the collaborative robot are as follows:
-# E7001\~E7066
+[__SOURCE](1-cobot-safety-function/1-13-simple-encoder-offset/README.md)
+# 1.13 Simple Encoder Offset
 
-| **Code** |                                  **Message**                                  |                                             **Cause**                                            | 　　　**Solutions**                                                                                                                                                                                    |
-| :------: | :---------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   E7001  |              Error in the initialization of the safety controller             |              Error in communication between the safety controller and the mainboard              | <ul><li>Reboot the controller.</li><li>Check the communication cable between the safety controller and the mainboard.</li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7002  |           Failure in the initialization of the robot’s statics data           | Data transmission to the safety controller failed because of a failure in motion initialization. | <ul><li>Reboot the controller.</li><li>If the error persists, consult with Hyundai Robotics.</li></ul>                                                                                              |
-|   E7003  |           Failure in the initialization of the robot’s dynamics data          | Data transmission to the safety controller failed because of a failure in motion initialization. | <ul><li>Reboot the controller.</li><li>If the error persists, consult with Hyundai Robotics.</li></ul>                                                                                              |
-|   E7004  |        Failure in the initialization of the safety function parameters        | Data transmission to the safety controller failed because of a failure in motion initialization. | <ul><li>Reboot the controller.</li><li>If the error persists, consult with Hyundai Robotics.</li></ul>                                                                                              |
-|   E7005  |         Failure in the transmission of the safety function parameters         |              Error in communication between the safety controller and the mainboard              | <ul><li>Reboot the controller.</li><li>Check the communication cable between the safety controller and the mainboard.</li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7010  | Error in the central processing unit (CPU) diagnosis in the safety controller |                                      Error in the CPU eFuse                                      | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7011  |              Error in the CPU diagnosis in the safety controller              |                                    Error in the CPU ECC module                                   | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7012  |              Error in the CPU diagnosis in the safety controller              |                                 Error in the CPU POSCON diagnosis                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7013  |              Error in the CPU diagnosis in the safety controller              |                                 Error in the CPU POSCON diagnosis                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7014  |              Error in the CPU diagnosis in the safety controller              |                                 Error in the CPU POSCON diagnosis                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7015  |              Error in the CPU diagnosis in the safety controller              |                                 Error in the CPU POSCON diagnosis                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7016  |              Error in the CPU diagnosis in the safety controller              |                                 Error in the CPU POSCON diagnosis                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7017  |              Error in the CPU diagnosis in the safety controller              |                                 Error in the CPU POSCON diagnosis                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7018  |              Error in the CPU diagnosis in the safety controller              |                             Error of invalid memory access by the CPU                            | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7019  |              Error in the CPU diagnosis in the safety controller              |                           Error of invalid peripheral access by the CPU                          | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7020  |              Error in the CPU diagnosis in the safety controller              |                           Error of invalid peripheral access by the CPU                          | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7021  |              Error in the CPU diagnosis in the safety controller              |                           Error of invalid peripheral access by the CPU                          | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7022  |              Error in the CPU diagnosis in the safety controller              |                           Error of invalid peripheral access by the CPU                          | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7022  |              Error in the CPU diagnosis in the safety controller              |                           Error of invalid peripheral access by the CPU                          | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7023  |              Error in the CPU diagnosis in the safety controller              |                           Error of invalid peripheral access by the CPU                          | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7024  |              Error in the CPU diagnosis in the safety controller              |                           Error of invalid peripheral access by the CPU                          | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7025  |              Error in the CPU diagnosis in the safety controller              |                           Error of invalid peripheral access by the CPU                          | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7026  |              Error in the CPU diagnosis in the safety controller              |                                   CPU REG1 ADC RAM parity error                                  | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7027  |              Error in the CPU diagnosis in the safety controller              |                                   CPU REG2 ADC RAM parity error                                  | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7028  |              Error in the CPU diagnosis in the safety controller              |                      <p>CPU SPI1 MIBSPI analog</p><p>loopback test error</p>                     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7029  |              Error in the CPU diagnosis in the safety controller              |                            CPU SPI1 MIBSPI ECC\_TEST\_MODE\_1BIT error                           | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7030  |              Error in the CPU diagnosis in the safety controller              |                            CPU SPI1 MIBSPI ECC\_TEST\_MODE\_1BIT error                           | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7031  |              Error in the CPU diagnosis in the safety controller              |                   <p>ERR_SPI1_MIBSPI_ECC_TEST</p><p>_MODE_1BIT_FAULT_INJECT</p>                  | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7032  |              Error in the CPU diagnosis in the safety controller              |                   <p>ERR_SPI1_MIBSPI_ECC_TEST</p><p>_MODE_2BIT_FAULT_INJECT</p>                  | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7033  |              Error in the CPU diagnosis in the safety controller              |                                     ERR\_VIM\_SOFTWARE\_TEST                                     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7034  |              Error in the CPU diagnosis in the safety controller              |                                 ERR\_DCAN1\_ECC\_TEST\_MODE\_1BIT                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7035  |              Error in the CPU diagnosis in the safety controller              |                                 ERR\_DCAN2\_ECC\_TEST\_MODE\_1BIT                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7036  |              Error in the CPU diagnosis in the safety controller              |                                 ERR\_DCAN1\_ECC\_TEST\_MODE\_2BIT                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7037  |              Error in the CPU diagnosis in the safety controller              |                                 ERR\_DCAN2\_ECC\_TEST\_MODE\_2BIT                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7038  |              Error in the CPU diagnosis in the safety controller              |                      <p>ERR_DCAN1_ECC_TEST_MODE</p><p>_1BIT_FAULT_INJECT</p>                     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7039  |              Error in the CPU diagnosis in the safety controller              |                      <p>ERR_DCAN1_ECC_TEST_MODE</p><p>_2BIT_FAULT_INJECT</p>                     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7040  |              Error in the CPU diagnosis in the safety controller              |                      <p>ERR_DCAN2_ECC_TEST_MODE</p><p>_1BIT_FAULT_INJECT</p>                     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7041  |              Error in the CPU diagnosis in the safety controller              |                      <p>ERR_DCAN2_ECC_TEST_MODE</p><p>_2BIT_FAULT_INJECT</p>                     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7042  |              Error in the CPU diagnosis in the safety controller              |                                 ERR\_FLASH\_ECC\_TEST\_MODE\_1BIT                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7043  |              Error in the CPU diagnosis in the safety controller              |                                 ERR\_FLASH\_ECC\_TEST\_MODE\_2BIT                                | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7044  |              Error in the CPU diagnosis in the safety controller              |                               ERR\_SRAM\_ECC\_ERROR\_FORCING\_1BIT                               | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7045  |              Error in the CPU diagnosis in the safety controller              |                               ERR\_SRAM\_ECC\_ERROR\_FORCING\_2BIT                               | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7046  |              Error in the CPU diagnosis in the safety controller              |                                 ERR\_ALL1PORTMEM\_PBIST\_EXECUTE                                 | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7047  |              Error in the CPU diagnosis in the safety controller              |                                 ERR\_ALL2PORTMEM\_PBIST\_EXECUTE                                 | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7048  |              Error in the CPU diagnosis in the safety controller              |                                  ERR\_ALLROMMEM\_PBIST\_EXECUTE                                  | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7049  |              Error in the CPU diagnosis in the safety controller              |                                 ERR\_CCMR5F\_CPUCOMP\_SELF\_TEST                                 | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7050  |              Error in the CPU diagnosis in the safety controller              |                     <p>ERR_CCMR5F_CPUCOMP_SELF</p><p>_TEST_ERROR_FORCING</p>                     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7051  |              Error in the CPU diagnosis in the safety controller              |                        <p>ERR_CCMR5F_CPUCOMP</p><p>_ERROR_FORCING_TEST</p>                       | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7052  |              Error in the CPU diagnosis in the safety controller              |                                 ERR\_CCMR5F\_VIMCOMP\_SELF\_TEST                                 | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7053  |              Error in the CPU diagnosis in the safety controller              |                     <p>ERR_CCMR5F_VIMCOMP</p><p>_SELF_TEST_ERROR_FORCING</p>                     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7054  |              Error in the CPU diagnosis in the safety controller              |                        <p>ERR_CCMR5F_VIMCOMP</p><p>_ERROR_FORCING_TEST</p>                       | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7055  |              Error in the CPU diagnosis in the safety controller              |                                  ERR\_CCMR5F\_PDCOMP\_SELF\_TEST                                 | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7056  |              Error in the CPU diagnosis in the safety controller              |                      <p>ERR_CCMR5F_PDCOMP</p><p>_SELF_TEST_ERROR_FORCING</p>                     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7057  |              Error in the CPU diagnosis in the safety controller              |                        <p>ERR_CCMR5F_PDCOMP</p><p>_ERROR_FORCING_TEST</p>                        | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7058  |              Error in the CPU diagnosis in the safety controller              |                                 ERR\_CCMR5F\_INMCOMP\_SELF\_TEST                                 | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7059  |              Error in the CPU diagnosis in the safety controller              |                     <p>ERR_CCMR5F_INMCOMP</p><p>_SELF_TEST_ERROR_FORCING</p>                     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7060  |              Error in the CPU diagnosis in the safety controller              |                        <p>ERR_CCMR5F_INMCOMP</p><p>_ERROR_FORCING_TEST</p>                       | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7061  |              Error in the CPU diagnosis in the safety controller              |                 <p>ERR_CCMR5F_CPUCOMP_ERROR</p><p>_FORCING_TEST_FAULT_INJECT</p>                 | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7062  |              Error in the CPU diagnosis in the safety controller              |                 <p>ERR_CCMR5F_VIMCOMP_ERROR</p><p>_FORCING_TEST_FAULT_INJECT</p>                 | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7063  |              Error in the CPU diagnosis in the safety controller              |                  <p>ERR_CCMR5F_PDCOMP_ERROR</p><p>_FORCING_TEST_FAULT_INJECT</p>                 | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7064  |              Error in the CPU diagnosis in the safety controller              |                 <p>ERR_CCMR5F_INMCOMP_ERROR</p><p>_FORCING_TEST_FAULT_INJECT</p>                 | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7065  |              Error in the CPU diagnosis in the safety controller              |                        Error in the RAM diagnosis (ERR\_RAM\_MARCH\_TEST)                        | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-|   E7066  |              Error in the CPU diagnosis in the safety controller              |            The program code of the flash area does not match the CRC (ERR\_CRC\_TEST)            | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                        |
-# E7101\~E7120
+This section describes the simple encoder offset mastering function using a device built into the robot.
+This function consists of two main parts:
+- Simple Mastering Position Setting
+- Simple mastering
 
-| **Code** |                                **Message**                               |                           **Cause**                          | 　　　**Solutions**                                                                                                                                                                                                                                      |
-| :------: | :----------------------------------------------------------------------: | :----------------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   E7101  |      Error in the safety CPU (CH0) watchdog in the safety controller     |           Watchdog timeout of the safety CPU (CH0)           | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                                                                          |
-|   E7102  |      Error in the safety CPU (CH1) watchdog in the safety controller     |           Watchdog timeout of the safety CPU (CH1)           | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                                                                                                                          |
-|   E7103  |      Error in the axis 1 encoder diagnosis by the safety controller      |    An error occurred during the axis 1 encoder diagnosis.    | <ul><li>Check the CAN communication cable between the safety controller and the encoder.</li><li>Reboot the controller.</li></ul>                                                                                                                     |
-|   E7104  |      Error in the axis 2 encoder diagnosis by the safety controller      |    An error occurred during the axis 2 encoder diagnosis.    | <ul><li>Check the CAN communication cable between the safety controller and the encoder.</li><li>Reboot the controller.</li></ul>                                                                                                                     |
-|   E7105  |      Error in the axis 3 encoder diagnosis by the safety controller      |    An error occurred during the axis 3 encoder diagnosis.    | <ul><li>Check the CAN communication cable between the safety controller and the encoder.</li><li>Reboot the controller.</li></ul>                                                                                                                     |
-|   E7106  |      Error in the axis 4 encoder diagnosis by the safety controller      |    An error occurred during the axis 4 encoder diagnosis.    | <ul><li>Check the CAN communication cable between the safety controller and the encoder.</li><li>Reboot the controller.</li></ul>                                                                                                                     |
-|   E7107  |      Error in the axis 5 encoder diagnosis by the safety controller      |    An error occurred during the axis 5 encoder diagnosis.    | <ul><li>Check the CAN communication cable between the safety controller and the encoder.</li><li>Reboot the controller.</li></ul>                                                                                                                     |
-|   E7108  |      Error in the axis 6 encoder diagnosis by the safety controller      |    An error occurred during the axis 6 encoder diagnosis.    | <ul><li>Check the CAN communication cable between the safety controller and the encoder.</li><li>Reboot the controller.</li></ul>                                                                                                                     |
-|   E7109  |   Error in the axis 1 torque sensor diagnosis by the safety controller   | An error occurred during the axis 1 torque sensor diagnosis. | <ul><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li><li>Reboot the controller.</li></ul>                                                       |
-|   E7110  |   Error in the axis 2 torque sensor diagnosis by the safety controller   | An error occurred during the axis 2 torque sensor diagnosis. | <ul><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li><li>Reboot the controller.</li></ul>                                                       |
-|   E7111  |   Error in the axis 3 torque sensor diagnosis by the safety controller   | An error occurred during the axis 3 torque sensor diagnosis. | <ul><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li><li>Reboot the controller.</li></ul>                                                       |
-|   E7112  |   Error in the axis 4 torque sensor diagnosis by the safety controller   | An error occurred during the axis 4 torque sensor diagnosis. | <ul><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li><li>Reboot the controller.</li></ul>                                                       |
-|   E7113  |   Error in the axis 5 torque sensor diagnosis by the safety controller   | An error occurred during the axis 5 torque sensor diagnosis. | <ul><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li><li>Reboot the controller.</li></ul>                                                       |
-|   E7114  |   Error in the axis 6 torque sensor diagnosis by the safety controller   | An error occurred during the axis 6 torque sensor diagnosis. | <ul><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li><li>Reboot the controller.</li></ul>                                                       |
-|   E7115  | Error (2) in the axis 1 torque sensor diagnosis by the safety controller | An error occurred during the axis 1 torque sensor diagnosis. | <ul><li>Check if the tool data match the actual tool.</li><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li></ul><p>Reboot the controller.</p>   |
-|   E7116  | Error (2) in the axis 2 torque sensor diagnosis by the safety controller | An error occurred during the axis 2 torque sensor diagnosis. | <ul><li>Check if the tool data match the actual tool.</li><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li><li>Reboot the controller.</li></ul> |
-|   E7117  | Error (2) in the axis 3 torque sensor diagnosis by the safety controller | An error occurred during the axis 3 torque sensor diagnosis. | <ul><li>Check if the tool data match the actual tool.</li><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li><li>Reboot the controller.</li></ul> |
-|   E7118  | Error (2) in the axis 4 torque sensor diagnosis by the safety controller | An error occurred during the axis 4 torque sensor diagnosis. | <ul><li>Check if the tool data match the actual tool.</li><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li><li>Reboot the controller.</li></ul> |
-|   E7119  | Error (2) in the axis 5 torque sensor diagnosis by the safety controller | An error occurred during the axis 5 torque sensor diagnosis. | <ul><li>Check if the tool data match the actual tool.</li><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li><li>Reboot the controller.</li></ul> |
-|   E7120  | Error (2) in the axis 6 torque sensor diagnosis by the safety controller | An error occurred during the axis 6 torque sensor diagnosis. | <ul><li>Check if the tool data match the actual tool.</li><li>Check the CAN communication cable between the safety controller and the torque sensor.</li><li>Check the torque sensor of the pertaining axis.</li><li>Reboot the controller.</li></ul> |
-# E7170\~E7213
+[__SOURCE](1-cobot-safety-function/1-13-simple-encoder-offset/1-update-mastering-position.md)
+# 1.13.1 Simple Mastering Position Setting
 
-| **Code** |                                **Message**                                |                                      **Cause**                                     | 　　　**Solutions**                                                                                              |
-| :------: | :-----------------------------------------------------------------------: | :--------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------- |
-|   E7170  |               Low temperature error in the safety controller              |                    Low temperature error in Temperature Sensor 1                   | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>  |
-|   E7171  |               Low temperature error in the safety controller              |                    Low temperature error in Temperature Sensor 2                   | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>  |
-|   E7172  |               Low temperature error in the safety controller              |                    Low temperature error in Temperature Sensor 3                   | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>  |
-|   E7173  |              High temperature error in the safety controller              |                   High temperature error in Temperature Sensor 1                   | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>  |
-|   E7174  |              High temperature error in the safety controller              |                   High temperature error in Temperature Sensor 2                   | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7175  |              High temperature error in the safety controller              |                   High temperature error in Temperature Sensor 3                   | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7176  |             Error in the 1.2 V power in the safety controller             |             The 1.2 V power of Channel 0 is below the specified value.             | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7177  |             Error in the 3.3 V power in the safety controller             |             The 3.3 V power of Channel 0 is below the specified value.             | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7178  |             Error in the 3.3 V power in the safety controller             |             The 3.3 V power of Channel 0 is below the specified value.             | <ul><li>Reboot the controller.</li><li> If the error persists, replace the safety controller board.</li></ul> |
-|   E7179  |              Error in the 5 V power in the safety controller              |              The 5 V power of Channel 0 is below the specified value.              | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7180  |              Error in the 24 V power in the safety controller             |              The 24 V power of Channel 0 is below the specified value.             | <ul><li>Reboot the controller.</li><li>Check the 24 V power of the controller.</li></ul>                      |
-|   E7181  |              Error in the 48 V power in the safety controller             |              The 48 V power of Channel 0 is below the specified value.             | <ul><li>Reboot the controller.</li><li>Check the 48 V power of the controller.</li></ul>                      |
-|   E7182  |             Error in the 1.2 V power in the safety controller             |             The 1.2 V power of Channel 1 is below the specified value.             | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7183  |             Error in the 3.3 V power in the safety controller             |             The 3.3 V power of Channel 1 is below the specified value.             | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7184  |             Error in the 3.3 V power in the safety controller             |             The 3.3 V power of Channel 1 is below the specified value.             | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7185  |              Error in the 5 V power in the safety controller              |              The 5 V power of Channel 1 is below the specified value.              | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7186  |              Error in the 24 V power in the safety controller             |              The 24 V power of Channel 1 is below the specified value.             | <ul><li>Reboot the controller.</li><li>Check the 24 V power of the controller.</li></ul>                      |
-|   E7187  |              Error in the 48 V power in the safety controller             |              The 48 V power of Channel 1 is below the specified value.             | <ul><li>Reboot the controller.</li><li>Check the 48 V power of the controller.</li></ul>                      |
-|   E7188  |             Error in the 1.2 V power in the safety controller             |             The 1.2 V power of Channel 0 is above the specified value.             | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7189  |             Error in the 3.3 V power in the safety controller             |             The 3.3 V power of Channel 0 is above the specified value.             | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7190  |             Error in the 3.3 V power in the safety controller             |             The 3.3 V power of Channel 0 is above the specified value.             | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7191  |              Error in the 5 V power in the safety controller              |              The 5 V power of Channel 0 is above the specified value.              | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7192  |              Error in the 24 V power in the safety controller             |              The 24 V power of Channel 0 is above the specified value.             | <ul><li>Reboot the controller.</li><li>Check the 24 V power of the controller.</li></ul>                      |
-|   E7193  |              Error in the 48 V power in the safety controller             |              The 48 V power of Channel 0 is above the specified value.             | <ul><li>Reboot the controller.</li><li>Check the 48 V power of the controller.</li></ul>                      |
-|   E7194  |             Error in the 1.2 V power in the safety controller             |             The 1.2 V power of Channel 1 is above the specified value.             | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7195  |             Error in the 3.3 V power in the safety controller             |             The 3.3 V power of Channel 1 is above the specified value.             | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7196  |             Error in the 3.3 V power in the safety controller             |             The 3.3 V power of Channel 1 is above the specified value.             | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7197  |              Error in the 5 V power in the safety controller              |              The 5 V power of Channel 1 is above the specified value.              | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7198  |              Error in the 24 V power in the safety controller             |              The 24 V power of Channel 1 is above the specified value.             | <ul><li>Reboot the controller.</li><li>Check the 24 V power of the controller.</li></ul>                      |
-|   E7199  |              Error in the 48 V power in the safety controller             |              The 48 V power of Channel 1 is above the specified value.             | <ul><li>Reboot the controller.</li><li>Check the 48 V power of the controller.</li></ul>                      |
-|   E7200  |          Safety controller failed to read the temperature sensor          |                    The temperature sensor value cannot be read.                    | <ul><li>Reboot the controller. I</li><li>f the error persists, replace the safety controller board.</li></ul> |
-|   E7201  |            Safety controller failed to read the voltage sensor            |                          The voltage value cannot be read.                         | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7202  |      Error in the program sequence diagnosis in the safety controller     | The operating sequence of the safety program in the safety controller is abnormal. | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7203  |      Error in the program sequence diagnosis in the safety controller     | The operating sequence of the safety program in the safety controller is abnormal. | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7204  |      Error in the program sequence diagnosis in the safety controller     | The operating sequence of the safety program in the safety controller is abnormal. | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>  |
-|   E7205  |      Error in the program sequence diagnosis in the safety controller     | The operating sequence of the safety program in the safety controller is abnormal. | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7206  |      Error in the program sequence diagnosis in the safety controller     | The operating sequence of the safety program in the safety controller is abnormal. | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7207  |      Error in the program sequence diagnosis in the safety controller     | The operating sequence of the safety program in the safety controller is abnormal. | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7210  | Error in the interchannel status synchronization in the safety controller |                        Two channels have different statuses.                       | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7211  |                Error in the status of the safety controller               |                             It has an undefined status.                            | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7212  |               Error in the channels in the safety controller              |                     The IDs of the two channels are incorrect.                     | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-|   E7213  |       Interchannel synchronization timeout in the safety controller       |                Two channels cannot be synchronized with each other.                | <ul><li>Reboot the controller. </li><li>If the error persists, replace the safety controller board.</li></ul> |
-# E7250\~E7348
+The robot requires mastering at a specific position; this section explains how to designate that position. Since the robot moves when the mastering position is set, care must be taken to avoid collisions with people or objects in the vicinity. Note that while there are various possible mastering positions, the system selects a position close to the robot's current posture.
 
-| **Code** |                                  **Message**                                  |                                     **Cause**                                    | 　　　**Solutions**                                                                                                                             |
-| :------: | :---------------------------------------------------------------------------: | :------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------- |
-|   E7250  |   Error in the interchannel status synchronization in the safety controller   |                       Two channels have different statuses.                      | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7251  |                  Error in the status of the safety controller                 |                            It has an undefined status.                           | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7252  |                 Error in the channels in the safety controller                |                    The IDs of the two channels are incorrect.                    | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7253  |         Interchannel synchronization timeout in the safety controller         |               Two channels cannot be synchronized with each other.               | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7761  |               Error in the tool number in the safety controller               |         An abnormal tool number has been received from the main computer.        | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7301  |           Error in the safety communication in the safety controller          |                Error in the communication with the EtherCAT slave                | <ul><li>Reboot the controller.</li><li>Check the EtherCAT communication cable between the main computer and the safety controller.</li></ul> |
-|   E7302  |               Error in the SDO subindex in the safety controller              |     <p>Abnormal subindex during</p><p>the initialization data extraction</p>     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7303  |             Safety communication timeout in the safety controller             |                Error in the communication with the EtherCAT slave                | <ul><li>Reboot the controller.</li><li>Check the EtherCAT communication cable between the main computer and the safety controller.</li></ul> |
-|   E7304  |           Error in the safety communication in the safety controller          |              Abnormal header information on the communication frame              | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7305  |            Safety communication CRC error in the safety controller            |                       CRC error of the communication frame                       | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7306  |          Safety communication subindex error in the safety controller         |       The subindex of the communication frame exceeded the specified range.      | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7307  |           Error in the safety communication in the safety controller          |                   Abnormal length information on the SDO frame                   | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7308  |           Error in the safety communication in the safety controller          | A wrong factor was transmitted during the communication with the EtherCAT slave. | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7309  |           Error in the safety communication in the safety controller          |                  Failure in object writing in the EtherCAT slave                 | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7310  |           Error in the safety communication in the safety controller          |      Data of an identical serial number was received from the main computer.     | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7311  |             Safety communication timeout in the safety controller             |                Cyclic communication timeout with the main computer               | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller board.</li></ul>                                 |
-|   E7321  |               Parameter range exceeded in the safety controller               |                A condition parameter exceeded the specified range.               | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7326  |               Parameter range exceeded in the safety controller               |           The Cartesian space 1 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7327  |               Parameter range exceeded in the safety controller               |           The Cartesian space 2 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7328  |               Parameter range exceeded in the safety controller               |           The Cartesian space 3 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7329  |               Parameter range exceeded in the safety controller               |           The Cartesian space 4 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7330  |               Parameter range exceeded in the safety controller               |           The Cartesian space 5 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7331  |               Parameter range exceeded in the safety controller               |           The Cartesian space 6 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7332  |               Parameter range exceeded in the safety controller               |           The Cartesian space 7 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7333  |               Parameter range exceeded in the safety controller               |           The Cartesian space 8 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7334  |               Parameter range exceeded in the safety controller               |           The Cartesian space 9 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7335  |               Parameter range exceeded in the safety controller               |          The Cartesian space 10 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7336  |               Parameter range exceeded in the safety controller               |          The Cartesian space 11 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7337  |               Parameter range exceeded in the safety controller               |          The Cartesian space 12 parameter exceeded the specified range.          | Check whether the safety parameter setting is in the specified range.                                                                        |
-|   E7338  |        Failure in the parameter initialization in the safety controller       |                   An overlapping safety parameter was received.                  | Reboot the controller.                                                                                                                       |
-|   E7339  | Failure in the kinematics information initialization in the safety controller |      Overlapping apparatus information was received from the main computer.      | Reboot the controller.                                                                                                                       |
-|   E7340  |   Failure in the dynamic information initialization in the safety controller  |       Overlapping dynamic information was received from the main computer.       | Reboot the controller.                                                                                                                       |
-|   E7341  |               Parameter range of the safety controller exceeded               |                        Tool parameter range was exceeded.                        | Check that the set tool parameters are within the range.                                                                                     |
-|   E7342  |               Parameter range of the safety controller exceeded               |                    Robot layout parameter range was exceeded.                    | Check that the set safety parameters are within the range.                                                                                   |
-|   E7343  |               Parameter range of the safety controller exceeded               |            Axial applied weight parameter range (S-axis) was exceeded.           | Check that the set safety parameters are within the range.                                                                                   |
-|   E7344  |               Parameter range of the safety controller exceeded               |            Axial applied weight parameter range (H-axis) was exceeded.           | Check that the set safety parameters are within the range.                                                                                   |
-|   E7345  |               Parameter range of the safety controller exceeded               |            Axial applied weight parameter range (V-axis) was exceeded.           | Check that the set safety parameters are within the range.                                                                                   |
-|   E7346  |               Parameter range of the safety controller exceeded               |                     Safety I/O parameter range was exceeded.                     | Check that the set safety parameters are within the range.                                                                                   |
-|   E7347  |               Parameter range of the safety controller exceeded               |                     Safety stop parameter range was exceeded.                    | Check that the set safety parameters are within the range.                                                                                   |
-|   E7348  |               Parameter range of the safety controller exceeded               |                       Default parameter range was exceeded.                      | Check that the set safety parameters are within the range.                                                                                   |
-# E7403\~E7711
+-  **\[system]** > **\[11: Cobot System ]** > **\[11: Simple Encoder Offest ]** Please touch the menu.
+- The 'Mastering Position' section displays 'Secondary Encoder' and 'Primary Encoder' values, representing the encoder readings for each joint when the robot is at the mastering position.
+- To register a new mastering position, touch the 'Move to New Position' button at the bottom.
+    - When the button is touched, the robot moves from its current location to the mastering position.
+    - Keep touching the button until the movement is complete; the robot will stop if you release it.
+    - Once the movement is complete, touch the 'Update Position' button.
+    - Touch the 'Save' button.
 
-| **Code** |                                             **Message**                                            |                                              **Cause**                                             | 　　　**Solutions**                                                                                                                                                                          |
-| :------: | :------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   E7405  |              The configuration certificate file of the collaborative robot is missing.             |  A failure occurred in reading the certificate file of the collaborative robot configuration file. | Set all the configurations of the collaborative robot again.                                                                                                                              |
-|   E7407  |          The type of the configuration certificate of the collaborative robot is invalid.          |      The type of the certificate file is invalid. The file may have been modified arbitrarily.     | Set all the configurations of the collaborative robot again.                                                                                                                              |
-|   E7409  |        The code of the configuration certificate of the collaborative robot does not match.        |      The code of the certificate file is invalid. The file may have been modified arbitrarily.     | Set all the configurations of the collaborative robot again.                                                                                                                              |
-|   E7501  |             Error in the communication with the safety board of the collaborative robot            |         Communication with the safety board of the collaborative robot is not established.         | Reboot the controller.                                                                                                                                                                    |
-|   E7601  | Failure in the reading of version information on the axis 1 torque sensor in the safety controller | Failure in the reading of version information on the axis 1 torque sensor in the safety controller | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the torque sensors of axes 1 through 6.</li></ul> |
-|   E7602  | Failure in the reading of version information on the axis 2 torque sensor in the safety controller | Failure in the reading of version information on the axis 2 torque sensor in the safety controller | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the torque sensors of axes 1 through 6.</li></ul> |
-|   E7603  | Failure in the reading of version information on the axis 3 torque sensor in the safety controller | Failure in the reading of version information on the axis 3 torque sensor in the safety controller | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the torque sensors of axes 1 through 6.</li></ul> |
-|   E7604  | Failure in the reading of version information on the axis 4 torque sensor in the safety controller | Failure in the reading of version information on the axis 4 torque sensor in the safety controller | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the torque sensors of axes 1 through 6.</li></ul> |
-|   E7605  | Failure in the reading of version information on the axis 5 torque sensor in the safety controller | Failure in the reading of version information on the axis 5 torque sensor in the safety controller | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the torque sensors of axes 1 through 6.</li></ul> |
-|   E7606  | Failure in the reading of version information on the axis 6 torque sensor in the safety controller | Failure in the reading of version information on the axis 6 torque sensor in the safety controller | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the torque sensors of axes 1 through 6.</li></ul> |
-|   E7607  |  Failure in the reading of the version information on the axis 1 encoder in the safety controller  |  Failure in the reading of the version information on the axis 1 encoder in the safety controller  | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the encoders of axes 1 through 6.</li></ul>       |
-|   E7608  |  Failure in the reading of the version information on the axis 2 encoder in the safety controller  |  Failure in the reading of the version information on the axis 2 encoder in the safety controller  | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the encoders of axes 1 through 6.</li></ul>       |
-|   E7609  |  Failure in the reading of the version information on the axis 3 encoder in the safety controller  |  Failure in the reading of the version information on the axis 3 encoder in the safety controller  | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the encoders of axes 1 through 6.</li></ul>       |
-|   E7610  |  Failure in the reading of the version information on the axis 4 encoder in the safety controller  |  Failure in the reading of the version information on the axis 4 encoder in the safety controller  | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the encoders of axes 1 through 6.</li></ul>       |
-|   E7611  |  Failure in the reading of the version information on the axis 5 encoder in the safety controller  |  Failure in the reading of the version information on the axis 5 encoder in the safety controller  | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the encoders of axes 1 through 6.</li></ul>       |
-|   E7612  |  Failure in the reading of the version information on the axis 6 encoder in the safety controller  |  Failure in the reading of the version information on the axis 6 encoder in the safety controller  | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li><li>Check the CAN ID settings of the encoders of axes 1 through 6.</li></ul>       |
-|   E7613  |             Communication timeout of the axis 1 torque sensor in the safety controller             |           CAN communication timeout of the axis 1 torque sensor in the safety controller           | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7614  |             Communication timeout of the axis 2 torque sensor in the safety controller             |           CAN communication timeout of the axis 2 torque sensor in the safety controller           | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7615  |             Communication timeout of the axis 3 torque sensor in the safety controller             |           CAN communication timeout of the axis 3 torque sensor in the safety controller           | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7616  |             Communication timeout of the axis 4 torque sensor in the safety controller             |           CAN communication timeout of the axis 4 torque sensor in the safety controller           | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7617  |             Communication timeout of the axis 5 torque sensor in the safety controller             |           CAN communication timeout of the axis 5 torque sensor in the safety controller           | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7618  |             Communication timeout of the axis 6 torque sensor in the safety controller             |           CAN communication timeout of the axis 6 torque sensor in the safety controller           | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7619  |                Communication timeout of the axis 1 encoder in the safety controller                |              CAN communication timeout of the axis 1 encoder in the safety controller              | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7620  |                Communication timeout of the axis 2 encoder in the safety controller                |              CAN communication timeout of the axis 2 encoder in the safety controller              | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7621  |                Communication timeout of the axis 3 encoder in the safety controller                |              CAN communication timeout of the axis 3 encoder in the safety controller              | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7622  |                Communication timeout of the axis 4 encoder in the safety controller                |              CAN communication timeout of the axis 4 encoder in the safety controller              | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7623  |                Communication timeout of the axis 5 encoder in the safety controller                |              CAN communication timeout of the axis 5 encoder in the safety controller              | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7624  |                Communication timeout of the axis 6 encoder in the safety controller                |              CAN communication timeout of the axis 6 encoder in the safety controller              | <ul><li>Reboot the controller.</li><li>Check the CAN communication cable of the robot manipulator.</li></ul>                                                                              |
-|   E7701  |                                  TCP speed violation (%s \[mm/s])                                  |                            The TCP speed violated the safety condition.                            | <ul><li>Check the specified values in the menu for setting the conditions of the safety functions.</li><li>Check the robot’s TCP speed in the edited program.</li></ul>                   |
-|   E7702  |                                    TCP force violation (%s \[N])                                   |                            The TCP force violated the safety condition.                            | <ul><li>Check the specified values in the menu for setting the conditions of the safety functions.</li><li>Check the tool number and data.</li></ul>                                      |
-|   E7703  |                              TCP rotating angle violation (%s \[deg])                              |                        The TCP rotating angle violated the safety condition.                       | <ul><li>Check the specified values in the menu for setting the conditions of the safety functions.</li><li>Check the tool’s orientation in the edited program.</li></ul>                  |
-|   E7704  |                              Robot’s power factor violation (%s \[N])                              |                       The robot’s power factor violated the safety condition.                      | <ul><li>Check the specified values in the menu for setting the conditions of the safety functions.</li><li>Check the speeds and positions of the axes in the edited program.</li></ul>    |
-|   E7705  |                              Robot’s momentum violation (%s \[kg m/s])                             |                         The robot’s momentum violated the safety condition.                        | <ul><li>Check the specified values in the menu for setting the conditions of the safety functions.</li><li>Check the robot’s position and TCP speed in the edited program.</li></ul>      |
-|   E7706  |                                    Robot’s safety stop violation                                   |                            The robot’s motion was detected in stop mode.                           | Check if the brakes of the axes function normally.                                                                                                                                        |
-|   E7707  |                              A collision was detected. – SCM (%s axis)                             |                              A collision with the robot was detected.                              | <ul><li>Identify the collision and remove its causes.</li><li>Adjust the collision detection level.</li></ul>                                                                             |
-|   E7708  |                    A collision with the collaborative robot was detected. – Main                   |                         A collision occurred because of an external factor.                        | <ul><li>Identify the collision and remove its causes.</li><li>Adjust the collision detection level.</li></ul>                                                                             |
-|   E7711  |                     TCP position violation of safety space (Cartesian space %s)                    |                              The TCP position exceeded a safety space.                             | <ul><li>Move to the safety space status monitoring window.</li><li>Select the recovery mode button to change the mode.</li><li>Move the robot to a safe space.</li></ul>                  |
-# E7731\~E7905
+    ![](../../_assets/simple_encoder_offset_1.png)
 
-| **Code** |                                      **Message**                                      |                                      **Cause**                                      | 　　　**Solutions**                                                                                                                                                                                   |
-| :------: | :-----------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   E7731  |                      Axis 1 violation of safety space (%s \[deg])                     |              The position of axis 1 exceeded a specified safety space.              | <ul><li>Move to the safety space status monitoring window.</li><li>Select the recovery mode button to change the mode.</li><li>Move the robot to a safe space.</li></ul>                           |
-|   E7732  |                      Axis 2 violation of safety space (%s \[deg])                     |              The position of axis 2 exceeded a specified safety space.              | <ul><li>Move to the safety space status monitoring window.</li><li>Select the recovery mode button to change the mode.</li><li>Move the robot to a safe space.</li></ul>                           |
-|   E7733  |                      Axis 3 violation of safety space (%s \[deg])                     |              The position of axis 3 exceeded a specified safety space.              | <ul><li>Move to the safety space status monitoring window.</li><li>Select the recovery mode button to change the mode.</li><li>Move the robot to a safe space.</li></ul>                           |
-|   E7734  |                      Axis 4 violation of safety space (%s \[deg])                     |              The position of axis 4 exceeded a specified safety space.              | <ul><li>Move to the safety space status monitoring window.</li><li>Select the recovery mode button to change the mode.</li><li>Move the robot to a safe space.</li></ul>                           |
-|   E7735  |                      Axis 5 violation of safety space (%s \[deg])                     |              The position of axis 5 exceeded a specified safety space.              | <ul><li>Move to the safety space status monitoring window.</li><li>Select the recovery mode button to change the mode.</li><li>Move the robot to a safe space.</li></ul>                           |
-|   E7736  |                      Axis 6 violation of safety space (%s \[deg])                     |              The position of axis 6 exceeded a specified safety space.              | <ul><li>Move to the safety space status monitoring window.</li><li>Select the recovery mode button to change the mode.</li><li>Move the robot to a safe space.</li></ul>                           |
-|   E7741  |                      Axis 1 violation of safe speed (%s \[deg/s])                     |             The speed of axis 1 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the speeds of the axes.</li><li>Check the speeds in the edited program.</li></ul>                                    |
-|   E7742  |                      Axis 2 violation of safe speed (%s \[deg/s])                     |             The speed of axis 2 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the speeds of the axes.</li><li>Check the speeds in the edited program.</li></ul>                                    |
-|   E7743  |                      Axis 3 violation of safe speed (%s \[deg/s])                     |             The speed of axis 3 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the speeds of the axes.</li><li>Check the speeds in the edited program.</li></ul>                                    |
-|   E7744  |                      Axis 4 violation of safe speed (%s \[deg/s])                     |             The speed of axis 4 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the speeds of the axes.</li><li>Check the speeds in the edited program.</li></ul>                                    |
-|   E7745  |                      Axis 5 violation of safe speed (%s \[deg/s])                     |             The speed of axis 5 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the speeds of the axes.</li><li>Check the speeds in the edited program.</li></ul>                                    |
-|   E7746  |                      Axis 6 violation of safe speed (%s \[deg/s])                     |             The speed of axis 6 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the speeds of the axes.</li><li>Check the speeds in the edited program.</li></ul>                                    |
-|   E7751  |                         Axis 1 violation of torque (%s \[Nm])                         |            The torque of axis 1 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the torques of the axes.</li><li>In the safety function parameters, check the current torques of the axes.</li></ul> |
-|   E7752  |                         Axis 2 violation of torque (%s \[Nm])                         |            The torque of axis 2 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the torques of the axes.</li><li>In the safety function parameters, check the current torques of the axes.</li></ul> |
-|   E7753  |                         Axis 3 violation of torque (%s \[Nm])                         |            The torque of axis 3 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the torques of the axes.</li><li>In the safety function parameters, check the current torques of the axes.</li></ul> |
-|   E7754  |                         Axis 4 violation of torque (%s \[Nm])                         |            The torque of axis 4 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the torques of the axes.</li><li>In the safety function parameters, check the current torques of the axes.</li></ul> |
-|   E7755  |                         Axis 5 violation of torque (%s \[Nm])                         |            The torque of axis 5 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the torques of the axes.</li><li>In the safety function parameters, check the current torques of the axes.</li></ul> |
-|   E7756  |                         Axis 6 violation of torque (%s \[Nm])                         |            The torque of axis 6 exceeded the specified safety condition.            | <ul><li>In the menu for setting the conditions of the safety functions, check the torques of the axes.</li><li>In the safety function parameters, check the current torques of the axes.</li></ul> |
-|   E7802  |                   Error in the mode switch in the safety controller                   |                          Abnormal mode switch signal input                          | Check the TP cable.                                                                                                                                                                                |
-|   E7804  |            Error in the interchannel communication in the safety controller           |                   Communication error between the two safety CPUs                   | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller.</li></ul>                                                                                             |
-|   E7805  | Error in the diagnosis of the signal for servo power control by the safety controller |           Error in the feedback of the STO signal for servo power control           | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller.</li></ul>                                                                                             |
-|   E7806  |             Error in the TP emergency stop signal in the safety controller            |                     Error in the emergency stop signal of the TP                    | Check the TP cable.                                                                                                                                                                                |
-|   E7807  |            Error in the TP enabling switch signal in the safety controller            |                    Error in the enabling switch signal of the TP                    | Check the TP cable.                                                                                                                                                                                |
-|   E7808  |           Error in the external safeguarding signal in the safety controller          |                      Error in the external safeguarding signal                      | Check the external safeguarding signal cable.                                                                                                                                                      |
-|   E7809  |          Error in the external emergency stop signal in the safety controller         |                     Error in the external emergency stop signal                     | Check the external emergency stop signal cable.                                                                                                                                                    |
-|   E7811  |            Mismatch of the TP mode switch signals in the safety controller            |               Mismatch between the dual signals of the TP mode switch               | Check the TP cable.                                                                                                                                                                                |
-|   E7812  |          Mismatch of the TP enabling switch signals in the safety controller          |             Mismatch between the dual signals of the TP enabling switch             | Check the TP cable.                                                                                                                                                                                |
-|   E7813  |        Mismatch of the external emergency stop signals in the safety controller       |          Mismatch between the external emergency stop dual-channel signals          | Check the external emergency stop cable.                                                                                                                                                           |
-|   E7814  |         Mismatch of the external safeguarding signals in the safety controller        |           Mismatch between the external safeguarding dual-channel signals           | Check the external safeguarding cable.                                                                                                                                                             |
-|   E7815  |           Mismatch of the TP emergency stop signals in the safety controller          |             Mismatch between the TP emergency stop dual-channel signals             | Check the TP cable.                                                                                                                                                                                |
-|   E7816  |         Mismatch of the safety input signals (no. 0) in the safety controller         |             Mismatch between the safety input no. 0 dual-channel signals            | Check the input signal cable.                                                                                                                                                                      |
-|   E7817  |         Mismatch of the safety input signals (no. 1) in the safety controller         |             Mismatch between the safety input no.1 dual-channel signals             | Check the input signal cable.                                                                                                                                                                      |
-|   E7818  |         Mismatch of the safety input signals (no. 2) in the safety controller         |             Mismatch between the safety input no. 2 dual-channel signals            | Check the input signal cable.                                                                                                                                                                      |
-|   E7819  |         Mismatch of the safety input signals (no. 3) in the safety controller         |             Mismatch between the safety input no. 3 dual-channel signals            | Check the input signal cable.                                                                                                                                                                      |
-|   E7821  |           Error in the safety output signal setting in the safety controller          |                   Abnormal usage setting of safety output signals                   | Check the output signal assignments of the safety parameters.                                                                                                                                      |
-|   E7822  |           Error in the safety input signal setting in the safety controller           |               Mismatch of the usages of the dual safety input signals               | Check the input signal assignments of the safety parameters.                                                                                                                                       |
-|   E7823  |           Error in the safety output signal setting in the safety controller          |             Mismatch of the usage settings of dual safety output signals            | Check the output signal assignments of the safety parameters.                                                                                                                                      |
-|   E7825  |           Error in the TP enabling signal diagnosis in the safety controller          |         Failure in the 0 V diagnosis during the TP enabling signal diagnosis        | Check the TP cable.                                                                                                                                                                                |
-|   E7826  |        Error in the TP emergency stop signal diagnosis in the safety controller       |      Failure in the 0 V diagnosis during the TP emergency stop signal diagnosis     | Check the TP cable.                                                                                                                                                                                |
-|   E7827  |           Error in the TP enabling signal diagnosis in the safety controller          |    Failure in the high voltage diagnosis during the TP enabling signal diagnosis    | Check the TP cable.                                                                                                                                                                                |
-|   E7828  |        Error in the TP emergency stop signal diagnosis in the safety controller       | Failure in the high voltage diagnosis during the TP emergency stop signal diagnosis | Check the TP cable.                                                                                                                                                                                |
-|   E7829  |                      Error in the safety output signal diagnosis                      |                      Error in the safety output signal feedback                     | Check the output signal cable.                                                                                                                                                                     |
-|   E7830  |                     Error in the direct teaching switch diagnosis                     |           Mismatch between the direct teaching switch dual-channel signals          | <ul><li>Check the direct teaching switches.</li><li>Reboot the controller.</li><li>If the error persists, replace the safety controller.</li></ul>                                                 |
-|   E7901  |      Error in the communication between the safety CPUs in the safety controller      |            Error in the communication parameters between the safety CPUs            | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller.</li></ul>                                                                                             |
-|   E7902  |      Error in the communication between the safety CPUs in the safety controller      |              General error in the communication between the safety CPUs             | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller.</li></ul>                                                                                             |
-|   E7903  |         Communication timeout between the safety CPUs in the safety controller        |        Communication timeout between the safety CPUs in the safety controller       | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller.</li></ul>                                                                                             |
-|   E7904  |      Error in the communication between the safety CPUs in the safety controller      |    Error in the communication TX between the safety CPUs in the safety controller   | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller.</li></ul>                                                                                             |
-|   E7905  |      Error in the communication between the safety CPUs in the safety controller      |    Error in the communication TX between the safety CPUs in the safety controller   | <ul><li>Reboot the controller.</li><li>If the error persists, replace the safety controller.</li></ul>                                                                                             |
+{% hint style="warning" %}
+**\[Warning]**
+* Tapping the 'Update Position' button without moving to the mastering position will not update the mastering position.
+* You must move to the mastering position, tap the 'Update Position' button, and save the setting to establish the new mastering position.
+* You must set a new mastering position in the following cases. Using the previously registered mastering position may result in improper mastering or accidents.
+    - Secondary encoder replacement
+    - Encoder initialization in the  **\[system]** > **\[3: Robot Parameters]** > **\[4: Encoder Offset]** menu
+{% endhint %}
+[__SOURCE](1-cobot-safety-function/1-13-simple-encoder-offset/2-update-encoder-offset.md)
+# 1.13.2 Simple Mastering
+
+This section explains how to initialize (master) the encoder offset after the robot moves to the designated mastering position. Since the robot moves to the mastering position, take care to avoid collisions with people or objects in the surrounding area.
+
+- **\[system]** > **\[11: Cobot System ]** > **\[11: Simple Encoder Offest ]** Please touch the menu.
+- The 'Current Position' section displays the 'Secondary Encoder' and 'Primary Encoder' values ​​for each joint at the robot's current location.
+- Touch the 'Move to Position' button at the bottom to move the robot to the mastering position.
+    - The robot moves to the mastering position when the button is touched.
+    - Keep touching the button until the movement is complete; the robot will stop if you release it.
+    - Once the movement is complete, touch the 'Full Reset' button.
+    - Touch the 'Save' button.
+    - Reboot the controller.
+
+    ![](../../_assets/simple_encoder_offset_1.png)
+
+{% hint style="warning" %}
+**\[Warning]**
+    - A mastering position must be registered to use the simple Mastering function.
+    - Touching the 'Reset All' button without moving to the mastering position will not reset the encoder offset.
+    - You must save the settings after performing the encoder offset to update it.
+    - Frequent use of the simple Encoder Offset function degrades mastering performance; please use it only when necessary.
+{% endhint %}    
+[__SOURCE](attachment/README.md)
 # Attachment
 
+
+[__SOURCE](attachment/rules-criteria-and-public-notice.md)
 # The Rules on the Criteria for Occupational Safety and Health, and the Public Notice of Safety Inspec
 
 {% embed url="https://hyundai-robotics.gitbook.io/rules-on-occupational-safety-and-health-standards/v/rules-english" %}
+
+[__SOURCE](warranty.md)
 # Warranty
 
 {% embed url="https://hyundai-robotics.gitbook.io/quality-assurance/v/qa-english" %}
