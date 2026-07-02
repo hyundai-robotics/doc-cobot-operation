@@ -1187,10 +1187,10 @@ This section explains how to initialize (master) the encoder offset after the ro
 
 {% hint style="warning" %}
 **\[Warning]**
-    - A mastering position must be registered to use the simple Mastering function.
-    - Touching the 'Reset All' button without moving to the mastering position will not reset the encoder offset.
-    - You must save the settings after performing the encoder offset to update it.
-    - Frequent use of the simple Encoder Offset function degrades mastering performance; please use it only when necessary.
+* A mastering position must be registered to use the simple Mastering function.
+* Touching the 'Reset All' button without moving to the mastering position will not reset the encoder offset.
+* You must save the settings after performing the encoder offset to update it.
+* Frequent use of the simple Encoder Offset function degrades mastering performance; please use it only when necessary.
 {% endhint %}    
 [__SOURCE](attachment/README.md)
 # Attachment
