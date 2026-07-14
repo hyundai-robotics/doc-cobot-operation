@@ -2,7 +2,7 @@
 
 1.  Please set the driving mode to manual.
 
-2.  **\[System]** > **\[11: Cbbot System > Direct Teaching]** Please touch the menu.
+2.  **\[System]** Button > **\[11: Cbbot System > Direct Teaching]** Please touch the menu.
 
 
 3. After configuring the settings and options for the collaborative robot's direct teaching function, touch the **[OK]** button.

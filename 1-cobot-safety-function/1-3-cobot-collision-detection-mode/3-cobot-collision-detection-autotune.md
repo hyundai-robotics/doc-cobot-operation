@@ -2,7 +2,7 @@
 
 1.  Please set the driving mode to manual.
 
-2.  **\[system]**  > **\[11: Cobot System  > 5: Collision Dectection Threshold]** Please touch the menu.
+2.  **\[system]** Button > **\[11: Cobot System  > 5: Collision Dectection Threshold]** Please touch the menu.
 
 3.  **\[Threshold Init]**  Please touch the button.
 
