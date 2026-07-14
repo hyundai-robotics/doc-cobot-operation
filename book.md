@@ -21,19 +21,19 @@
 
 ### <mark style="color:green;">충돌감지</mark>&#xD;
 
-로봇에 외력이 가해져 허용치를 초과하는 경우 사용자가 설정한 안전 정지 수행합니다.
+로봇이 동작 중 외부로부터 충격이 가해져 설정된 임계 값을 초과하는 경우 사용자 안전을 위해 정지합니다.
 
 *   **임계값**
 
-    어떤 동작이나 상태가 바뀌는 기준이 되는 값을 의미합니다.
+    외부로부터 충격이 가해졌다고 판단되는 기준 값입니다.
 
 ### <mark style="color:green;">직접교시</mark>&#xD;
 
-작업자가 로봇을 손으로 직접 움직여 원하는 경로와 자세를 가르치는 방식입니다.
+작업자가 로봇을 손으로 직접 움직여 원하는 경로와 자세로 이동하여 교시하는 방식입니다.
 
 *   **구속 모션**
 
-    협동로봇의 직접교시 기능 중 하나로, 로봇이 특정 방향이나 특정 축으로만 움직이도록 제한한 상태에서 교시하는 기능입니다.
+    협동로봇의 직접교시 기능 중 하나로, 로봇이 직교 좌표계의 특정 방향이나 특정 축으로만 움직이도록 제한한 상태에서 교시하는 기능입니다.
 
 *   **콕핏**
 
@@ -63,29 +63,29 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 [__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/1-safety-rated-monitored-stop.md)
 # 1.2.1 안전 정격 감시 정지
 
-사람이 작업 공간 내 진입 시 로봇의 작동이 정지합니다. 외부 감시 장치를 설치하고 이를 안전 제어 모듈(SCM: Safety Control Module)에 연결하거나 로봇내 레이더 모듈을 설정하여 사용하십시오.
+사람이 작업 공간 내 진입 시 로봇의 작동이 정지합니다. 외부 감시 장치를 설치하고 이를 안전 제어 모듈(SCM: Safety Control Module)에 연결하거나 로봇에 설치된 레이더 센서를 사용하십시오.
 
 * 외부 장치에 안전 입력을 연결할 경우에는 안전 I/O신호 설정에서 정지 방법(정지 0, 정지 1, 정지 2)을 설정해야 합니다.
 * 안전 가드 및 외부 비상정지를 연결한 경우에는 국제 또는 해당 지역 규제에 부합하는 정지 방법을 설정해야 합니다.
 
 관련 기능 설정에 대한 참조 정보는 다음과 같습니다.
 
-* 레이더 모듈 설정에 대한 자세한 내용은 ([레이더 모듈 기능설명서 - SafeSpace2.0](https://github.com/hyundai-robotics/doc-Object-Detection-System#)) 내 ([8.1 구성 절차]( ))를 참조하십시오.
-* 안전 I/O 신호 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)) 내 ([3.3.4 안전 입출력](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7))를 참조하십시오.
-* 안전 정지 기능 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)) 내 ([3.3.1.2 정지 설정](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/1-general-condition/2-safe-stop?cont_model=Hi7))을 참조하십시오.
+* 레이더 모듈 설정에 대한 자세한 내용은 ([레이더 모듈 기능설명서 - SafeSpace2.0](https://github.com/hyundai-robotics/doc-Object-Detection-System#?cont_model=${cont_model})) 내 ([8.1 구성 절차]( ))를 참조하십시오.
+* 안전 I/O 신호 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.4 안전 입출력](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7?cont_model=${cont_model}))를 참조하십시오.
+* 안전 정지 기능 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.1.2 정지 설정](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/1-general-condition/2-safe-stop?cont_model=Hi7?cont_model=${cont_model}))을 참조하십시오.
 
 [__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/2-speed-separation-monitoring.md)
 # 1.2.2 속도 및 위치 감시
 
 로봇은 지정된 거리 및 속도 내에서 작동합니다.
 
-속도 및 위치 감시 모드는 사람의 위치 및 속도를 감지할 수 있는 센서를 이용해 로봇과 사람 간의 거리와 상대 속도에 비례하여 로봇의 구동 속도를 제어하는 모드로 거리를 감지하는 외부 센서나 레이더 모듈 입력에 대해 감속 모드를 사용할 수 있습니다.
+속도 및 위치 감시 모드는 사람의 위치 및 속도를 감지할 수 있는 센서를 이용해 로봇과 사람 간의 거리에 따라 로봇의 구동 속도를 제어하는 모드로, 거리를 감지하는 외부 센서나 로봇에 설치된 레이더 센서를 사용할 수 있습니다.
 
 속도 및 위치 감시 모드 사용을 위한 참조 정보는 다음과 같습니다.
 
-* 레이더 모듈 설정에 대한 자세한 내용은 ([레이더 모듈 기능설명서 - SafeSpace2.0](https://github.com/hyundai-robotics/doc-Object-Detection-System#)) 내 ([8.1 구성 절차]( ))를 참조하십시오.
-* 로봇 안전 조건 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)) 내 ([3.3.2.6 Re plan 설정](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/2-robot-safety-condition/6-re-plan?cont_model=Hi7))을 참조하십시오.
-* 안전 I/O 신호 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)) 내 ([3.3.4 안전 입출력](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7))를 참조하십시오.
+* 레이더 모듈 설정에 대한 자세한 내용은 ([레이더 모듈 기능설명서 - SafeSpace2.0](https://github.com/hyundai-robotics/doc-Object-Detection-System#?cont_model=${cont_model})) 내 ([8.1 구성 절차]( ))를 참조하십시오.
+* 로봇 안전 조건 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.2.6 Re plan 설정](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/2-robot-safety-condition/6-re-plan?cont_model=Hi7?cont_model=${cont_model}))을 참조하십시오.
+* 안전 I/O 신호 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.4 안전 입출력](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7?cont_model=${cont_model}))를 참조하십시오.
 
 [__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/3-power-force-limit.md)
 # 1.2.3 동력 및 힘 제한
@@ -94,11 +94,11 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 
 충돌 감지 기능의 경우 충돌 부위를 설정하여 충돌을 감지하고, TCP 힘 제한의 경우 TCP에 가해지는 외부 힘(N)을 제한합니다. 또한 파워(W)와 모멘텀(kg·m/s)을 설정하여 로봇의 동력을 제한할 수 있습니다.
 
-* 로봇 안전 조건 설정중 파워와 모멘텀 감시 및 동력 제한에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)) 내 ([3.3.2 로봇 감시 기능](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/2-robot-safety-condition/README?cont_model=Hi7))을 참조하십시오.
+* 로봇 안전 조건 설정중 파워와 모멘텀 감시 및 동력 제한에 대한 자세한 내용은 ([사용자 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model} )) 내 ([3.3.2 로봇 감시 기능](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/2-robot-safety-condition/README?cont_model=Hi7?cont_model=${cont_model} ))을 참조하십시오.
 * 충돌 감지 기능에 대한 자세한 내용은 **(1.2 협동로봇 충돌감지 모드)** 를 참조하십시오
 
 [__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/4-hand-guid.md)
-# 1.2.3 핸드가이드
+# 1.2.4 핸드가이드
 
 작업자가 로봇을 손으로 직접 움직여 위치나 경로를 교시할 수 있도록 하는 수동 조작 모드입니다. 로봇의 힘 제어 기능을 이용해 사람이 가하는 힘을 감지하고, 그 방향으로 로봇이 부드럽게 움직입니다. 복잡한 프로그래밍 없이도 작업을 설정할 수 있습니다.
 
@@ -139,7 +139,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 {% endhint %}
 
 [__SOURCE](1-cobot-safety-function/1-3-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
-# 1.2.2 충돌검지 로봇 명령어(cobot_coldet)
+# 1.2.2 충돌감지 로봇 명령어(cobot_coldet)
 
 ### 설명
 
