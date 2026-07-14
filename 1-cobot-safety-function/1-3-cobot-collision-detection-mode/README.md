@@ -1,4 +1,4 @@
-# 1.11 Collaborative robot collision detection mode
+# 1.3 Collaborative robot collision detection mode
 
 The collision detection function serves as a safety mechanism when the robot operates under abnormal conditions or exhibits irregular behavior. You can configure the detection mode and run auto-tuning to automatically set the optimal collision detection sensitivity for the current task.
 

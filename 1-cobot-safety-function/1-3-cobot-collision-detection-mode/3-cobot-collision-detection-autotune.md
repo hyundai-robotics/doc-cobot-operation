@@ -1,10 +1,8 @@
-﻿# 1.11.3 Collaborative Robot Collision Detection Auto-Tuning Mode
+# 1.3.3 Collaborative Robot Collision Detection Auto-Tuning Mode
 
 1.  Please set the driving mode to manual.
 
-
 2.  **\[system]**  > **\[11: Cobot System ]** > **\[5: Collision Dectection Threshold]** Please touch the menu.
-
 
 3.  **\[Threshold Init]**  Please touch the button.
 
@@ -16,7 +14,6 @@
 * **\[Tuning count]**: Set the number of job executions for performing automatic collision detection tuning.
 * **\[Threshold Init]**: Resets the collision detection threshold.
 * **\[Factory Reset]**: Resets the collision detection threshold to the factory default value.
-
 
 {% hint style="warning" %}
 **\[warning]**

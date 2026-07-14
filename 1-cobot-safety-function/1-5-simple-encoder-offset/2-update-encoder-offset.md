@@ -1,4 +1,4 @@
-# 1.13.2 Simple Mastering
+# 1.5.2 Simple Mastering
 
 This section explains how to initialize (master) the encoder offset after the robot moves to the designated mastering position. Since the robot moves to the mastering position, take care to avoid collisions with people or objects in the surrounding area.
 

@@ -1,10 +1,8 @@
-﻿# 1.11.1 Collision Detection Controller Settings
+# 1.3.1 Collision Detection Controller Settings
 
 1.  Please set the driving mode to manual.
 
-
 2.  **\[system]** Button > **\[11: Cobot System ]** > **\[Collision Detection]** Please touch the menu.
-
 
 3. After configuring the settings and options for the collaborative robot's collision detection function, touch the **\[OK]**  button.
 ![](../../_assets/image64.jpg)
@@ -12,7 +10,6 @@
 * **\[Collision detection]**: Configure whether to use the collision detection function.
 * **\[Body parts for collision detection]**: Select the body part to apply the robot's maximum speed capable of guaranteeing minimum safety against injury upon collision detection.
 * **\[Collision detection reaction]**: Select whether to execute an avoidance maneuver after a collision is detected.
-
 
 {% hint style="warning" %}
 **\[Warning]**

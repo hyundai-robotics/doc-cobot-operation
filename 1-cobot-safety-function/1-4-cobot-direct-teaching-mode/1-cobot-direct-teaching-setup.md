@@ -1,7 +1,6 @@
-# 1.12.1 Direct Teaching Controller Configuration
+# 1.4.1 Direct Teaching Controller Configuration
 
 1.  Please set the driving mode to manual.
-
 
 2.  **\[System]** > **\[11: Cbbot System]** > **\[Direct Teaching]** Please touch the menu.
 
@@ -10,8 +9,8 @@
 
 ![](../../_assets/image57.png)
 
-* **Direct teaching On**: Direct teaching mode activates immediately upon motor-on (SHIFT + MOT. ON + Enable Switch). The motor remains on and direct teaching operates only while the Enable Switch is pressed. To switch the robot back to Jog or Auto mode, you must disable the "Direct teaching On" setting.
-* **Constraint motion**: Determines the default mode when direct teaching is executed. If 'None' is selected, you cannot switch to another mode; however, switching between other modes is possible while direct teaching is in progress.
+* **Direct Teaching On**: The system operates in direct teaching mode immediately upon motor activation (SHIFT + MOT. ON + Enable Switch). Motor activation and direct teaching operation require the enable switch to be pressed. To switch back to Jog or Auto mode, the 'Direct Teaching On' setting must be turned off.
+* **Constraint Motion**: Determines the default mode when direct teaching is active. Selecting 'None' activates FREE mode; while the mode cannot be changed during motor activation in this setting, mode switching is possible during direct teaching in other modes.
 
 ![](../../_assets/image60.png) 
 

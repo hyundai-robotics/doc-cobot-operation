@@ -1,4 +1,5 @@
-# 1.11.2 Collision-detection robot command(cobot_coldet)
+
+# 1.3.2 Collision-detection robot command(cobot_coldet)
 
 ### explanation
 
