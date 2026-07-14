@@ -15,6 +15,5 @@ Collision detection is handled by the Hi7 controller.
 
 ### example
 
-cobot_coldet.on
+cobot_coldet.on</br>
 cobot_coldet.off
-```

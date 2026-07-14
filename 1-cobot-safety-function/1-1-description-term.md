@@ -1,6 +1,6 @@
 # 1.1 Description of terms
 
-### <mark style="color:green;">Collision detection</mark>&#xD;
+### <mark style="color:green;"> Collision detection </mark>&#xD;
 
 If an external impact exceeding the set threshold is applied while the robot is in operation, it stops to ensure user safety.
 
@@ -8,7 +8,7 @@ If an external impact exceeding the set threshold is applied while the robot is 
 
     The reference value used to determine whether an external impact has occurred.
 
-### <mark style="color:green;">Direct teaching</mark>&#xD;
+### <mark style="color:green;"> Direct teaching </mark>&#xD;
 
 This is a teaching method in which an operator manually moves the robot to a desired path and pose.
 
@@ -30,6 +30,6 @@ This is a teaching method in which an operator manually moves the robot to a des
     Positions 1 and 3: Robot operation stops. In the case of Position 3, the switch returns directly to Position 1 without passing through Position 2.
     Position 2: Robot operation is enabled.
 
-### <mark style="color:green;">Mastering</mark>&#xD;
+### <mark style="color:green;"> Mastering </mark>&#xD;
 
 It refers to the process of aligning the robot's actual joint angles with the joint angles perceived by the controller.

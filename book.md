@@ -38,7 +38,7 @@ Hyundai Robotics reserves the right to modify this document without prior notifi
 [__SOURCE](1-cobot-safety-function/1-1-description-term.md)
 # 1.1 Description of terms
 
-### <mark style="color:green;">Collision detection</mark>&#xD;
+### <mark style="color:green;"> Collision detection </mark>&#xD;
 
 If an external impact exceeding the set threshold is applied while the robot is in operation, it stops to ensure user safety.
 
@@ -46,7 +46,7 @@ If an external impact exceeding the set threshold is applied while the robot is 
 
     The reference value used to determine whether an external impact has occurred.
 
-### <mark style="color:green;">Direct teaching</mark>&#xD;
+### <mark style="color:green;"> Direct teaching </mark>&#xD;
 
 This is a teaching method in which an operator manually moves the robot to a desired path and pose.
 
@@ -68,7 +68,7 @@ This is a teaching method in which an operator manually moves the robot to a des
     Positions 1 and 3: Robot operation stops. In the case of Position 3, the switch returns directly to Position 1 without passing through Position 2.
     Position 2: Robot operation is enabled.
 
-### <mark style="color:green;">Mastering</mark>&#xD;
+### <mark style="color:green;"> Mastering </mark>&#xD;
 
 It refers to the process of aligning the robot's actual joint angles with the joint angles perceived by the controller.
 [__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/README.md)
@@ -87,7 +87,7 @@ The robot stops operating when a person enters the workspace. Either install an 
 
 The reference information on the setting of the related functions is as follows:
 
-* For detailed information on radar module settings, please refer to the([Configuration procedure]( )) section of the ([User Manual ](https://github.com/hyundai-robotics/doc-Object-Detection-System/tree/english?cont_model=${cont_model})).
+* For detailed information on radar module settings, please refer to the([Configuration procedure](https://github.com/hyundai-robotics/doc-Object-Detection-System/tree/english?cont_model=${cont_model)) section of the ([User Manual ](https://github.com/hyundai-robotics/doc-Object-Detection-System/tree/english?cont_model=${cont_model})).
 * For detailed information on safety I/O signal settings, please refer to ([3.3.4 Safety Input/Output](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7%3Fcont_model%3D%24%7Bcont_model%7D?cont_model=${cont_model})) in the ([Hi7 Controller Function Manual - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README?cont_model=%24%7Bcont_model%7D?cont_model=${cont_model})).
 * For details on configuring the safe stop function, please refer to ([3.3.1.2 Stop Settings](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/3-safety-function/3-safety-function/1-general-condition/2-safe-stop?cont_model=Hi7?cont_model=${cont_model})) in the ([Hi7 Controller Function Manual - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README?cont_model=%24%7Bcont_model%7D?cont_model=${cont_model})).
 
@@ -100,7 +100,7 @@ The speed and position monitoring mode controls the robot's operating speed base
 
 Reference information regarding the use of the speed and position monitoring mode is provided below.
 
-* For detailed information on radar module settings, please refer to the([Configuration procedure]( )) section of the ([User Manual ](https://github.com/hyundai-robotics/doc-Object-Detection-System/tree/english?cont_model=${cont_model})).
+* For detailed information on radar module settings, please refer to the([Configuration procedure](https://github.com/hyundai-robotics/doc-Object-Detection-System/tree/english?cont_model=${cont_model)) section of the ([User Manual ](https://github.com/hyundai-robotics/doc-Object-Detection-System/tree/english?cont_model=${cont_model})).
 * For details on robot safety condition settings, please refer to "([3.3.2.6 Re plan Setting](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/3-safety-function/3-safety-function/2-robot-safety-condition/6-re-plan?cont_model=Hi7%3Fcont_model%3D%24%7Bcont_model%7D?cont_model=${cont_model})) in the ([Hi7 Controller Function Manual - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README?cont_model=%24%7Bcont_model%7D?cont_model=${cont_model})).
 * For details on safety I/O signal settings, please refer to ([3.3.4 Safety Input/Output](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7%3Fcont_model%3D%24%7Bcont_model%7D?cont_model=${cont_model})) in the ([Hi7 Controller Function Manual - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README?cont_model=%24%7Bcont_model%7D?cont_model=${cont_model})).
 
@@ -136,7 +136,7 @@ Configuration methods include controller settings and robot language commands:
 
 1.  Please set the driving mode to manual.
 
-2.  **\[system]** Button > **\[11: Cobot System ]** > **\[Collision Detection]** Please touch the menu.
+2.  **\[system]** Button > **\[11: Cobot System  > Collision Detection]** Please touch the menu.
 
 3. After configuring the settings and options for the collaborative robot's collision detection function, touch the **\[OK]**  button.
 ![](../../_assets/image64.jpg)
@@ -169,15 +169,14 @@ Collision detection is handled by the Hi7 controller.
 
 ### example
 
-cobot_coldet.on
+cobot_coldet.on</br>
 cobot_coldet.off
-```
 [__SOURCE](1-cobot-safety-function/1-3-cobot-collision-detection-mode/3-cobot-collision-detection-autotune.md)
 # 1.3.3 Collaborative Robot Collision Detection Auto-Tuning Mode
 
 1.  Please set the driving mode to manual.
 
-2.  **\[system]**  > **\[11: Cobot System ]** > **\[5: Collision Dectection Threshold]** Please touch the menu.
+2.  **\[system]** Button  > **\[11: Cobot System  > 5: Collision Dectection Threshold]** Please touch the menu.
 
 3.  **\[Threshold Init]**  Please touch the button.
 
@@ -212,7 +211,7 @@ Configuration methods include controller settings and cockpit button settings:
 
 1.  Please set the driving mode to manual.
 
-2.  **\[System]** > **\[11: Cbbot System]** > **\[Direct Teaching]** Please touch the menu.
+2.  **\[System]** Button > **\[11: Cbbot System > Direct Teaching]** Please touch the menu.
 
 
 3. After configuring the settings and options for the collaborative robot's direct teaching function, touch the **[OK]** button.
@@ -269,7 +268,7 @@ This function consists of two main parts:
 
 The robot requires mastering at a specific position; this section explains how to designate that position. Since the robot moves when the mastering position is set, care must be taken to avoid collisions with people or objects in the vicinity. Note that while there are various possible mastering positions, the system selects a position close to the robot's current posture.
 
--  **\[system]** > **\[11: Cobot System ]** > **\[11: Simple Encoder Offest ]** Please touch the menu.
+-  **\[system]** Button > **\[11: Cobot System > 11: Simple Encoder Offest ]** Please touch the menu.
 - The 'Mastering Position' section displays 'Secondary Encoder' and 'Primary Encoder' values, representing the encoder readings for each joint when the robot is at the mastering position.
 - To register a new mastering position, touch the 'Move to New Position' button at the bottom.
     - When the button is touched, the robot moves from its current location to the mastering position.
@@ -294,7 +293,7 @@ The robot requires mastering at a specific position; this section explains how t
 
 This section explains how to initialize (master) the encoder offset after the robot moves to the designated mastering position. Since the robot moves to the mastering position, take care to avoid collisions with people or objects in the surrounding area.
 
-- **\[system]** > **\[11: Cobot System ]** > **\[11: Simple Encoder Offest ]** Please touch the menu.
+- **\[system]** Button > **\[11: Cobot System  > 11: Simple Encoder Offest ]** Please touch the menu.
 - The 'Current Position' section displays the 'Secondary Encoder' and 'Primary Encoder' values ​​for each joint at the robot's current location.
 - Touch the 'Move to Position' button at the bottom to move the robot to the mastering position.
     - The robot moves to the mastering position when the button is touched.

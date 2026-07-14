@@ -2,7 +2,7 @@
 
 The robot requires mastering at a specific position; this section explains how to designate that position. Since the robot moves when the mastering position is set, care must be taken to avoid collisions with people or objects in the vicinity. Note that while there are various possible mastering positions, the system selects a position close to the robot's current posture.
 
--  **\[system]** > **\[11: Cobot System ]** > **\[11: Simple Encoder Offest ]** Please touch the menu.
+-  **\[system]** Button > **\[11: Cobot System > 11: Simple Encoder Offest ]** Please touch the menu.
 - The 'Mastering Position' section displays 'Secondary Encoder' and 'Primary Encoder' values, representing the encoder readings for each joint when the robot is at the mastering position.
 - To register a new mastering position, touch the 'Move to New Position' button at the bottom.
     - When the button is touched, the robot moves from its current location to the mastering position.

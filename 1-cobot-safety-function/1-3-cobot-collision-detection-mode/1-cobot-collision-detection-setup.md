@@ -2,7 +2,7 @@
 
 1.  Please set the driving mode to manual.
 
-2.  **\[system]** Button > **\[11: Cobot System ]** > **\[Collision Detection]** Please touch the menu.
+2.  **\[system]** Button > **\[11: Cobot System  > Collision Detection]** Please touch the menu.
 
 3. After configuring the settings and options for the collaborative robot's collision detection function, touch the **\[OK]**  button.
 ![](../../_assets/image64.jpg)
