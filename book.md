@@ -70,7 +70,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 
 관련 기능 설정에 대한 참조 정보는 다음과 같습니다.
 
-* 레이더 모듈 설정에 대한 자세한 내용은 ([레이더 모듈 기능설명서 - SafeSpace2.0](https://github.com/hyundai-robotics/doc-Object-Detection-System#?cont_model=${cont_model})) 내 ([8.1 구성 절차]( ))를 참조하십시오.
+* 레이더 모듈 설정에 대한 자세한 내용은 ([사용자 설명서](https://github.com/hyundai-robotics/doc-Object-Detection-System#?cont_model=${cont_model})) 내 ([8.1 구성 절차]( ))를 참조하십시오.
 * 안전 I/O 신호 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.4 안전 입출력](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7?cont_model=${cont_model}))를 참조하십시오.
 * 안전 정지 기능 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.1.2 정지 설정](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/1-general-condition/2-safe-stop?cont_model=Hi7?cont_model=${cont_model}))을 참조하십시오.
 
@@ -94,7 +94,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 
 충돌 감지 기능의 경우 충돌 부위를 설정하여 충돌을 감지하고, TCP 힘 제한의 경우 TCP에 가해지는 외부 힘(N)을 제한합니다. 또한 파워(W)와 모멘텀(kg·m/s)을 설정하여 로봇의 동력을 제한할 수 있습니다.
 
-* 로봇 안전 조건 설정중 파워와 모멘텀 감시 및 동력 제한에 대한 자세한 내용은 ([사용자 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model} )) 내 ([3.3.2 로봇 감시 기능](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/2-robot-safety-condition/README?cont_model=Hi7?cont_model=${cont_model} ))을 참조하십시오.
+* 로봇 안전 조건 설정중 파워와 모멘텀 감시 및 동력 제한에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model} )) 내 ([3.3.2 로봇 감시 기능](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/2-robot-safety-condition/README?cont_model=Hi7?cont_model=${cont_model} ))을 참조하십시오.
 * 충돌 감지 기능에 대한 자세한 내용은 **(1.2 협동로봇 충돌감지 모드)** 를 참조하십시오
 
 [__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/4-hand-guid.md)
@@ -107,7 +107,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 * 핸드 가이드에 대한 자세한 내용은 **(1.3 협동로봇 직접교시 모드)** 를 참조하십시오
 
 [__SOURCE](1-cobot-safety-function/1-3-cobot-collision-detection-mode/README.md)
-# 1.2 협동로봇 충돌감지 모드
+# 1.3 협동로봇 충돌감지 모드
 
 로봇이 비정상적인 조건에서 동작하게 되거나 이상 동작하게 될 때의 안전 장치로 충돌감지 기능이 있습니다. 감지 모드를 설정하고 자동 튜닝을 실행하여 현재 작업에 맞는 최적 충돌 감지 민감도를 자동 설정할 수 있습니다.
 
@@ -116,10 +116,9 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 2. 로봇 언어 명령문: 로봇 프로그램 동작 시 구간 별로 충돌감지 실행 여부를 설정하기 위하여 로봇 언어 명령문을 사용. 
 
 [__SOURCE](1-cobot-safety-function/1-3-cobot-collision-detection-mode/1-cobot-collision-detection-setup.md)
-# 1.2.1 협동로봇 충돌감지 제어기 설정
+# 1.3.1 협동로봇 충돌감지 제어기 설정
 
 1.  운전 방식을 수동 모드로 설정하십시오.
-
 
 2.  **\[시스템]** 버튼 > **\[11: 협동 로봇 시스템 > 충돌감지]** 메뉴를 터치하십시오.
 
@@ -139,7 +138,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 {% endhint %}
 
 [__SOURCE](1-cobot-safety-function/1-3-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
-# 1.2.2 충돌감지 로봇 명령어(cobot_coldet)
+# 1.3.2 충돌감지 로봇 명령어(cobot_coldet)
 
 ### 설명
 
@@ -159,7 +158,7 @@ cobot_coldet.on
 cobot_coldet.off
 ```
 [__SOURCE](1-cobot-safety-function/1-3-cobot-collision-detection-mode/3-cobot-collision-detection-autotune.md)
-# 1.2.3 협동로봇 충돌감지 자동 튜닝 모드
+# 1.3.3 협동로봇 충돌감지 자동 튜닝 모드
 
 1.  운전 방식을 수동 모드로 설정하십시오.
 
@@ -191,7 +190,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 {% endhint %}
 
 [__SOURCE](1-cobot-safety-function/1-4-cobot-direct-teaching-mode/README.md)
-# 1.3 협동로봇 직접교시 모드
+# 1.4 협동로봇 직접교시 모드
 
 로봇의 직접교시(Direct Teaching)는 로봇 프로그래밍에 대한 전문적인 지식이 없는 사용자도 로봇을 직접 움직여 원하는 동작을 가르칠 수 있는 직관적인 방식입니다. 이는 복잡한 티치 펜던트 조작 대신 작업자가 직접 로봇 팔 끝을 잡고 경로를 안내하여 작업 경로와 위치를 설정하는 것을 의미합니다.
 
@@ -200,7 +199,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 2. 콕핏 버튼: 로봇 TP에서 설정한 직접교시 모드를 실행 
 
 [__SOURCE](1-cobot-safety-function/1-4-cobot-direct-teaching-mode/1-cobot-direct-teaching-setup.md)
-# 1.3.1 협동로봇 직접교시 제어기 설정
+# 1.4.1 협동로봇 직접교시 제어기 설정
 
 1.  운전 방식을 수동 모드로 설정하십시오.
 
@@ -249,7 +248,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 {% endhint %}
 
 [__SOURCE](1-cobot-safety-function/1-5-simple-encoder-offset/README.md)
-# 1.13 간편 엔코더 옵셋
+# 1.5 간편 엔코더 옵셋
 
 로봇에 내장된 장치로 마스터링하는 간편 엔코더 옵셋을 설명합니다. 
 본 기능은 크게 두 가지로 구성되어 있습니다.
@@ -257,7 +256,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 - 간편 마스터링
 
 [__SOURCE](1-cobot-safety-function/1-5-simple-encoder-offset/1-update-mastering-position.md)
-# 1.4.1 간편 마스터링 위치 설정
+# 1.5.1 간편 마스터링 위치 설정
 
 로봇은 특정 위치에서 마스터링을 해야하며, 그 위치를 지정하는 방법을 설명합니다. 마스터링 위치를 지정할 때 로봇이 움직이므로, 로봇 주변에 사람, 물건 등과 충돌하지 않도록 주의해야 합니다. 참고로, 마스터링이 가능한 위치는 다양하게 있는데, 현재 로봇 자세에서 가까운 곳으로 설정됩니다.
 
@@ -280,7 +279,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
     -  **\[시스템]** > **\[11: 로봇 파라미터 > 엔코더 옵셋]** 메뉴에서 엔코더 초기화
 {% endhint %}
 [__SOURCE](1-cobot-safety-function/1-5-simple-encoder-offset/2-update-encoder-offset.md)
-# 1.4.2 간편 마스터링
+# 1.5.2 간편 마스터링
 
 설정된 마스터링 위치로 로봇이 이동한 후 엔코더 옵셋을 초기화(마스터링)하는 방법을 설명합니다. 마스터링 위치로 로봇이 이동하므로, 로봇 주변에 사람, 물건 등과 충돌하지 않도록 주의해야 합니다. 
 
