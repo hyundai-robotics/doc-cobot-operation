@@ -176,7 +176,7 @@ cobot_coldet.off
 
 1.  Please set the driving mode to manual.
 
-2.  **\[system]** Button  > **\[11: Cobot System  > 5: Collision Dectection Threshold]** Please touch the menu.
+2.  **\[system]** Button  > **\[11: Cobot System  > Collision Dectection Threshold]** Please touch the menu.
 
 3.  **\[Threshold Init]**  Please touch the button.
 
@@ -211,7 +211,7 @@ Configuration methods include controller settings and cockpit button settings:
 
 1.  Please set the driving mode to manual.
 
-2.  **\[System]** Button > **\[11: Cbbot System > Direct Teaching]** Please touch the menu.
+2.  **\[System]** Button > **\[11: Cobot System > Direct Teaching]** Please touch the menu.
 
 
 3. After configuring the settings and options for the collaborative robot's direct teaching function, touch the **[OK]** button.
@@ -268,7 +268,7 @@ This function consists of two main parts:
 
 The robot requires mastering at a specific position; this section explains how to designate that position. Since the robot moves when the mastering position is set, care must be taken to avoid collisions with people or objects in the vicinity. Note that while there are various possible mastering positions, the system selects a position close to the robot's current posture.
 
--  **\[system]** Button > **\[11: Cobot System > 11: Simple Encoder Offest ]** Please touch the menu.
+-  **\[system]** Button > **\[11: Cobot System > 11: Simple Encoder Offest]** Please touch the menu.
 - The 'Mastering Position' section displays 'Secondary Encoder' and 'Primary Encoder' values, representing the encoder readings for each joint when the robot is at the mastering position.
 - To register a new mastering position, touch the 'Move to New Position' button at the bottom.
     - When the button is touched, the robot moves from its current location to the mastering position.
@@ -286,14 +286,14 @@ The robot requires mastering at a specific position; this section explains how t
 * You must move to the mastering position, tap the 'Update Position' button, and save the setting to establish the new mastering position.
 * You must set a new mastering position in the following cases. Using the previously registered mastering position may result in improper mastering or accidents.
     - Secondary encoder replacement
-    - Encoder initialization in the  **\[system]** > **\[3: Robot Parameters]** > **\[4: Encoder Offset]** menu
+    - Encoder initialization in the  **\[system]** > **\[11: Cobot System]** > **\[Simple Encoder Offset]** menu
 {% endhint %}
 [__SOURCE](1-cobot-safety-function/1-5-simple-encoder-offset/2-update-encoder-offset.md)
 # 1.5.2 Simple Mastering
 
 This section explains how to initialize (master) the encoder offset after the robot moves to the designated mastering position. Since the robot moves to the mastering position, take care to avoid collisions with people or objects in the surrounding area.
 
-- **\[system]** Button > **\[11: Cobot System  > 11: Simple Encoder Offest ]** Please touch the menu.
+- **\[system]** Button > **\[11: Cobot System  > Simple Encoder Offest]** Please touch the menu.
 - The 'Current Position' section displays the 'Secondary Encoder' and 'Primary Encoder' values ​​for each joint at the robot's current location.
 - Touch the 'Move to Position' button at the bottom to move the robot to the mastering position.
     - The robot moves to the mastering position when the button is touched.
