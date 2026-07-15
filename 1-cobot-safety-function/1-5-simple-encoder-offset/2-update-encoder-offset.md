@@ -2,7 +2,7 @@
 
 This section explains how to initialize (master) the encoder offset after the robot moves to the designated mastering position. Since the robot moves to the mastering position, take care to avoid collisions with people or objects in the surrounding area.
 
-- **\[system]** Button > **\[11: Cobot System  > Simple Encoder Offest]** Please touch the menu.
+- **\[system]** Button > **\[11: Cobot System  > Simple Encoder Offset]** Please touch the menu.
 - The 'Current Position' section displays the 'Secondary Encoder' and 'Primary Encoder' values ​​for each joint at the robot's current location.
 - Touch the 'Move to Position' button at the bottom to move the robot to the mastering position.
     - The robot moves to the mastering position when the button is touched.
