@@ -83,7 +83,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 
 속도 및 위치 감시 모드 사용을 위한 참조 정보는 다음과 같습니다.
 
-* 레이더 모듈 설정에 대한 자세한 내용은 ([레이더 모듈 기능설명서 - SafeSpace2.0](https://github.com/hyundai-robotics/doc-Object-Detection-System#?cont_model=${cont_model})) 내 ([8.1 구성 절차]( ))를 참조하십시오.
+* 레이더 모듈 설정에 대한 자세한 내용은 ([사용자 설명서](https://github.com/hyundai-robotics/doc-Object-Detection-System#?cont_model=${cont_model})) 내 ([8.1 구성 절차]( ))를 참조하십시오.
 * 로봇 안전 조건 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.2.6 Re plan 설정](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/2-robot-safety-condition/6-re-plan?cont_model=Hi7?cont_model=${cont_model}))을 참조하십시오.
 * 안전 I/O 신호 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.4 안전 입출력](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7?cont_model=${cont_model}))를 참조하십시오.
 
@@ -95,7 +95,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 충돌 감지 기능의 경우 충돌 부위를 설정하여 충돌을 감지하고, TCP 힘 제한의 경우 TCP에 가해지는 외부 힘(N)을 제한합니다. 또한 파워(W)와 모멘텀(kg·m/s)을 설정하여 로봇의 동력을 제한할 수 있습니다.
 
 * 로봇 안전 조건 설정중 파워와 모멘텀 감시 및 동력 제한에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model} )) 내 ([3.3.2 로봇 감시 기능](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/2-robot-safety-condition/README?cont_model=Hi7?cont_model=${cont_model} ))을 참조하십시오.
-* 충돌 감지 기능에 대한 자세한 내용은 **(1.2 협동로봇 충돌감지 모드)** 를 참조하십시오
+* 충돌 감지 기능에 대한 자세한 내용은 **(1.3 협동로봇 충돌감지 모드)** 를 참조하십시오
 
 [__SOURCE](1-cobot-safety-function/1-2-collaborative-operation-mode/4-hand-guid.md)
 # 1.2.4 핸드가이드
@@ -104,7 +104,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 
 하기에 서술할 내용에서 핸드가이드와 협동로봇의 직접교시는 동일한 뜻으로 사용됩니다.
 
-* 핸드 가이드에 대한 자세한 내용은 **(1.3 협동로봇 직접교시 모드)** 를 참조하십시오
+* 핸드 가이드에 대한 자세한 내용은 **(1.4 협동로봇 직접교시 모드)** 를 참조하십시오
 
 [__SOURCE](1-cobot-safety-function/1-3-cobot-collision-detection-mode/README.md)
 # 1.3 협동로봇 충돌감지 모드
@@ -154,9 +154,8 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 
 ### 사용 예
 
-cobot_coldet.on
+cobot_coldet.on </br>
 cobot_coldet.off
-```
 [__SOURCE](1-cobot-safety-function/1-3-cobot-collision-detection-mode/3-cobot-collision-detection-autotune.md)
 # 1.3.3 협동로봇 충돌감지 자동 튜닝 모드
 
@@ -276,7 +275,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 * 마스터링 위치로 이동한 후 '위치 최신화' 버튼을 터치하고 저장까지 해야 새 마스터링 위치가 설정됩니다.
 * 아래의 경우, 마스터링 위치를 새롭게 설정해야 합니다. 기존에 등록된 마스터링 위치를 그대로 사용할 경우, 정상적으로 마스터링이 되지 않거나 사고가 발생할 수 있습니다.
     - 2차 엔코더 교체
-    -  **\[시스템]** > **\[11: 로봇 파라미터 > 엔코더 옵셋]** 메뉴에서 엔코더 초기화
+    -  **\[시스템]** > **\[11: 협동로봇 시스템 > 간편 엔코더 옵셋]** 메뉴에서 엔코더 초기화
 {% endhint %}
 [__SOURCE](1-cobot-safety-function/1-5-simple-encoder-offset/2-update-encoder-offset.md)
 # 1.5.2 간편 마스터링
@@ -304,9 +303,9 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 [__SOURCE](attachment/rules-criteria-and-public-notice.md)
 # 산업안전보건기준에 관한 규칙 및 안전검사 고시
 
-{% embed url="https://hyundai-robotics.gitbook.io/rules-on-occupational-safety-and-health-standards" %}
+"[산업안전보건기준에 관한 규칙](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/ko/README)"
 
 [__SOURCE](warranty.md)
 # 품질 보증
 
-{% embed url="https://hyundai-robotics.gitbook.io/quality-assurance" %}
+"[품질보증](https://hrbook-hrc.web.app/#/view/quality-assurance/ko/README)"

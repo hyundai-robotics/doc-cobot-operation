@@ -1,3 +1,3 @@
 ﻿# 품질 보증
 
-{% embed url="https://hyundai-robotics.gitbook.io/quality-assurance" %}
+"[품질보증](https://hrbook-hrc.web.app/#/view/quality-assurance/ko/README)"
