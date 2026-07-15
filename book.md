@@ -315,9 +315,9 @@ This section explains how to initialize (master) the encoder offset after the ro
 [__SOURCE](attachment/rules-criteria-and-public-notice.md)
 # The Rules on the Criteria for Occupational Safety and Health, and the Public Notice of Safety Inspec
 
-{% embed url="https://hyundai-robotics.gitbook.io/rules-on-occupational-safety-and-health-standards/v/rules-english" %}
+"[Rules on Industrial Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/en/README)"
 
 [__SOURCE](warranty.md)
 # Warranty
 
-{% embed url="https://hyundai-robotics.gitbook.io/quality-assurance/v/qa-english" %}
+"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/en/README)"

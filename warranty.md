@@ -1,3 +1,3 @@
 # Warranty
 
-{% embed url="https://hyundai-robotics.gitbook.io/quality-assurance/v/qa-english" %}
+"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/en/README)"
