@@ -7,6 +7,6 @@
 
 관련 기능 설정에 대한 참조 정보는 다음과 같습니다.
 
-* 레이더 모듈 설정에 대한 자세한 내용은 ([사용자 설명서](https://github.com/hyundai-robotics/doc-Object-Detection-System#?cont_model=${cont_model})) 내 ([8.1 구성 절차]( ))를 참조하십시오.
+* 레이더 모듈 설정에 대한 자세한 내용은 ([Hi7 제어기 기능 설명서 - 레이더 객체 감지 시스템](https://hrbook-hrc.web.app/#/view/doc-Object-Detection-System/ko/README?cont_model=${cont_model})) 내 ([8.1 구성 절차](https://hrbook-hrc.web.app/#/view/doc-Object-Detection-System/ko/8-Configuration_and_Operation/8-1-Configuration_procedure/README?cont_model=${cont_model}))를 참조하십시오.
 * 안전 I/O 신호 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.4 안전 입출력](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7?cont_model=${cont_model}))를 참조하십시오.
 * 안전 정지 기능 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.1.2 정지 설정](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/1-general-condition/2-safe-stop?cont_model=Hi7?cont_model=${cont_model}))을 참조하십시오.
