@@ -2,7 +2,7 @@
 
 The robot requires mastering at a specific position; this section explains how to designate that position. Since the robot moves when the mastering position is set, care must be taken to avoid collisions with people or objects in the vicinity. Note that while there are various possible mastering positions, the system selects a position close to the robot's current posture.
 
--  **\[system]** Button > **\[11: Cobot System > Simple Encoder Offest]** Please touch the menu.
+-  `[F2: system] - 11: Cobot System - Simple Encoder Offest` Please touch the menu.
 - The 'Mastering Position' section displays 'Secondary Encoder' and 'Primary Encoder' values, representing the encoder readings for each joint when the robot is at the mastering position.
 - To register a new mastering position, touch the 'Move to New Position' button at the bottom.
     - When the button is touched, the robot moves from its current location to the mastering position.
@@ -19,7 +19,7 @@ The robot requires mastering at a specific position; this section explains how t
 * You must move to the mastering position, tap the 'Update Position' button, and save the setting to establish the new mastering position.
 * You must set a new mastering position in the following cases. Using the previously registered mastering position may result in improper mastering or accidents.
     - Secondary encoder replacement
-    - Encoder initialization in the  **\[system]** > **\[11: Cobot System > Simple Encoder Offset]** menu
+    - Encoder initialization in the  `[F2: system] - 3: Robot parameter - 4: Encoder Offset` menu
 {% endhint %}
 
 {% hint style="warning" %}
@@ -28,5 +28,5 @@ The robot requires mastering at a specific position; this section explains how t
 * Vous devez vous déplacer jusqu'à la position de mastering, appuyer sur le bouton « Update Position » et enregistrer le paramètre pour définir la nouvelle position de mastering.
 * Vous devez définir une nouvelle position de mastering dans les cas suivants. L'utilisation de la position de mastering précédemment enregistrée peut entraîner un mastering incorrect ou des accidents.
     - Remplacement du codeur secondaire
-    - Initialisation du codeur dans le **\[system]** > **\[11: Cobot System > Simple Encoder Offset]** menu
+    - Initialisation du codeur dans le `[F2: system] - 3: Robot parameter - 4: Encoder Offset` menu
 {% endhint %}
