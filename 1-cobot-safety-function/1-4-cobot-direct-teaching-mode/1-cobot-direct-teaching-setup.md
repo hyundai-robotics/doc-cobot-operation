@@ -51,7 +51,7 @@
 **\[warning]**
 
 * L'apprentissage direct peut ne pas s'exécuter en cas d'écart important entre les données de l'outil et les valeurs réelles. Si l'apprentissage direct ne se lance pas, veuillez arrêter le robot et vérifier les valeurs saisies pour les données de l'outil.
-* Pour lancer l'apprentissage direct, appuyez simultanément sur le bouton « Motor On » (Moteur activé), le dispositif d'homme mort (Enable Switch) et la touche « Shift ».
+* Lors de la phase d'apprentissage direct, vous pouvez procéder de la même manière que pour le jogging standard.
 * Vous devez maintenir le dispositif d'homme mort enfoncé après la mise en marche du moteur pour conserver le mode d'apprentissage direct.
 * L'apprentissage direct s'arrête si vous désactivez la fonction (« Direct teaching On ») ou si vous relâchez le dispositif d'homme mort alors que la fonction est active.
 * Veuillez vérifier la présence d'objets ou de personnes à proximité avant de faire fonctionner le robot en mode d'apprentissage direct.
