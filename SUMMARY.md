@@ -20,5 +20,8 @@
   * [1.5 간편 엔코더 옵셋](1-cobot-safety-function/1-5-simple-encoder-offset/README.md)
     * [1.5.1 간편 마스터링 위치 설정](1-cobot-safety-function/1-5-simple-encoder-offset/1-update-mastering-position.md)
     * [1.5.2 간편 마스터링](1-cobot-safety-function/1-5-simple-encoder-offset/2-update-encoder-offset.md)
+  * [1.6 협동 모드 일반 설정](1-cobot-safety-function/1-6-cobot-general-set/README.md)
+    * [1.6.1 협동 모드 설정](1-cobot-safety-function/1-6-cobot-general-set/1-co-op-mode-setting.md)
+    * [1.6.2 LED 설정](1-cobot-safety-function/1-6-cobot-general-set/2-led-setting.md)  
   * [산업안전보건기준에 관한 규칙 및 안전검사 고시](attachment/rules-criteria-and-public-notice.md)
 * [품질 보증](warranty.md)
