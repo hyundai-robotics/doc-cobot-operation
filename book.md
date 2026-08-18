@@ -352,6 +352,64 @@ This section explains how to initialize (master) the encoder offset after the ro
 * Vous devez enregistrer les paramètres après avoir effectué le réglage du décalage de l'encodeur pour le mettre à jour.
 * Une utilisation fréquente de la fonction simple de décalage de l'encodeur dégrade les performances de mastering ; veuillez ne l'utiliser qu'en cas de nécessité.
 {% endhint %}    
+[__SOURCE](1-cobot-safety-function/1-6-cobot-general-set/README.md)
+# 1.6 Co-op Mode General Settings
+
+협동로봇 일반 설정에 대해 설명합니다. 
+본 기능은 크게 두 가지로 구성되어 있습니다.
+- Co-op Mode Settings
+- LED Settings
+
+[__SOURCE](1-cobot-safety-function/1-6-cobot-general-set/1-co-op-mode-setting.md)
+# 1.6.1 Co-op Mode Settings
+
+What is collaborative mode? It is a mode that limits the maximum speed to ensure safety in the event of a collision between a collaborative robot and a human. If you wish to operate the robot at speeds exceeding this limit, you can disable collaborative mode after conducting a risk assessment based on industrial robot standards.
+
+- `[F2: system] - 11: Cobot System - Cobot General Settings` Tap the menu.
+- Check if Collaborative Mode is enabled (Default: ON).
+- Configure the collaborative robot's collaborative mode and maximum speed, then click "Apply to All" to save the settings.
+    ![](../../_assets/image61.png) 
+    - Co-op Mode On: Sets whether collaborative mode is enabled.
+    - Set the Co-op mode Max Speed(mm/s): The maximum speed for collaborative mode entered by the user. Values ​​between 250 and 1000 mm/s can be entered (Default: 800 mm/s).
+    - Applied co-op Mode Max Speed(mm/s): Displays the current maximum speed of the collaborative robot. This value represents the final maximum speed, incorporating settings related to collision detection and safety motion.
+    - Changes are saved only after clicking "Apply All" and entering the correct password.
+
+{% hint style="warning" %}
+**\[warning]**
+* Be sure to conduct a risk assessment based on industrial robot standards before disabling this mode.
+* The maximum speed resulting from deceleration due to radar detection is not reflected in the "set maximum speed for collaborative mode."
+{% endhint %}
+
+{% hint style="warning" %}
+**\[warning]**
+* Veillez à effectuer une évaluation des risques fondée sur les normes relatives aux robots industriels avant de désactiver ce mode.
+* La vitesse maximale résultant de la décélération due à la détection radar n'est pas prise en compte dans la « vitesse maximale définie pour le mode collaboratif ».
+{% endhint %}
+[__SOURCE](1-cobot-safety-function/1-6-cobot-general-set/2-led-setting.md)
+# 1.6.2 LED Settings
+
+This indicates the LED brightness settings and the meaning of each LED color. The colors cannot be changed; only the brightness is adjustable.
+
+- `[F2: system] - 11: Cobot System- Cobot General Settings` Tap the menu.
+- Enter the LED settings and click "Apply to All" to save.
+    ![](../../_assets/image62.png) 
+    - Base LED Brightness (%): Adjusts the brightness of the LED mounted on Axis 1. (Default: 10%)
+    - Flange LED Brightness (%): Adjusts the brightness of the LED mounted on Axis 6. (Default: 10%)
+    - Settings are saved only after clicking "Apply All" and entering the correct password. 
+
+    
+
+{% hint style="warning" %}
+**\[warning]**
+* Keeping the LED on at 100% continuously may result in performance degradation.
+
+{% endhint %}
+
+{% hint style="warning" %}
+**\[warning]**
+* Maintenir la LED allumée en continu à 100 % peut entraîner une dégradation des performances.
+
+{% endhint %}
 [__SOURCE](attachment/rules-criteria-and-public-notice.md)
 # The Rules on the Criteria for Occupational Safety and Health, and the Public Notice of Safety Inspec
 
