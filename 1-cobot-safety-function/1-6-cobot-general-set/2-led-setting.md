@@ -22,3 +22,39 @@ This indicates the LED brightness settings and the meaning of each LED color. Th
 * Maintenir la LED allumée en continu à 100 % peut entraîner une dégradation des performances.
 
 {% endhint %}
+
+The robot status by LED color is as follows:
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center;">Color</th>
+      <th style="text-align: center;">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center;">RED</td>
+      <td>Error, emergency stop, or robot stop by radar</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Green</td>
+      <td>Auto mode</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Blue</td>
+      <td>Manual mode(motor on)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">White</td>
+      <td>Manual mode(motor off)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Blue blink</td>
+      <td>Direct teaching mode</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Yellow blink</td>
+      <td>Warning, robot deceleration by radar</td>
+    </tr>
+  </tbody>
+</table>

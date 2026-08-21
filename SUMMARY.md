@@ -22,5 +22,6 @@
   * [1.6 Co-op Mode General Settings](1-cobot-safety-function/1-6-cobot-general-set/README.md)
     * [1.6.1 Co-op Mode Settings](1-cobot-safety-function/1-6-cobot-general-set/1-co-op-mode-setting.md)
     * [1.6.2 LED Settings](1-cobot-safety-function/1-6-cobot-general-set/2-led-setting.md)     
+  * [1.7 LED test](1-cobot-safety-function/1-7-cobot-LED-test.md)
   * [The Rules on the Criteria for Occupational Safety and Health, and the Public Notice of Safety Inspec](attachment/rules-criteria-and-public-notice.md)
 * [Warranty](warranty.md)
