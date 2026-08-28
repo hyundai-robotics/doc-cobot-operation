@@ -15,7 +15,7 @@ Hyundai Robotics reserves the right to modify this document without prior notifi
 
 
 
-**Copyright ⓒ 2020 by Hyundai Robotics**
+**Copyright ⓒ 2022 by HD Hyundai Robotics**
 {% endhint %}
 
 [__SOURCE](0-about-this-manual/README.md)
