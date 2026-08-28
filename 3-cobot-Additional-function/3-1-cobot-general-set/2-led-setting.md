@@ -1,4 +1,4 @@
-# 1.6.2 LED Settings
+# 3.1.2 LED Settings
 
 This indicates the LED brightness settings and the meaning of each LED color. The colors cannot be changed; only the brightness is adjustable.
 

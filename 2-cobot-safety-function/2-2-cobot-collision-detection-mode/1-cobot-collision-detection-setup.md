@@ -1,4 +1,4 @@
-# 1.3.1 Collision Detection Controller Settings
+# 2.2.1 Collision Detection Controller Settings
 
 1.  Please set the driving mode to manual.
 

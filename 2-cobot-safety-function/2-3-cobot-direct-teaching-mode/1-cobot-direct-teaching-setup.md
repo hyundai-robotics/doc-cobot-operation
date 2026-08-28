@@ -1,4 +1,4 @@
-# 1.4.1 Direct Teaching Controller Configuration
+# 2.3.1 Direct Teaching Controller Configuration
 
 1.  Please set the driving mode to manual.
 

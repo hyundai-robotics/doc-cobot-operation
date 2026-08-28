@@ -1,8 +1,13 @@
 {
     "langCode": "en",
-    "series": "Hyundai Robot Hi7 Controller",
+    "series": "Hi7 Controller",
     "title": "Safety Function Manual for Collaborative Robot",
-    "publisher": "Hyundai Robotics",
+    "publisher": "HD Hyundai Robotics",
     "tocTitle": "Table of Contents",
-    "tocTitleElements": "[ \"h1\", \"h2\" ]"
+    "tocTitleElements": "[ \"h1\", \"h2\" ]",
+    "references": [
+        { "title" : "Hi7 Controller Function Manual - SafeSpace2.0" },
+        { "title" : "Hi7 Controller Function Manual - Radar Object DetectionSystem" }
+    ]
 }
+

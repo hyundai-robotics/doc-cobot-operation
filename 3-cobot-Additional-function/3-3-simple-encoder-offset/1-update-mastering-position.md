@@ -1,4 +1,4 @@
-﻿# 1.5.1 Simple Mastering Position Setting
+﻿# 3.3.1 Simple Mastering Position Setting
 
 The robot requires mastering at a specific position; this section explains how to designate that position. Since the robot moves when the mastering position is set, care must be taken to avoid collisions with people or objects in the vicinity. Note that while there are various possible mastering positions, the system selects a position close to the robot's current posture.
 

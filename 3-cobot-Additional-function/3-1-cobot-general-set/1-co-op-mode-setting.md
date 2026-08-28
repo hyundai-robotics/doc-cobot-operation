@@ -1,4 +1,4 @@
-﻿# 1.6.1 Co-op Mode Settings
+﻿# 3.1.1 Co-op Mode Settings
 
 What is collaborative mode? It is a mode that limits the maximum speed to ensure safety in the event of a collision between a collaborative robot and a human. If you wish to operate the robot at speeds exceeding this limit, you can disable collaborative mode after conducting a risk assessment based on industrial robot standards.
 

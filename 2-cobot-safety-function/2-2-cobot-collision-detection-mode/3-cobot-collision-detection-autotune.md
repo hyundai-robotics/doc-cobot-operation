@@ -1,4 +1,4 @@
-# 1.3.3 Collaborative Robot Collision Detection Auto-Tuning Mode
+# 2.2.3 Collaborative Robot Collision Detection Auto-Tuning Mode
 
 1.  Please set the driving mode to manual.
 

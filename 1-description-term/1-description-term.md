@@ -1,4 +1,4 @@
-# 1.1 Description of terms
+# 1. Description of terms
 
 ### <mark style="color:green;"> Collision detection </mark>&#xD;
 

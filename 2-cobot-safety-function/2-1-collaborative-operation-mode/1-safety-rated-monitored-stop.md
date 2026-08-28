@@ -1,5 +1,4 @@
-# 1.2.1 Safety-rated monitored stop
-
+# 2.1.1 Safety-rated monitored stop
 
 The robot stops operating when a person enters the workspace. Either install an external monitoring device and connect it to the Safety Control Module (SCM) or use the radar sensor installed on the robot.
 

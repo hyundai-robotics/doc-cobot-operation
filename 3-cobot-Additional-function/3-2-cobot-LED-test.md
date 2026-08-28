@@ -1,4 +1,4 @@
-# 1.7 LED test
+# 3.2 LED test
 
 This function allows you to test the collaborative robot LED.
 

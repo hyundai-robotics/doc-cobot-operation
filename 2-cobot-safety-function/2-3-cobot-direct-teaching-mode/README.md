@@ -1,4 +1,4 @@
-# 1.4 Collaborative robot direct teaching mode
+# 2.3 Collaborative robot direct teaching mode
 
 Direct teaching is an intuitive method that allows users without specialized robot programming knowledge to teach a robot desired movements by manually manipulating it. Instead of using a complex teach pendant, the operator directly guides the robot's end-effector to define the work path and positions.
 
