@@ -30,7 +30,7 @@
 {% include file="ko/safety-notice.md" %}
 
 [__SOURCE](1-description-term/1-description-term.md)
-# 1 용어 설명
+# 1. 용어 설명
 
 ### <mark style="color:green;">충돌감지</mark>&#xD;
 
@@ -78,7 +78,7 @@
 ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 안전하게 작업할 수 있도록 4 개의 운전 모드에 대해 설명하고 있습니다. 협동 운전은 이 중 최소 한 가지 요구 사항을 충족해야 하고 운전 중에는 반드시 협동 운전 중임을 시각적으로 표시하여 알려야 합니다.
 
 [__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/1-safety-rated-monitored-stop.md)
-# 1.2.1 안전 정격 감시 정지
+# 2.1.1 안전 정격 감시 정지
 
 사람이 작업 공간 내 진입 시 로봇의 작동이 정지합니다. 외부 감시 장치를 설치하고 이를 안전 제어 모듈(SCM: Safety Control Module)에 연결하거나 로봇에 설치된 레이더 센서를 사용하십시오.
 
@@ -92,7 +92,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 * 안전 정지 기능 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.1.2 정지 설정](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/1-general-condition/2-safe-stop?cont_model=Hi7?cont_model=${cont_model}))을 참조하십시오.
 
 [__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/2-speed-separation-monitoring.md)
-# 1.2.2 속도 및 위치 감시
+# 2.1.2 속도 및 위치 감시
 
 로봇은 지정된 거리 및 속도 내에서 작동합니다.
 
@@ -115,13 +115,13 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 * 충돌 감지 기능에 대한 자세한 내용은 **(2.2 협동로봇 충돌감지 모드)** 를 참조하십시오
 
 [__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/4-hand-guid.md)
-# 1.2.4 핸드 가이드
+# 2.1.4 핸드 가이드
 
 작업자가 로봇을 손으로 직접 움직여 위치나 경로를 교시할 수 있도록 하는 수동 조작 모드입니다. 로봇의 힘 제어 기능을 이용해 사람이 가하는 힘을 감지하고, 그 방향으로 로봇이 부드럽게 움직입니다. 복잡한 프로그래밍 없이도 작업을 설정할 수 있습니다.
 
 하기에 서술할 내용에서 핸드가이드와 협동로봇의 직접교시는 동일한 뜻으로 사용됩니다.
 
-* 핸드 가이드에 대한 자세한 내용은 **(1.4 협동로봇 직접교시 모드)** 를 참조하십시오
+* 핸드 가이드에 대한 자세한 내용은 **(2.3 협동로봇 직접교시 모드)** 를 참조하십시오
 
 [__SOURCE](2-cobot-safety-function/2-2-cobot-collision-detection-mode/README.md)
 # 2.2 협동로봇 충돌감지 모드
@@ -155,7 +155,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 {% endhint %}
 
 [__SOURCE](2-cobot-safety-function/2-2-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
-# 1.3.2 충돌감지 로봇 명령어(cobot_coldet)
+# 2.2.2 충돌감지 로봇 명령어(cobot_coldet)
 
 ### 설명
 
@@ -174,7 +174,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 cobot_coldet.on </br>
 cobot_coldet.off
 [__SOURCE](2-cobot-safety-function/2-2-cobot-collision-detection-mode/3-cobot-collision-detection-autotune.md)
-# 1.3.3 협동로봇 충돌감지 자동 튜닝 모드
+# 2.3.3 협동로봇 충돌감지 자동 튜닝 모드
 
 1.  운전 방식을 수동 모드로 설정하십시오.
 
@@ -215,7 +215,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 2. 콕핏 버튼: 로봇 TP에서 설정한 직접교시 모드를 실행 
 
 [__SOURCE](2-cobot-safety-function/2-3-cobot-direct-teaching-mode/1-cobot-direct-teaching-setup.md)
-# 1.4.1 협동로봇 직접교시 제어기 설정
+# 2.3.1 협동로봇 직접교시 제어기 설정
 
 1.  운전 방식을 수동 모드로 설정하십시오.
 
@@ -278,7 +278,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 - LED 설정
 
 [__SOURCE](3-cobot-Additional-function/3-1-cobot-general-set/1-co-op-mode-setting.md)
-# 1.6.1 협동 모드 설정
+# 3.1.1 협동 모드 설정
 
 협동 모드란? 협동 로봇과 사람의 충돌이 생겼을때를 대비하여, 최고속을 제한하는 모드입니다. 제한된 최고속 이상의 속도로 로봇을 구동하고 싶다면 산업용 로봇 기준의 위험성 평가 후 협동 모드를 해제하시면 됩니다.
 
@@ -374,7 +374,7 @@ LED 색상별 로봇 상태는 다음과 같습니다.
 - 간편 마스터링
 
 [__SOURCE](3-cobot-Additional-function/3-3-simple-encoder-offset/1-update-mastering-position.md)
-# 1.5.1 간편 마스터링 위치 설정
+# 3.3.1 간편 마스터링 위치 설정
 
 로봇은 특정 위치에서 마스터링을 해야하며, 그 위치를 지정하는 방법을 설명합니다. 마스터링 위치를 지정할 때 로봇이 움직이므로, 로봇 주변에 사람, 물건 등과 충돌하지 않도록 주의해야 합니다. 참고로, 마스터링이 가능한 위치는 다양하게 있는데, 현재 로봇 자세에서 가까운 곳으로 설정됩니다.
 

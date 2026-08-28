@@ -6,7 +6,6 @@
     "tocTitle": "목차",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
     "references": [
-        { "title" : "Hi7 제어기 기능 설명서 - 레이더 객체 감지 시스템"},
         { "title" : "Hi7 제어기 기능설명서 - SafeSpace2.0" },
         { "title" : "Hi7 제어기 기능 설명서 - 레이더 객체 감지 시스템" }
     ]
