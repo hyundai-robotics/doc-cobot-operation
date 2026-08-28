@@ -1,4 +1,4 @@
-﻿# 1.1 용어 설명
+﻿# 1 용어 설명
 
 ### <mark style="color:green;">충돌감지</mark>&#xD;
 
