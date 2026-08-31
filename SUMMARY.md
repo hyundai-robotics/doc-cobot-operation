@@ -1,5 +1,5 @@
 # Table of contents
-* [Safety Function Manual for Collaborative Robot](README.md)
+* [Safety Function Manual for Collaborative Robot - HDC Series](README.md)
 * [About the Manual](0-about-this-manual/README.md)
   * [Precautions](0-about-this-manual/precautions.md)
   * [Safety Cautions](0-about-this-manual/safety-notice.md)
