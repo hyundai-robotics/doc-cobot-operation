@@ -1,6 +1,6 @@
 # Table of contents
 
-* [협동로봇 안전 기능 설명서](README.md)
+* [협동로봇 안전 기능 설명서 - HDC 시리즈](README.md)
 * [이 설명서에 대하여](0-about-this-manual/README.md)
   * [사전 주의사항](0-about-this-manual/precautions.md)
   * [안전 주의 사항](0-about-this-manual/safety-notice.md)
