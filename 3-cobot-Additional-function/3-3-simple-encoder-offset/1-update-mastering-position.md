@@ -18,7 +18,10 @@ The robot requires mastering at a specific position; this section explains how t
 **\[Warning]**
 * Tapping the 'Update Position' button without moving to the mastering position will not update the mastering position.
 * You must move to the mastering position, tap the 'Update Position' button, and save the setting to establish the new mastering position.
+* Set the encoder origin position (encoder offset) first, and then set the simple mastering position.
 * You must set a new mastering position in the following cases. Using the previously registered mastering position may result in improper mastering or accidents.
     - Secondary encoder replacement
+    - Motor replacement
+    - Tool replacement
     - Encoder initialization in the  `[F2: system] - 3: Robot parameter - 4: Encoder Offset` menu
 {% endhint %}
