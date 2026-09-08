@@ -17,7 +17,7 @@
     * [2.2.3 협동로봇 충돌감지 자동 튜닝 모드](2-cobot-safety-function/2-2-cobot-collision-detection-mode/3-cobot-collision-detection-autotune.md)
   * [2.3 협동로봇 직접교시 모드](2-cobot-safety-function/2-3-cobot-direct-teaching-mode/README.md)
     * [2.3.1 직접교시 제어기 설정](2-cobot-safety-function/2-3-cobot-direct-teaching-mode/1-cobot-direct-teaching-setup.md)
-* [3. 협동로봇 부가기능 기능](3-cobot-Additional-function/README.md)
+* [3. 협동로봇 부가 기능](3-cobot-Additional-function/README.md)
   * [3.1 협동 모드 일반 설정](3-cobot-Additional-function/3-1-cobot-general-set/README.md)
     * [3.1.1 협동 모드 설정](3-cobot-Additional-function/3-1-cobot-general-set/1-co-op-mode-setting.md)
     * [3.1.2 LED 설정](3-cobot-Additional-function/3-1-cobot-general-set/2-led-setting.md)
