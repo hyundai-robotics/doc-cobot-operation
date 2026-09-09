@@ -11,7 +11,7 @@ This section explains how to perform mastering after the robot moves to the desi
     - Touch the 'Save' button.
     - Reboot the controller.
 
-    ![](../../_assets/simple_encoder_offset_1.png)
+    ![](../../_assets/simple_mastering_1.png)
 
 {% hint style="warning" %}
 **\[Warning]**

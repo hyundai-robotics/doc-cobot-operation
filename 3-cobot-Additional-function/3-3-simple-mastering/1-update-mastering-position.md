@@ -11,7 +11,7 @@ The robot requires mastering at a specific position; this section explains how t
     - Touch the 'Save' button.
 
 
-    ![](../../_assets/simple_encoder_offset_1.png)
+    ![](../../_assets/simple_mastering_1.png)
 
 {% hint style="warning" %}
 
