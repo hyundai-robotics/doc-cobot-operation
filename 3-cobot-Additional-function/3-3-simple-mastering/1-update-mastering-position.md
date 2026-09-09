@@ -10,7 +10,7 @@
     - 이동 완료가 되면 '위치 최신화' 버튼을 터치합니다.
     - '저장하기' 버튼을 터치합니다.
 
-    ![](../../_assets/simple_encoder_offset_1.png)
+    ![](../../_assets/simple_mastering_1.png)
 
 {% hint style="warning" %}
 **\[주의]**
