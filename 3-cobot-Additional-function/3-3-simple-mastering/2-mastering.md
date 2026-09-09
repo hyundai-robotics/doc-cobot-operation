@@ -2,7 +2,7 @@
 
 This section explains how to perform mastering after the robot moves to the designated mastering position. Since the robot moves to the mastering position, take care to avoid collisions with people or objects in the surrounding area.
 
-- `[F2: system] - 11: Cobot System - Simple Mastering` Please touch the menu.
+- After entering engineer mode, touch the `[F2: system] - 11: Cobot System - Simple Mastering` menu.
 - The 'Current Position' section displays the 'Secondary Encoder' and 'Primary Encoder' values ​​for each joint at the robot's current location.
 - Touch the 'Move to Position' button at the bottom to move the robot to the mastering position.
     - The robot moves to the mastering position when the button is touched.
