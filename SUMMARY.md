@@ -24,5 +24,6 @@
   * [3.3 Simple mastering](3-cobot-Additional-function/3-3-simple-mastering/README.md)
     * [3.3.1 Simple mastering position setting](3-cobot-Additional-function/3-3-simple-mastering/1-update-mastering-position.md)
     * [3.3.2 Simple mastering execution](3-cobot-Additional-function/3-3-simple-mastering/2-mastering.md)
+  * [3.4 Flange downward direction constraint](3-cobot-Additional-function/3-4-flange-downward.md)
 * [The Rules on the Criteria for Occupational Safety and Health, and the Public Notice of Safety Inspec](attachment/rules-criteria-and-public-notice.md)
 * [Warranty](warranty.md)

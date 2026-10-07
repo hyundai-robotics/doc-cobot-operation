@@ -342,20 +342,20 @@ This function allows you to test the collaborative robot LED.
 - Tap the 'LED Blink' button to make the selected color blink.
 - Tap the 'LED Off' button to turn off the LED.
 
-[__SOURCE](3-cobot-Additional-function/3-3-simple-encoder-offset/README.md)
-# 3.3 Simple Encoder Offset
+[__SOURCE](3-cobot-Additional-function/3-3-simple-mastering/README.md)
+# 3.3 Simple Mastering
 
-This section describes the simple encoder offset mastering function using a device built into the robot.
+This section explains how to perform mastering using the built-in device of the robot.
 This function consists of two main parts:
-- Simple Mastering Position Setting
-- Simple mastering
+- Simple mastering position setting
+- Simple mastering execution
 
-[__SOURCE](3-cobot-Additional-function/3-3-simple-encoder-offset/1-update-mastering-position.md)
+[__SOURCE](3-cobot-Additional-function/3-3-simple-mastering/1-update-mastering-position.md)
 # 3.3.1 Simple Mastering Position Setting
 
 The robot requires mastering at a specific position; this section explains how to designate that position. Since the robot moves when the mastering position is set, care must be taken to avoid collisions with people or objects in the vicinity. Note that while there are various possible mastering positions, the system selects a position close to the robot's current posture.
 
-- `[F2: system] - 11: Cobot System - Simple Encoder Offest` Please touch the menu.
+- After entering engineer mode, touch the `[F2: system] - 11: Cobot System - Simple Mastering` menu.
 - The 'Mastering Position' section displays 'Secondary Encoder' and 'Primary Encoder' values, representing the encoder readings for each joint when the robot is at the mastering position.
 - To register a new mastering position, touch the 'Move to New Position' button at the bottom.
     - When the button is touched, the robot moves from its current location to the mastering position.
@@ -364,23 +364,26 @@ The robot requires mastering at a specific position; this section explains how t
     - Touch the 'Save' button.
 
 
-    ![](../../_assets/simple_encoder_offset_1.png)
+    ![](../../_assets/simple_mastering_1.png)
 
 {% hint style="warning" %}
 
 **\[Warning]**
 * Tapping the 'Update Position' button without moving to the mastering position will not update the mastering position.
 * You must move to the mastering position, tap the 'Update Position' button, and save the setting to establish the new mastering position.
+* Set the encoder origin position (encoder offset) first, and then set the simple mastering position.
 * You must set a new mastering position in the following cases. Using the previously registered mastering position may result in improper mastering or accidents.
     - Secondary encoder replacement
+    - Motor replacement
+    - Tool replacement
     - Encoder initialization in the  `[F2: system] - 3: Robot parameter - 4: Encoder Offset` menu
 {% endhint %}
-[__SOURCE](3-cobot-Additional-function/3-3-simple-encoder-offset/2-update-encoder-offset.md)
-# 3.3.2 Simple Mastering
+[__SOURCE](3-cobot-Additional-function/3-3-simple-mastering/2-mastering.md)
+# 3.3.2 Simple Mastering Execution
 
-This section explains how to initialize (master) the encoder offset after the robot moves to the designated mastering position. Since the robot moves to the mastering position, take care to avoid collisions with people or objects in the surrounding area.
+This section explains how to perform mastering after the robot moves to the designated mastering position. Since the robot moves to the mastering position, take care to avoid collisions with people or objects in the surrounding area.
 
-- `[F2: system] - 11: Cobot System - Simple Encoder Offset` Please touch the menu.
+- After entering engineer mode, touch the `[F2: system] - 11: Cobot System - Simple Mastering` menu.
 - The 'Current Position' section displays the 'Secondary Encoder' and 'Primary Encoder' values ​​for each joint at the robot's current location.
 - Touch the 'Move to Position' button at the bottom to move the robot to the mastering position.
     - The robot moves to the mastering position when the button is touched.
@@ -389,16 +392,36 @@ This section explains how to initialize (master) the encoder offset after the ro
     - Touch the 'Save' button.
     - Reboot the controller.
 
-    ![](../../_assets/simple_encoder_offset_1.png)
+    ![](../../_assets/simple_mastering_1.png)
 
 {% hint style="warning" %}
 **\[Warning]**
-* A mastering position must be registered to use the simple Mastering function.
-* Touching the 'Reset All' button without moving to the mastering position will not reset the encoder offset.
-* You must save the settings after performing the encoder offset to update it.
-* Frequent use of the simple Encoder Offset function degrades mastering performance; please use it only when necessary.
+* A mastering position must be registered to use the simple mastering function.
+* If the robot does not move to the mastering position before the 'Reset All' button is touched, mastering will not be performed.
+* Mastering is completed only after saving following 'Reset All'.
+* If a warning or error related to the encoder occurs, simple mastering may not function properly.
+* Frequent use of the simple mastering degrades mastering performance; please use it only when necessary.
 {% endhint %}    
 
+[__SOURCE](3-cobot-Additional-function/3-4-flange-downward.md)
+# 3.4 Flange Downward Direction Constraint
+
+<mark style="color:green;">This function is available only for the HDC50-17.</mark><br>
+For the HDC50-17, the angle between the flange Z-axis and the vertical direction of the ground must be maintained within 15°. 
+If the angle exceeds 15°, the robot will stop.
+
+![](../_assets/Flange_angle_HDC50.png) 
+
+If the robot stops because the angle exceeds 15°, jogging may be restricted.
+In this case, operate the robot according to the procedure below to bring the angle between the flange Z-axis and the vertical direction of the ground within 15°.
+
+- In engineer mode, select the `[F2: system] - 3: Robot Parameter - 3: Soft Limit` menu.
+- Turn the motor on and jog the robot until the angle between the flange Z-axis and the vertical direction of the ground is within 15°.
+
+{% hint style="warning" %}
+**\[Warning]**
+* After entering the `Soft Limit` menu, ensure that the angle between the flange Z-axis and the vertical direction of the ground does not exceed 15°.
+{% endhint %}
 [__SOURCE](attachment/rules-criteria-and-public-notice.md)
 # The Rules on the Criteria for Occupational Safety and Health, and the Public Notice of Safety Inspec
 
