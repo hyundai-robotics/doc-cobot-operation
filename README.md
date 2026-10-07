@@ -1,2 +1,2 @@
-﻿# Safety Function Manual for Collaborative Robot - HDC Series
+﻿# Function Manual for Collaborative Robot - HDC Series
 
