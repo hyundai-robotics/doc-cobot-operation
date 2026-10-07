@@ -1,4 +1,4 @@
-# 3.4 Flange Downward Direction Constraint
+# 3.4 Flange Downward Orientation
 
 <mark style="color:green;">This function is available only for the HDC50-17.</mark><br>
 For the HDC50-17, the angle between the flange Z-axis and the vertical direction of the ground must be maintained within 15°. 
