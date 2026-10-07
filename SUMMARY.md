@@ -25,5 +25,6 @@
   * [3.3 간편 마스터링](3-cobot-Additional-function/3-3-simple-mastering/README.md)
     * [3.3.1 간편 마스터링 위치 설정](3-cobot-Additional-function/3-3-simple-mastering/1-update-mastering-position.md)
     * [3.3.2 간편 마스터링 실행](3-cobot-Additional-function/3-3-simple-mastering/2-mastering.md)
+  * [3.4 플랜지 아래 방향 제한](3-cobot-Additional-function/3-4-flange-downward.md)
 * [산업안전보건기준에 관한 규칙 및 안전검사 고시](attachment/rules-criteria-and-public-notice.md)
 * [품질 보증](warranty.md)
