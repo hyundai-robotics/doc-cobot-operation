@@ -1,6 +1,6 @@
 ﻿
 [__SOURCE](README.md)
-# 협동로봇 안전 기능 설명서 - HDC 시리즈
+# 협동로봇 기능 설명서 - HDC 시리즈
 
 
 
@@ -60,12 +60,12 @@
 # 2. 협동로봇 안전 기능
 
 
-[__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/README.md)
+[__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/README.md)
 # 2.1 협동 운전 모드
 
 ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 안전하게 작업할 수 있도록 4 개의 운전 모드에 대해 설명하고 있습니다. 협동 운전은 이 중 최소 한 가지 요구 사항을 충족해야 하고 운전 중에는 반드시 협동 운전 중임을 시각적으로 표시하여 알려야 합니다.
 
-[__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/1-safety-rated-monitored-stop.md)
+[__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/1-safety-rated-monitored-stop.md)
 # 2.1.1 안전 정격 감시 정지
 
 사람이 작업 공간 내 진입 시 로봇의 작동이 정지합니다. 외부 감시 장치를 설치하고 이를 안전 제어 모듈(SCM: Safety Control Module)에 연결하거나 로봇에 설치된 레이더 센서를 사용하십시오.
@@ -79,7 +79,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 * 안전 I/O 신호 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.4 안전 입출력](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7?cont_model=${cont_model}))를 참조하십시오.
 * 안전 정지 기능 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.1.2 정지 설정](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/1-general-condition/2-safe-stop?cont_model=Hi7?cont_model=${cont_model}))을 참조하십시오.
 
-[__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/2-speed-separation-monitoring.md)
+[__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/2-speed-separation-monitoring.md)
 # 2.1.2 속도 및 위치 감시
 
 로봇은 지정된 거리 및 속도 내에서 작동합니다.
@@ -92,7 +92,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 * 로봇 안전 조건 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.2.6 Re plan 설정](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/2-robot-safety-condition/6-re-plan?cont_model=Hi7?cont_model=${cont_model}))을 참조하십시오.
 * 안전 I/O 신호 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.4 안전 입출력](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7?cont_model=${cont_model}))를 참조하십시오.
 
-[__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/3-power-force-limit.md)
+[__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/3-power-force-limit.md)
 # 2.1.3 동력 및 힘 제한
 
 접촉 사고 발생 시, 인체에 가해지는 충격을 제한합니다. 충돌 감지 기능 및 TCP 힘 제한 기능을 통해 작업자와 로봇 간의 접촉 사고 발생 시 작업자의 신체에 가해지는 충격을 제한할 수 있습니다.
@@ -102,7 +102,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 * 로봇 안전 조건 설정중 파워와 모멘텀 감시 및 동력 제한에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model} )) 내 ([3.3.2 로봇 감시 기능](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/2-robot-safety-condition/README?cont_model=Hi7?cont_model=${cont_model} ))을 참조하십시오.
 * 충돌 감지 기능에 대한 자세한 내용은 **(2.2 협동로봇 충돌감지 모드)** 를 참조하십시오
 
-[__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/4-hand-guid.md)
+[__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/4-hand-guid.md)
 # 2.1.4 핸드 가이드
 
 작업자가 로봇을 손으로 직접 움직여 위치나 경로를 교시할 수 있도록 하는 수동 조작 모드입니다. 로봇의 힘 제어 기능을 이용해 사람이 가하는 힘을 감지하고, 그 방향으로 로봇이 부드럽게 움직입니다. 복잡한 프로그래밍 없이도 작업을 설정할 수 있습니다.
@@ -111,7 +111,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 
 * 핸드 가이드에 대한 자세한 내용은 **(2.3 협동로봇 직접교시 모드)** 를 참조하십시오
 
-[__SOURCE](2-cobot-safety-function/2-2-cobot-collision-detection-mode/README.md)
+[__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/README.md)
 # 2.2 협동로봇 충돌감지 모드
 
 로봇이 비정상적인 조건에서 동작하게 되거나 이상 동작하게 될 때의 안전 장치로 충돌감지 기능이 있습니다. 감지 모드를 설정하고 자동 튜닝을 실행하여 현재 작업에 맞는 최적 충돌 감지 민감도를 자동 설정할 수 있습니다.
@@ -120,7 +120,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 1. 제어기 설정: 항상 적용되는 기본적인 설정 (default)
 2. 로봇 언어 명령문: 로봇 프로그램 동작 시 구간 별로 충돌감지 실행 여부를 설정하기 위하여 로봇 언어 명령문을 사용. 
 
-[__SOURCE](2-cobot-safety-function/2-2-cobot-collision-detection-mode/1-cobot-collision-detection-setup.md)
+[__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/1-cobot-collision-detection-setup.md)
 # 2.2.1 협동로봇 충돌감지 제어기 설정
 
 1.  운전 방식을 수동 모드로 설정하십시오.
@@ -129,7 +129,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 
 3. 협동로봇의 충돌감지 기능의 사용 여부와 옵션을 설정한 후 **\[OK]** 버튼을 터치하십시오.
 
-![](../../_assets/image64.jpg)
+![](../../_assets/2-cobot-safety-function/image64.jpg)
 
 * **\[감지]**: 충돌감지 기능의 사용 여부를 설정합니다.
 * **\[충돌 부위]**: 충돌감지 시 상해 최소 안전 보장 가능한 로봇의 최대속도를 적용하기 위한 신체 부위를 선택합니다.
@@ -142,7 +142,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 * 툴 데이터가 실제 값과 오차가 클 경우 충돌을 잘못 감지할 수 있습니다. 길이나 무게, 무게 중심 등의 툴 관련 정보를 정확하게 설정하십시오. 또한 로봇의 설치 각도 및 중력 방향을 반드시 확인하십시오. 툴 데이터를 정확히 설정해도 오감지가 발생한다면 엔코더 및 기속도 센서를 점검하십시오.
 {% endhint %}
 
-[__SOURCE](2-cobot-safety-function/2-2-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
+[__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
 # 2.2.2 충돌감지 로봇 명령어(cobot_coldet)
 
 ### 설명
@@ -161,7 +161,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 
 cobot_coldet.on </br>
 cobot_coldet.off
-[__SOURCE](2-cobot-safety-function/2-2-cobot-collision-detection-mode/3-cobot-collision-detection-autotune.md)
+[__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/3-cobot-collision-detection-autotune.md)
 # 2.3.3 협동로봇 충돌감지 자동 튜닝 모드
 
 1.  운전 방식을 수동 모드로 설정하십시오.
@@ -174,7 +174,7 @@ cobot_coldet.off
 
 4. 협동로봇의 충돌감지 임계값 자동 튜닝 기능의 실행 여부와 실행 횟수를 설정한 후 **\[저장]** 버튼을 터치하십시오.
 
-![](../../_assets/image65.jpg)
+![](../../_assets/2-cobot-safety-function/image65.jpg)
 
 * **\[자동 튜닝]**: 충돌감지 자동 튜닝 기능 실행 여부를 설정합니다.
 * **\[튜닝 횟수]**: 충돌감지 자동 튜닝을 수행할 job 실행 횟수를 설정합니다.
@@ -193,7 +193,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 이 기능은 자동 모드에 한정하여 수행하며 수동 모드에서는 공장 출하 값으로 충돌감지 기능이 수행됨을 참조 바랍니다. 
 {% endhint %}
 
-[__SOURCE](2-cobot-safety-function/2-3-cobot-direct-teaching-mode/README.md)
+[__SOURCE](2-cobot-safety-function/3-cobot-direct-teaching-mode/README.md)
 # 2.3 협동로봇 직접교시 모드
 
 로봇의 직접교시(Direct Teaching)는 로봇 프로그래밍에 대한 전문적인 지식이 없는 사용자도 로봇을 직접 움직여 원하는 동작을 가르칠 수 있는 직관적인 방식입니다. 이는 복잡한 티치 펜던트 조작 대신 작업자가 직접 로봇 팔 끝을 잡고 경로를 안내하여 작업 경로와 위치를 설정하는 것을 의미합니다.
@@ -202,7 +202,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 1. 제어기 설정: 항상 적용되는 기본적인 설정 (default)
 2. 콕핏 버튼: 로봇 TP에서 설정한 직접교시 모드를 실행 
 
-[__SOURCE](2-cobot-safety-function/2-3-cobot-direct-teaching-mode/1-cobot-direct-teaching-setup.md)
+[__SOURCE](2-cobot-safety-function/3-cobot-direct-teaching-mode/1-cobot-direct-teaching-setup.md)
 # 2.3.1 협동로봇 직접교시 제어기 설정
 
 1.  운전 방식을 수동 모드로 설정하십시오.
@@ -213,12 +213,12 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 
 3. 협동로봇의 직접교시 기능의 사용 여부와 옵션을 설정한 후 **\[OK]** 버튼을 터치하십시오.
 
-![](../../_assets/image57.png)
+![](../../_assets/2-cobot-safety-function/image57.png)
 
 * **직접 교시 활성화 (Direct teaching On)**: 모터온 시 바로 직접교시로 동작합니다. Enable Switch가 눌러져 있어야만 모터온이며, 직접교시가 구동됩니다. 다시 조그나 자동으로 로봇을 원할 경우 설정내 '직접 교시 활성화 (Direct teaching On)'를 OFF 해야함 
 * **구속 모션(Constraint motion)**: 직접교시가 실행될때 기본 모드를 결정합니다. '없음'을 선택했을 경우 FREE 모드로 실행 되며, 모터온 중 다른 모드로 바꾸지 못하지만 그 외 다른 모드에선 직접교시 실행 중 모드 변경이 가능합니다.
 
-![](../../_assets/image60.png) 
+![](../../_assets/2-cobot-safety-function/image60.png) 
 
 - 위 사진은 협동로봇 시리즈 HDC에 부착된 콕핏 버튼을 형상황한 그림입니다. 참고하여 아래 콕핏 설정을 읽어주시기 바랍니다.
 
@@ -257,23 +257,23 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 # 3. 협동로봇 부가 기능
 
 
-[__SOURCE](3-cobot-Additional-function/3-1-cobot-general-set/README.md)
-# 3.1 협동 로봇 일반 설정
+[__SOURCE](3-cobot-Additional-function/1-cobot-general-set/README.md)
+## 3.1 협동 로봇 일반 설정
 
 협동로봇 일반 설정에 대해 설명합니다. 
 본 기능은 크게 두 가지로 구성되어 있습니다.
 - 협동 모드 설정 
 - LED 설정
 
-[__SOURCE](3-cobot-Additional-function/3-1-cobot-general-set/1-co-op-mode-setting.md)
-# 3.1.1 협동 모드 설정
+[__SOURCE](3-cobot-Additional-function/1-cobot-general-set/1-co-op-mode-setting.md)
+### 3.1.1 협동 모드 설정
 
 협동 모드란? 협동 로봇과 사람의 충돌이 생겼을때를 대비하여, 최고속을 제한하는 모드입니다. 제한된 최고속 이상의 속도로 로봇을 구동하고 싶다면 산업용 로봇 기준의 위험성 평가 후 협동 모드를 해제하시면 됩니다.
 
 - `[F2: 시스템] - 11: 협동로봇 시스템 - 협동 로봇 일반 설정` 메뉴를 터치하십시오.
 - 협동모드 활성화가 ON 되어있는지 확인합니다.(디폴트 : ON)
 - 협동로봇의 협동 모드및 최고속을 설정하고 전체 적용을 클릭하여 저장하십시오.
-    ![](../../_assets/image61.png) 
+    ![](../../_assets/3-cobot-Additional-function/1-cobot-general-set/image61.png) 
     - 협동 모드 활성화 :  협동 모드 사용 여부를 설정합니다. 
     - 협동 모드 최고속 설정 : 사용자가 입력할 협동모드 최고속입니다. 250 ~ 1000 mm/s 사이 값을 입력할 수 있습니다.(디폴트 : 800 mm/s)
     - 설정된 협동 모드 최고속 : 현재 협동 로봇의 최고속을 알려줍니다. 위 기능은 충돌감지 및 안전 모션내 설정값까지 반영된 최종 최고속입니다.
@@ -284,14 +284,14 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 * 협동 모드를 OFF하시기 전에 반드시 산업용 로봇 기준의 위험성 평가를 진행하십시오
 * 레이더 감지로 인한 감속으로 변경된 최고속은 "설정된 협동 모드 최고속"에 반영되지 않습니다.
 {% endhint %}
-[__SOURCE](3-cobot-Additional-function/3-1-cobot-general-set/2-led-setting.md)
-# 3.1.2 LED 설정
+[__SOURCE](3-cobot-Additional-function/1-cobot-general-set/2-led-setting.md)
+### 3.1.2 LED 설정
 
 LED 밝기 설정 및 LED 색상 별 의미를 나타냅니다. 색상은 변경할 수 없으며, 밝기만 조절 가능합니다.
 
 - `[F2: 시스템] - 11: 협동로봇 시스템 - 협동 로봇 일반 설정` 메뉴를 터치하십시오.
 - LED 설정 값을 입력하고 전체적용을 클릭하여 저장하십시오.
-    ![](../../_assets/image62.png) 
+    ![](../../_assets/3-cobot-Additional-function/1-cobot-general-set/image62.png) 
     - 베이스 LED 밝기 (%) : 1축에 장착된 LED 밝기를 조절합니다. (디폴트 : 10%)
     - 플랜지 LED 밝기 (%) : 6축에 장착된 LED 밝기를 조절합니다.(디폴트 : 10%)
     - 전체 적용 클릭 후 맞는 비밀번호를 입력해야 저장됩니다. 
@@ -340,29 +340,305 @@ LED 색상별 로봇 상태는 다음과 같습니다.
   </tbody>
 </table>
 
-[__SOURCE](3-cobot-Additional-function/3-2-cobot-LED-test.md)
-# 3.2 LED 테스트
+[__SOURCE](3-cobot-Additional-function/2-tool-io/README.md)
+## 3.2 Tool IO 설정
 
-협동로봇 LED를 테스트할 수 있는 기능입니다.
+<br>
 
-![](../_assets/LED_test_1.png) 
+이 장에서는 협동로봇의 6축 끝에 위치한 Tool IO 시스템에 대해 기술합니다.
 
-- 엔지니어 모드에서 `[F2: 시스템] - 11: 협동로봇 시스템 - LED 테스트` 메뉴를 터치하십시오.
-- 테스트할 LED 색상을 선택합니다.
-- 'LED 점등' 버튼을 터치하면 선택한 색상이 점등됩니다.
-- 'LED 점멸' 버튼을 터치하면 선택한 색상이 점멸합니다.
-- 'LED 소등' 버튼을 터치하면 LED가 소등됩니다.
+<br>
 
-[__SOURCE](3-cobot-Additional-function/3-3-simple-mastering/README.md)
-# 3.3 간편 마스터링
+<style type="text/css">
+table  {border-collapse:collapse;}
+td {border-color:gray;border-style:solid;border-width:1px;}
+.grayed {background-color:lightgray;}
+.powderblued {background-color:powderblue;}
+</style>
+<br>
+
+**전원 공급 사양**
+
+<br>
+<table class="tg">
+<thead>
+	<tr>
+		<th class='powderblued'>구분</th>
+		<th class='powderblued'>사양</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>출력 전압</td>
+		<td>24V</td>
+	</tr>
+	<tr>
+		<td>정격 전류</td>
+		<td>3A</td>
+	</tr>
+	<tr>
+		<td>최대 Peak 전류</td>
+		<td>4.5A</td>
+	</tr>
+</tbody>
+</table>
+<br>
+
+**디지털 I/O 사양**
+
+<br>
+<table class="tg">
+<thead>
+	<tr>
+		<th colspan=2, class='powderblued'>구분</th>
+		<th class='powderblued'>사양</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td colspan=2>커넥터</td>
+		<td>TOOL IO <br> M8, A-code, 8Pin, Female</td>
+	</tr>
+	<tr>
+		<td colspan=2>I/O 타입</td>
+		<td>PNP / NPN</td>
+	</tr>
+	<tr>
+		<td colspan=2>기준 전압</td>
+		<td>24V</td>
+	</tr>
+	<tr>
+		<td rowspan=2>채널 수</td>
+		<td>디지털 입력</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>디지털 출력</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td rowspan=4>디지털 입력</td>
+		<td>OFF 상태 전압</td>
+		<td>? ~ ?, @ 25°C</td>
+	</tr>
+	<tr>
+		<td>ON 상태 전압</td>
+		<td>? ~ ?, @ 25°C</td>
+	</tr>
+	<tr>
+		<td>ON 상태 전류</td>
+		<td>? ~ ?, @ 25°C</td>
+	</tr>
+	<tr>
+		<td>입력 신호 필터 시간</td>
+		<td>5ms</td>
+	</tr>
+	<tr>
+		<td>디지털 출력</td>
+		<td>ON 상태 전류</td>
+		<td>? ~ ?, @ 25°C</td>
+	</tr>
+</tbody>
+</table>
+<br>
+
+**아날로그 I/O 사양**
+
+<br>
+<table class="tg">
+<thead>
+	<tr>
+		<th class='powderblued'>구분</th>
+		<th class='powderblued'>사양</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>커넥터</td>
+		<td>TOOL IO <br> M8, A-code, 8Pin, Female</td>
+	</tr>
+	<tr>
+		<td>채널 수</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>입력 전압 범위</td>
+		<td>0 ~ 10V</td>
+	</tr>
+	<tr>
+		<td>데이터 형식</td>
+		<td>12bits (0 ~ 4095)</td>
+	</tr>
+	<tr>
+		<td>입력 신호 필터</td>
+		<td>이동 평균 필터 (50ms 평균 입력)</td>
+	</tr>
+	<tr>
+		<td>오차 범위</td>
+		<td>±0.5% Full Scale @ 25°C</td>
+	</tr>
+</tbody>
+</table>
+<br>
+
+**시리얼 통신 사양 (RS485)**
+
+<br>
+<table class="tg">
+<thead>
+	<tr>
+		<th class='powderblued'>구분</th>
+		<th class='powderblued'>사양</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>통신 방식</td>
+		<td>RS485</td>
+	</tr>
+	<tr>
+		<td>커넥터</td>
+		<td>RS485 <br> M8, A-code, 8Pin, Female</td>
+	</tr>
+	<tr>
+		<td>통신 속도</td>
+		<td>9600bps<br>19200bps<br>38400bps<br>57600bps<br>115200bps<br>230400bps<br>460800bps<br>500Kbps<br>625Kbps<br>1Mbps<br>2.5Mbps</td>
+	</tr>
+	<tr>
+		<td>패리티</td>
+		<td>없음 / 홀수 / 짝수</td>
+	</tr>
+	<tr>
+		<td>종료 비트</td>
+		<td>1 Bit / 2 Bit</td>
+	</tr>
+	<tr>
+		<td>데이터 길이</td>
+		<td>7 Bit / 8 Bit</td>
+	</tr>
+</tbody>
+</table>
+<br>
+[__SOURCE](3-cobot-Additional-function/2-tool-io/1-connector.md)
+### 3.2.1 Tool IO 커넥터
+
+해당 매뉴얼은 준비중입니다.
+
+[__SOURCE](3-cobot-Additional-function/2-tool-io/2-system.md)
+### 3.2.2 Tool IO 시스템
+
+협동로봇 Tool IO 시스템 장치의 상태를 확인하는 기능입니다.
+
+<br>
+
+**1. 메뉴를 터치하여 설정 화면으로 진입합니다.**
+
+<br>
+
+**\[시스템 > 11: 협동로봇 시스템 > 2: Tool IO 설정 > 1: Tool IO 시스템 설정]**
+
+<br>
+
+![[그림 3.2.2-1 Tool IO System 설정]](<../../_assets/3-cobot-Additional-function/2-tool-io/2-system/image1.png>) 
+
+<br>
+
+{% hint style="info" %}
+   [시스템 상태 확인]   
+   - 시스템 상태 신호   
+   - 시스템 장치 내부 전압   
+   - 외부 출력 전압 및 전류   
+   - 온도 센서   
+   - 콕핏 버튼 입력 상태      
+      
+{% endhint %}
+[__SOURCE](3-cobot-Additional-function/2-tool-io/3-interface.md)
+### 3.2.3 Tool IO 인터페이스
+
+협동로봇 Tool IO 시스템 장치의 인터페이스를 설정하는 기능입니다.
+
+<br>
+
+{% hint style="info" %}
+   - Tool IO 장치를 이용한 Modbus RTU 통신을 사용하는 경우 다음 매뉴얼을 참고해 주십시오.
+
+   - "[Hi7 제어기 기능설명서 - 모드버스](https://hrbook-hrc.web.app/#/view/doc-modbus/ko/4-modbus-master/1-roblang?cont_model=Hi7)"
+{% endhint %}
+
+
+**1. 메뉴를 터치하여 설정 화면으로 진입합니다.**
+
+<br>
+
+**\[시스템 > 11: 협동로봇 시스템 > 2: Tool IO 설정 > 2: Tool IO 인터페이스 설정]**
+
+<br>
+
+![[그림 3.2.3-1 Tool IO 인터페이스 설정]](<../../_assets/3-cobot-Additional-function/2-tool-io/3-interface/image1.png>) 
+
+<br>
+
+{% hint style="info" %}
+   [출력 전원 설정]   
+   - 24V 전원: 외부 출력 전원 설정   
+      - OFF   
+      - 24V   
+   - I/O 종류: Tool IO 디지털 입출력 방식 설정   
+      - PNP   
+      - NPN   
+
+   [시리얼 통신 설정]   
+   - Tool IO 시스템 RS485 커넥터의 시리얼 통신 파라미터를 설정합니다.   
+
+   - 시리얼: 통신 사용 여부 설정   
+      - OFF   
+      - ON   
+   - 통신 속도: 시리얼 통신 속도 설정   
+      - 9600bps ~ 2.5Mbps   
+   - 패리티 비트: 패리티 비트 설정   
+      - 없음   
+      - 홀수   
+      - 짝수   
+   - 종료 비트: 스톱 비트 설정   
+      - 1 Bit   
+      - 2 Bit   
+   - 데이터 길이: 데이터 비트 길이 설정   
+      - 7 Bit   
+      - 8 Bit   
+      
+{% endhint %}
+
+<br>
+
+![[그림 3.2.3-2 Tool IO 인터페이스 설정]](<../../_assets/3-cobot-Additional-function/2-tool-io/3-interface/image2.png>) 
+
+<br>
+
+{% hint style="info" %}
+   [전원 상태]   
+   - 24V 전원: 외부 출력 전원의 ON/OFF 동작 상태   
+   - I/O 종류: 현재 적용된 I/O 종류   
+   - 전압 24V: 외부 출력 전압 측정값   
+   - 전류 24V: 외부 출력 전류 측정값   
+
+   [시리얼 상태]   
+   - 시리얼 동작: 시리얼 통신 ON/OFF 동작 상태   
+   - 통신 속도: 현재 적용된 통신 속도   
+   - 패리티 비트: 현재 적용된 패리티 비트   
+   - 종료 비트: 현재 적용된 종료 비트   
+   - 데이터 길이: 현재 적용된 데이터 길이   
+      
+{% endhint %}
+[__SOURCE](3-cobot-Additional-function/3-simple-mastering/README.md)
+## 3.3 간편 마스터링
 
 로봇에 내장된 장치로 마스터링하는 방법을 설명합니다. 
 본 기능은 크게 두 가지로 구성되어 있습니다.
 - 간편 마스터링 위치 설정
 - 간편 마스터링 실행
 
-[__SOURCE](3-cobot-Additional-function/3-3-simple-mastering/1-update-mastering-position.md)
-# 3.3.1 간편 마스터링 위치 설정
+[__SOURCE](3-cobot-Additional-function/3-simple-mastering/1-update-mastering-position.md)
+### 3.3.1 간편 마스터링 위치 설정
 
 로봇은 특정 위치에서 마스터링을 해야하며, 그 위치를 지정하는 방법을 설명합니다. 마스터링 위치를 지정할 때 로봇이 움직이므로, 로봇 주변에 사람, 물건 등과 충돌하지 않도록 주의해야 합니다. 참고로, 마스터링이 가능한 위치는 다양하게 있는데, 현재 로봇 자세에서 가까운 곳으로 설정됩니다.
 
@@ -374,7 +650,7 @@ LED 색상별 로봇 상태는 다음과 같습니다.
     - 이동 완료가 되면 '위치 최신화' 버튼을 터치합니다.
     - '저장하기' 버튼을 터치합니다.
 
-    ![](../../_assets/simple_mastering_1.png)
+    ![](../../_assets/3-cobot-Additional-function/3-simple-mastering/simple_mastering_1.png)
 
 {% hint style="warning" %}
 **\[주의]**
@@ -387,8 +663,8 @@ LED 색상별 로봇 상태는 다음과 같습니다.
     - 툴 교체
     - `[F2: 시스템] - 3: 로봇 파라미터 - 4: 엔코더 옵셋` 메뉴에서 엔코더 초기화
 {% endhint %}
-[__SOURCE](3-cobot-Additional-function/3-3-simple-mastering/2-mastering.md)
-# 3.3.2 간편 마스터링 실행
+[__SOURCE](3-cobot-Additional-function/3-simple-mastering/2-mastering.md)
+### 3.3.2 간편 마스터링 실행
 
 설정된 마스터링 위치로 로봇이 이동한 후 마스터링하는 방법을 설명합니다. 마스터링 위치로 로봇이 이동하므로, 로봇 주변에 사람, 물건 등과 충돌하지 않도록 주의해야 합니다. 
 
@@ -401,7 +677,7 @@ LED 색상별 로봇 상태는 다음과 같습니다.
     - 저장하기 버튼을 터치합니다.
     - 제어기를 재부팅합니다.
 
-    ![](../../_assets/simple_mastering_1.png)
+    ![](../../_assets/3-cobot-Additional-function/3-simple-mastering/simple_mastering_1.png)
 
 {% hint style="warning" %}
 **\[주의]**
@@ -411,14 +687,27 @@ LED 색상별 로봇 상태는 다음과 같습니다.
 * 엔코더와 관련된 경고 또는 에러가 발생한 경우, 간편 마스터링이 정상적으로 작동되지 않을 수 있습니다.
 * 간편 마스터링을 빈번하게 사용하면 마스터링 성능이 저하됩니다. 필요한 경우에만 사용하시기 바랍니다.
 {% endhint %}
-[__SOURCE](3-cobot-Additional-function/3-4-flange-downward.md)
-# 3.4 플랜지 아래 보기
+[__SOURCE](3-cobot-Additional-function/4-cobot-LED-test.md)
+## 3.4 LED 테스트
+
+협동로봇 LED를 테스트할 수 있는 기능입니다.
+
+![](../_assets/3-cobot-Additional-function/4-cobot-LED-test/LED_test_1.png) 
+
+- 엔지니어 모드에서 `[F2: 시스템] - 11: 협동로봇 시스템 - LED 테스트` 메뉴를 터치하십시오.
+- 테스트할 LED 색상을 선택합니다.
+- 'LED 점등' 버튼을 터치하면 선택한 색상이 점등됩니다.
+- 'LED 점멸' 버튼을 터치하면 선택한 색상이 점멸합니다.
+- 'LED 소등' 버튼을 터치하면 LED가 소등됩니다.
+
+[__SOURCE](3-cobot-Additional-function/5-flange-downward.md)
+## 3.5 플랜지 아래 보기
 
 <mark style="color:green;">본 기능은 HDC50-17에서만 사용됩니다.</mark><br>
 HDC50-17은 플랜지 Z축과 지면의 수직 방향 사이의 각도가 15° 이내로 유지되어야 합니다.
 해당 각도가 15°를 초과하면 로봇이 정지합니다.
 
-![](../_assets/Flange_angle_HDC50.png) 
+![](../_assets/3-cobot-Additional-function/5-flange-downward/Flange_angle_HDC50.png) 
 
 각도가 15°를 초과하여 로봇이 정지한 경우, 조그가 제한될 수 있습니다.
 이 경우 다음 절차에 따라 로봇을 조작하여 플랜지 Z축과 지면의 수직 방향 사이의 각도가 15° 이내가 되도록 하십시오.
