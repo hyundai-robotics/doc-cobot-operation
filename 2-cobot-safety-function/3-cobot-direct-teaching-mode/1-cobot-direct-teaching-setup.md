@@ -8,12 +8,12 @@
 
 3. 협동로봇의 직접교시 기능의 사용 여부와 옵션을 설정한 후 **\[OK]** 버튼을 터치하십시오.
 
-![](../../_assets/image57.png)
+![](../../_assets/2-cobot-safety-function/image57.png)
 
 * **직접 교시 활성화 (Direct teaching On)**: 모터온 시 바로 직접교시로 동작합니다. Enable Switch가 눌러져 있어야만 모터온이며, 직접교시가 구동됩니다. 다시 조그나 자동으로 로봇을 원할 경우 설정내 '직접 교시 활성화 (Direct teaching On)'를 OFF 해야함 
 * **구속 모션(Constraint motion)**: 직접교시가 실행될때 기본 모드를 결정합니다. '없음'을 선택했을 경우 FREE 모드로 실행 되며, 모터온 중 다른 모드로 바꾸지 못하지만 그 외 다른 모드에선 직접교시 실행 중 모드 변경이 가능합니다.
 
-![](../../_assets/image60.png) 
+![](../../_assets/2-cobot-safety-function/image60.png) 
 
 - 위 사진은 협동로봇 시리즈 HDC에 부착된 콕핏 버튼을 형상황한 그림입니다. 참고하여 아래 콕핏 설정을 읽어주시기 바랍니다.
 

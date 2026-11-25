@@ -4,7 +4,7 @@
 HDC50-17은 플랜지 Z축과 지면의 수직 방향 사이의 각도가 15° 이내로 유지되어야 합니다.
 해당 각도가 15°를 초과하면 로봇이 정지합니다.
 
-![](../_assets/Flange_angle_HDC50.png) 
+![](../_assets/3-cobot-Additional-function/5-flange-downward/Flange_angle_HDC50.png) 
 
 각도가 15°를 초과하여 로봇이 정지한 경우, 조그가 제한될 수 있습니다.
 이 경우 다음 절차에 따라 로봇을 조작하여 플랜지 Z축과 지면의 수직 방향 사이의 각도가 15° 이내가 되도록 하십시오.

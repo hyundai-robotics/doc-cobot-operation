@@ -2,7 +2,7 @@
 
 협동로봇 LED를 테스트할 수 있는 기능입니다.
 
-![](../_assets/LED_test_1.png) 
+![](../_assets/3-cobot-Additional-function/4-cobot-LED-test/LED_test_1.png) 
 
 - 엔지니어 모드에서 `[F2: 시스템] - 11: 협동로봇 시스템 - LED 테스트` 메뉴를 터치하십시오.
 - 테스트할 LED 색상을 선택합니다.
