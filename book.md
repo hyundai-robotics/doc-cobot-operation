@@ -1,6 +1,6 @@
 ﻿
 [__SOURCE](README.md)
-# Safety Function Manual for Collaborative Robot - HDC Series
+# Function Manual for Collaborative Robot - HDC Series
 
 
 [__SOURCE](0-about-this-manual/README.md)
@@ -56,13 +56,13 @@ It refers to the process of aligning the robot's actual joint angles with the jo
 # 2. Safety functions of the collaborative robot
 
 
-[__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/README.md)
-# 2.1 Collaborative operation mode
+[__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/README.md)
+## 2.1 Collaborative operation mode
 
 ISO 10218-1 and ISO/TS 15066 describe four operating modes so that operators can practice work safety without being exposed to risks. The collaborative operation should meet a least one of these requirements, and a visual display should show that the system is in collaborative operation when it is in operation.
 
-[__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/1-safety-rated-monitored-stop.md)
-# 2.1.1 Safety-rated monitored stop
+[__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/1-safety-rated-monitored-stop.md)
+### 2.1.1 Safety-rated monitored stop
 
 The robot stops operating when a person enters the workspace. Either install an external monitoring device and connect it to the Safety Control Module (SCM) or use the radar sensor installed on the robot.
 
@@ -75,8 +75,8 @@ The reference information on the setting of the related functions is as follows:
 * For detailed information on safety I/O signal settings, please refer to ([3.3.4 Safety Input/Output](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7%3Fcont_model%3D%24%7Bcont_model%7D?cont_model=${cont_model})) in the ([Hi7 Controller Function Manual - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README?cont_model=%24%7Bcont_model%7D?cont_model=${cont_model})).
 * For details on configuring the safe stop function, please refer to ([3.3.1.2 Stop Settings](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/3-safety-function/3-safety-function/1-general-condition/2-safe-stop?cont_model=Hi7?cont_model=${cont_model})) in the ([Hi7 Controller Function Manual - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README?cont_model=%24%7Bcont_model%7D?cont_model=${cont_model})).
 
-[__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/2-speed-separation-monitoring.md)
-# 2.1.2 Speed and separation monitoring
+[__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/2-speed-separation-monitoring.md)
+### 2.1.2 Speed and separation monitoring
 
 The robot operates within specified distance and speed limits.
 
@@ -87,8 +87,8 @@ Reference information regarding the use of the speed and position monitoring mod
 * For details on robot safety condition settings, please refer to "([3.3.2.6 Re plan Setting](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/3-safety-function/3-safety-function/2-robot-safety-condition/6-re-plan?cont_model=Hi7%3Fcont_model%3D%24%7Bcont_model%7D?cont_model=${cont_model})) in the ([Hi7 Controller Function Manual - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README?cont_model=%24%7Bcont_model%7D?cont_model=${cont_model})).
 * For details on safety I/O signal settings, please refer to ([3.3.4 Safety Input/Output](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7%3Fcont_model%3D%24%7Bcont_model%7D?cont_model=${cont_model})) in the ([Hi7 Controller Function Manual - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README?cont_model=%24%7Bcont_model%7D?cont_model=${cont_model})).
 
-[__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/3-power-force-limit.md)
-# 2.1.3 Power and force limiting
+[__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/3-power-force-limit.md)
+### 2.1.3 Power and force limiting
 
 
 In the event of contact, the system limits the impact force exerted on the human body. Collision detection and TCP force limiting functions serve to restrict the impact on the operator during contact between the operator and the robot.
@@ -99,8 +99,8 @@ The collision detection function identifies collisions based on user-defined con
 * For details on the collision detection function, please refer to **(2.2 Collaborative robot collision detection mode)**.
 
 
-[__SOURCE](2-cobot-safety-function/2-1-collaborative-operation-mode/4-hand-guid.md)
-# 2.1.4 Hand guiding
+[__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/4-hand-guid.md)
+### 2.1.4 Hand guiding
 
 This is a manual operation mode that allows an operator to directly move the robot by hand to teach positions or paths. By utilizing the robot's force control function, the system detects the force applied by the human and moves the robot smoothly in that direction. This enables task setup without the need for complex programming.
 
@@ -109,8 +109,8 @@ In the following description, the terms "hand-guiding" and "direct teaching of c
 
 * For more information on hand guiding, please refer to **(2.3 Collaborative robot direct teaching mode)**.
 
-[__SOURCE](2-cobot-safety-function/2-2-cobot-collision-detection-mode/README.md)
-# 2.2 Collaborative robot collision detection mode
+[__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/README.md)
+## 2.2 Collaborative robot collision detection mode
 
 The collision detection function serves as a safety mechanism when the robot operates under abnormal conditions or exhibits irregular behavior. You can configure the detection mode and run auto-tuning to automatically set the optimal collision detection sensitivity for the current task.
 
@@ -118,15 +118,15 @@ Configuration methods include controller settings and robot language commands:
 1. Controller settings: Basic settings that are always applied (default).
 2. Robot language commands: Robot language commands are used to configure whether collision detection is active for specific segments during robot program execution.
 
-[__SOURCE](2-cobot-safety-function/2-2-cobot-collision-detection-mode/1-cobot-collision-detection-setup.md)
-# 2.2.1 Collision Detection Controller Settings
+[__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/1-cobot-collision-detection-setup.md)
+### 2.2.1 Collision Detection Controller Settings
 
 1.  Please set the driving mode to manual.
 
 2.  **\[system]** Button > **\[11: Cobot System  > Collision Detection]** Please touch the menu.
 
 3. After configuring the settings and options for the collaborative robot's collision detection function, touch the **\[OK]**  button.
-![](../../_assets/image64.jpg)
+![](../../_assets/2-cobot-safety-function/image64.jpg)
 
 * **\[Collision detection]**: Configure whether to use the collision detection function.
 * **\[Body parts for collision detection]**: Select the body part to apply the robot's maximum speed capable of guaranteeing minimum safety against injury upon collision detection.
@@ -138,8 +138,8 @@ Configuration methods include controller settings and robot language commands:
 * If there is a significant discrepancy between the tool data and actual values, collisions may be incorrectly detected. Please accurately configure tool-related information, such as length, weight, and the center of gravity. Additionally, be sure to verify the robot's installation angle and the direction of gravity. If false detections persist despite accurate tool data configuration, please inspect the encoders and acceleration sensors.
 {% endhint %}
 
-[__SOURCE](2-cobot-safety-function/2-2-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
-# 2.2.2 Collision-detection robot command(cobot_coldet)
+[__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
+### 2.2.2 Collision-detection robot command(cobot_coldet)
 
 ### explanation
 
@@ -157,8 +157,8 @@ Collision detection is handled by the Hi7 controller.
 
 cobot_coldet.on</br>
 cobot_coldet.off
-[__SOURCE](2-cobot-safety-function/2-2-cobot-collision-detection-mode/3-cobot-collision-detection-autotune.md)
-# 2.2.3 Collaborative Robot Collision Detection Auto-Tuning Mode
+[__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/3-cobot-collision-detection-autotune.md)
+### 2.2.3 Collaborative Robot Collision Detection Auto-Tuning Mode
 
 1.  Please set the driving mode to manual.
 
@@ -168,7 +168,7 @@ cobot_coldet.off
 
 4. After configuring whether to enable the automatic tuning function for the collaborative robot's collision detection threshold and setting the number of execution cycles, touch the **\[Save]** button.
 
-![](../../_assets/image65.jpg)
+![](../../_assets/2-cobot-safety-function/image65.jpg)
 
 * **\[Auto tuning]**: Configure whether to enable the collision detection auto-tuning function.
 * **\[Tuning count]**: Set the number of job executions for performing automatic collision detection tuning.
@@ -183,8 +183,8 @@ If the number of auto-tuning iterations is set too low, the process may finish b
 Please note that this function operates only in Auto mode; in Manual mode, the collision detection function operates using factory default settings.
 {% endhint %}
 
-[__SOURCE](2-cobot-safety-function/2-3-cobot-direct-teaching-mode/README.md)
-# 2.3 Collaborative robot direct teaching mode
+[__SOURCE](2-cobot-safety-function/3-cobot-direct-teaching-mode/README.md)
+## 2.3 Collaborative robot direct teaching mode
 
 Direct teaching is an intuitive method that allows users without specialized robot programming knowledge to teach a robot desired movements by manually manipulating it. Instead of using a complex teach pendant, the operator directly guides the robot's end-effector to define the work path and positions.
 
@@ -192,8 +192,8 @@ Configuration methods include controller settings and cockpit button settings:
 1. Controller settings: Basic settings applied by default.
 2. Cockpit button: Activates the direct teaching mode configured on the robot's teach pendant (TP).
 
-[__SOURCE](2-cobot-safety-function/2-3-cobot-direct-teaching-mode/1-cobot-direct-teaching-setup.md)
-# 2.3.1 Direct Teaching Controller Configuration
+[__SOURCE](2-cobot-safety-function/3-cobot-direct-teaching-mode/1-cobot-direct-teaching-setup.md)
+### 2.3.1 Direct Teaching Controller Configuration
 
 1.  Please set the driving mode to manual.
 
@@ -202,12 +202,12 @@ Configuration methods include controller settings and cockpit button settings:
 
 3. After configuring the settings and options for the collaborative robot's direct teaching function, touch the **[OK]** button.
 
-![](../../_assets/image57.png)
+![](../../_assets/2-cobot-safety-function/image57.png)
 
 * **Direct teaching On**: Upon motor activation, the system immediately operates in direct teaching mode. The motor remains active—and direct teaching enabled—only while the enable switch is pressed. To switch the robot back to Jog or Automatic mode, you must disable the "Direct Teaching On" setting.
 * **Constraint Motion**: Determines the default mode when direct teaching is active. Selecting 'None' activates FREE mode; while the mode cannot be changed during motor activation in this setting, mode switching is possible during direct teaching in other modes.
 
-![](../../_assets/image60.png) 
+![](../../_assets/2-cobot-safety-function/image60.png) 
 
 - The image above illustrates the cockpit buttons attached to the HDC series of collaborative robots. Please refer to this image when reading the cockpit settings below.
 
@@ -247,23 +247,23 @@ Configuration methods include controller settings and cockpit button settings:
 # 3. Additional functions of the collaborative robot
 
 
-[__SOURCE](3-cobot-Additional-function/3-1-cobot-general-set/README.md)
-# 3.1 Co-op Mode General Settings
+[__SOURCE](3-cobot-Additional-function/1-cobot-general-set/README.md)
+## 3.1 Co-op Mode General Settings
 
 This section explains the general settings for the collaborative robot.
 This function consists of two main parts.
 - Co-op Mode Settings
 - LED Settings
 
-[__SOURCE](3-cobot-Additional-function/3-1-cobot-general-set/1-co-op-mode-setting.md)
-# 3.1.1 Co-op Mode Settings
+[__SOURCE](3-cobot-Additional-function/1-cobot-general-set/1-co-op-mode-setting.md)
+### 3.1.1 Co-op Mode Settings
 
 What is collaborative mode? It is a mode that limits the maximum speed to ensure safety in the event of a collision between a collaborative robot and a human. If you wish to operate the robot at speeds exceeding this limit, you can disable collaborative mode after conducting a risk assessment based on industrial robot standards.
 
 - `[F2: system] - 11: Cobot System - Cobot General Settings` Tap the menu.
 - Check if Collaborative Mode is enabled (Default: ON).
 - Configure the collaborative robot's collaborative mode and maximum speed, then click "Apply to All" to save the settings.
-    ![](../../_assets/image61.png) 
+    ![](../../_assets/3-cobot-Additional-function/1-cobot-general-set/image61.png) 
     - Co-op Mode On: Sets whether collaborative mode is enabled.
     - Set the Co-op mode Max Speed(mm/s): The maximum speed for collaborative mode entered by the user. Values ​​between 250 and 1000 mm/s can be entered (Default: 800 mm/s).
     - Applied co-op Mode Max Speed(mm/s): Displays the current maximum speed of the collaborative robot. This value represents the final maximum speed, incorporating settings related to collision detection and safety motion.
@@ -274,14 +274,14 @@ What is collaborative mode? It is a mode that limits the maximum speed to ensure
 * Be sure to conduct a risk assessment based on industrial robot standards before disabling this mode.
 * The maximum speed resulting from deceleration due to radar detection is not reflected in the "set maximum speed for collaborative mode."
 {% endhint %}
-[__SOURCE](3-cobot-Additional-function/3-1-cobot-general-set/2-led-setting.md)
-# 3.1.2 LED Settings
+[__SOURCE](3-cobot-Additional-function/1-cobot-general-set/2-led-setting.md)
+### 3.1.2 LED Settings
 
 This indicates the LED brightness settings and the meaning of each LED color. The colors cannot be changed; only the brightness is adjustable.
 
 - `[F2: system] - 11: Cobot System- Cobot General Settings` Tap the menu.
 - Enter the LED settings and click "Apply to All" to save.
-    ![](../../_assets/image62.png) 
+    ![](../../_assets/3-cobot-Additional-function/1-cobot-general-set/image62.png) 
     - Base LED Brightness (%): Adjusts the brightness of the LED mounted on Axis 1. (Default: 10%)
     - Flange LED Brightness (%): Adjusts the brightness of the LED mounted on Axis 6. (Default: 10%)
     - Settings are saved only after clicking "Apply All" and entering the correct password. 
@@ -329,29 +329,308 @@ The robot status by LED color is as follows:
     </tr>
   </tbody>
 </table>
-[__SOURCE](3-cobot-Additional-function/3-2-cobot-LED-test.md)
-# 3.2 LED test
+[__SOURCE](3-cobot-Additional-function/2-tool-io/README.md)
+## 3.2 Tool IO Settings
 
-This function allows you to test the collaborative robot LED.
+<br>
 
-![](../_assets/LED_test_1.png) 
+This chapter describes the Tool IO system located at the end of the 6th axis of the collaborative robot.
 
-- Go to engineer mode and tap `[F2: system] - 11: Cobot System - LED test`.
-- Select the LED color you want to test.
-- Tap the 'LED On' button to turn on the selected color.
-- Tap the 'LED Blink' button to make the selected color blink.
-- Tap the 'LED Off' button to turn off the LED.
+<br>
 
-[__SOURCE](3-cobot-Additional-function/3-3-simple-mastering/README.md)
-# 3.3 Simple Mastering
+<style type="text/css">
+table  {border-collapse:collapse;}
+td {border-color:gray;border-style:solid;border-width:1px;}
+.grayed {background-color:lightgray;}
+.powderblued {background-color:powderblue;}
+</style>
+<br>
+
+**Power Supply Specifications**
+
+<br>
+<table class="tg">
+<thead>
+	<tr>
+		<th class='powderblued'>Category</th>
+		<th class='powderblued'>Specification</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Output Voltage</td>
+		<td>24V</td>
+	</tr>
+	<tr>
+		<td>Rated Current</td>
+		<td>3A</td>
+	</tr>
+	<tr>
+		<td>Maximum Peak Current</td>
+		<td>4.5A</td>
+	</tr>
+</tbody>
+</table>
+<br>
+
+**Digital I/O Specifications**
+
+<br>
+<table class="tg">
+<thead>
+	<tr>
+		<th colspan=2, class='powderblued'>Category</th>
+		<th class='powderblued'>Specification</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td colspan=2>Connector</td>
+		<td>TOOL IO <br> M8, A-code, 8Pin, Female</td>
+	</tr>
+	<tr>
+		<td colspan=2>I/O Type</td>
+		<td>PNP / NPN</td>
+	</tr>
+	<tr>
+		<td colspan=2>Reference Voltage</td>
+		<td>24V</td>
+	</tr>
+	<tr>
+		<td rowspan=2>Number of Channels</td>
+		<td>Digital Input</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>Digital Output</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td rowspan=4>Digital Input</td>
+		<td>OFF State Voltage</td>
+		<td>? ~ ?, @ 25°C</td>
+	</tr>
+	<tr>
+		<td>ON State Voltage</td>
+		<td>? ~ ?, @ 25°C</td>
+	</tr>
+	<tr>
+		<td>ON State Current</td>
+		<td>? ~ ?, @ 25°C</td>
+	</tr>
+	<tr>
+		<td>Input Signal Filter Time</td>
+		<td>5ms</td>
+	</tr>
+	<tr>
+		<td>Digital Output</td>
+		<td>ON State Current</td>
+		<td>? ~ ?, @ 25°C</td>
+	</tr>
+</tbody>
+</table>
+<br>
+
+**Analog I/O Specifications**
+
+<br>
+<table class="tg">
+<thead>
+	<tr>
+		<th class='powderblued'>Category</th>
+		<th class='powderblued'>Specification</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Connector</td>
+		<td>TOOL IO <br> M8, A-code, 8Pin, Female</td>
+	</tr>
+	<tr>
+		<td>Number of Channels</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>Input Voltage Range</td>
+		<td>0 ~ 10V</td>
+	</tr>
+	<tr>
+		<td>Data Format</td>
+		<td>12bits (0 ~ 4095)</td>
+	</tr>
+	<tr>
+		<td>Input Signal Filter</td>
+		<td>Moving Average Filter (50ms average input)</td>
+	</tr>
+	<tr>
+		<td>Error Range</td>
+		<td>±0.5% Full Scale @ 25°C</td>
+	</tr>
+</tbody>
+</table>
+<br>
+
+**Serial Communication Specifications (RS485)**
+
+<br>
+<table class="tg">
+<thead>
+	<tr>
+		<th class='powderblued'>Category</th>
+		<th class='powderblued'>Specification</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Communication Type</td>
+		<td>RS485</td>
+	</tr>
+	<tr>
+		<td>Connector</td>
+		<td>RS485 <br> M8, A-code, 8Pin, Female</td>
+	</tr>
+	<tr>
+		<td>Baud Rate</td>
+		<td>9600bps<br>19200bps<br>38400bps<br>57600bps<br>115200bps<br>230400bps<br>460800bps<br>500Kbps<br>625Kbps<br>1Mbps<br>2.5Mbps</td>
+	</tr>
+	<tr>
+		<td>Parity</td>
+		<td>None / Odd / Even</td>
+	</tr>
+	<tr>
+		<td>Stop Bit</td>
+		<td>1 Bit / 2 Bit</td>
+	</tr>
+	<tr>
+		<td>Data Length</td>
+		<td>7 Bit / 8 Bit</td>
+	</tr>
+</tbody>
+</table>
+<br>
+
+[__SOURCE](3-cobot-Additional-function/2-tool-io/1-connector.md)
+### 3.2.1 Tool IO Connector
+
+This manual is in preparation.
+
+[__SOURCE](3-cobot-Additional-function/2-tool-io/2-system.md)
+### 3.2.2 Tool IO System
+
+This function checks the status of the collaborative robot's Tool IO system device.
+
+<br>
+
+**1. Touch the menu to enter the settings screen.**
+
+<br>
+
+**\[System > 11: Cobot System > 2: Tool IO Settings > 1: Tool IO System Settings]**
+
+<br>
+
+![[Figure 3.2.2-1 Tool IO System Settings]](<../../_assets/3-cobot-Additional-function/2-tool-io/2-system/image1.png>) 
+
+<br>
+
+{% hint style="info" %}
+   [System Status Check]   
+   - System Status Signal   
+   - System Device Internal Voltage   
+   - External Output Voltage and Current   
+   - Temperature Sensor   
+   - Cockpit Button Input Status      
+      
+{% endhint %}
+
+[__SOURCE](3-cobot-Additional-function/2-tool-io/3-interface.md)
+### 3.2.3 Tool IO Interface
+
+This function configures the interface of the collaborative robot's Tool IO system device.
+
+<br>
+
+{% hint style="info" %}
+   - If you are using Modbus RTU communication with the Tool IO device, please refer to the following manual.
+
+   - "[Hi7 Controller Function Manual - Modbus](https://hrbook-hrc.web.app/#/view/doc-modbus/en/4-modbus-master/1-roblang?cont_model=Hi7)"
+{% endhint %}
+
+
+**1. Touch the menu to enter the settings screen.**
+
+<br>
+
+**\[System > 11: Cobot System > 2: Tool IO Settings > 2: Tool IO Interface Settings]**
+
+<br>
+
+![[Figure 3.2.3-1 Tool IO Interface Settings]](<../../_assets/3-cobot-Additional-function/2-tool-io/3-interface/image1.png>) 
+
+<br>
+
+{% hint style="info" %}
+   [Output Power Settings]   
+   - 24V Power: External output power setting   
+      - OFF   
+      - 24V   
+   - I/O Type: Tool IO digital input/output type setting   
+      - PNP   
+      - NPN   
+
+   [Serial Communication Settings]   
+   - Configures the serial communication parameters of the Tool IO system RS485 connector.   
+
+   - Serial: Enable/disable communication   
+      - OFF   
+      - ON   
+   - Baud Rate: Serial communication speed setting   
+      - 9600bps ~ 2.5Mbps   
+   - Parity Bit: Parity bit setting   
+      - None   
+      - Odd   
+      - Even   
+   - Stop Bit: Stop bit setting   
+      - 1 Bit   
+      - 2 Bit   
+   - Data Length: Data bit length setting   
+      - 7 Bit   
+      - 8 Bit   
+      
+{% endhint %}
+
+<br>
+
+![[Figure 3.2.3-2 Tool IO Interface Settings]](<../../_assets/3-cobot-Additional-function/2-tool-io/3-interface/image2.png>) 
+
+<br>
+
+{% hint style="info" %}
+   [Power Status]   
+   - 24V Power: ON/OFF operation status of external output power   
+   - I/O Type: Currently applied I/O type   
+   - Voltage 24V: External output voltage measurement value   
+   - Current 24V: External output current measurement value   
+
+   [Serial Status]   
+   - Serial Operation: ON/OFF operation status of serial communication   
+   - Baud Rate: Currently applied baud rate   
+   - Parity Bit: Currently applied parity bit   
+   - Stop Bit: Currently applied stop bit   
+   - Data Length: Currently applied data length   
+      
+{% endhint %}
+
+[__SOURCE](3-cobot-Additional-function/3-simple-mastering/README.md)
+## 3.3 Simple Mastering
 
 This section explains how to perform mastering using the built-in device of the robot.
 This function consists of two main parts:
 - Simple mastering position setting
 - Simple mastering execution
 
-[__SOURCE](3-cobot-Additional-function/3-3-simple-mastering/1-update-mastering-position.md)
-# 3.3.1 Simple Mastering Position Setting
+[__SOURCE](3-cobot-Additional-function/3-simple-mastering/1-update-mastering-position.md)
+## 3.3.1 Simple Mastering Position Setting
 
 The robot requires mastering at a specific position; this section explains how to designate that position. Since the robot moves when the mastering position is set, care must be taken to avoid collisions with people or objects in the vicinity. Note that while there are various possible mastering positions, the system selects a position close to the robot's current posture.
 
@@ -364,7 +643,7 @@ The robot requires mastering at a specific position; this section explains how t
     - Touch the 'Save' button.
 
 
-    ![](../../_assets/simple_mastering_1.png)
+    ![](../../_assets/3-cobot-Additional-function/3-simple-mastering/simple_mastering_1.png)
 
 {% hint style="warning" %}
 
@@ -378,8 +657,8 @@ The robot requires mastering at a specific position; this section explains how t
     - Tool replacement
     - Encoder initialization in the  `[F2: system] - 3: Robot parameter - 4: Encoder Offset` menu
 {% endhint %}
-[__SOURCE](3-cobot-Additional-function/3-3-simple-mastering/2-mastering.md)
-# 3.3.2 Simple Mastering Execution
+[__SOURCE](3-cobot-Additional-function/3-simple-mastering/2-mastering.md)
+### 3.3.2 Simple Mastering Execution
 
 This section explains how to perform mastering after the robot moves to the designated mastering position. Since the robot moves to the mastering position, take care to avoid collisions with people or objects in the surrounding area.
 
@@ -392,7 +671,7 @@ This section explains how to perform mastering after the robot moves to the desi
     - Touch the 'Save' button.
     - Reboot the controller.
 
-    ![](../../_assets/simple_mastering_1.png)
+    ![](../../_assets/3-cobot-Additional-function/3-simple-mastering/simple_mastering_1.png)
 
 {% hint style="warning" %}
 **\[Warning]**
@@ -403,14 +682,27 @@ This section explains how to perform mastering after the robot moves to the desi
 * Frequent use of the simple mastering degrades mastering performance; please use it only when necessary.
 {% endhint %}    
 
-[__SOURCE](3-cobot-Additional-function/3-4-flange-downward.md)
-# 3.4 Flange Downward Orientation
+[__SOURCE](3-cobot-Additional-function/4-cobot-LED-test.md)
+## 3.2 LED test
+
+This function allows you to test the collaborative robot LED.
+
+![](../_assets/3-cobot-Additional-function/4-cobot-LED-test/LED_test_1.png) 
+
+- Go to engineer mode and tap `[F2: system] - 11: Cobot System - LED test`.
+- Select the LED color you want to test.
+- Tap the 'LED On' button to turn on the selected color.
+- Tap the 'LED Blink' button to make the selected color blink.
+- Tap the 'LED Off' button to turn off the LED.
+
+[__SOURCE](3-cobot-Additional-function/5-flange-downward.md)
+## 3.4 Flange Downward Orientation
 
 <mark style="color:green;">This function is available only for the HDC50-17.</mark><br>
 For the HDC50-17, the angle between the flange Z-axis and the vertical direction of the ground must be maintained within 15°. 
 If the angle exceeds 15°, the robot will stop.
 
-![](../_assets/Flange_angle_HDC50.png) 
+![](../_assets/3-cobot-Additional-function/5-flange-downward/Flange_angle_HDC50.png) 
 
 If the robot stops because the angle exceeds 15°, jogging may be restricted.
 In this case, operate the robot according to the procedure below to bring the angle between the flange Z-axis and the vertical direction of the ground within 15°.
