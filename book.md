@@ -61,12 +61,12 @@
 
 
 [__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/README.md)
-# 2.1 협동 운전 모드
+## 2.1 협동 운전 모드
 
 ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 안전하게 작업할 수 있도록 4 개의 운전 모드에 대해 설명하고 있습니다. 협동 운전은 이 중 최소 한 가지 요구 사항을 충족해야 하고 운전 중에는 반드시 협동 운전 중임을 시각적으로 표시하여 알려야 합니다.
 
 [__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/1-safety-rated-monitored-stop.md)
-# 2.1.1 안전 정격 감시 정지
+### 2.1.1 안전 정격 감시 정지
 
 사람이 작업 공간 내 진입 시 로봇의 작동이 정지합니다. 외부 감시 장치를 설치하고 이를 안전 제어 모듈(SCM: Safety Control Module)에 연결하거나 로봇에 설치된 레이더 센서를 사용하십시오.
 
@@ -80,7 +80,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 * 안전 정지 기능 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.1.2 정지 설정](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/1-general-condition/2-safe-stop?cont_model=Hi7?cont_model=${cont_model}))을 참조하십시오.
 
 [__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/2-speed-separation-monitoring.md)
-# 2.1.2 속도 및 위치 감시
+### 2.1.2 속도 및 위치 감시
 
 로봇은 지정된 거리 및 속도 내에서 작동합니다.
 
@@ -93,7 +93,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 * 안전 I/O 신호 설정에 대한 자세한 내용은 ([Hi7 제어기 기능설명서 - SafeSpace2.0](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README?cont_model=${cont_model})) 내 ([3.3.4 안전 입출력](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/3-safety-function/3-safety-function/4-safety-io/README?cont_model=Hi7?cont_model=${cont_model}))를 참조하십시오.
 
 [__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/3-power-force-limit.md)
-# 2.1.3 동력 및 힘 제한
+### 2.1.3 동력 및 힘 제한
 
 접촉 사고 발생 시, 인체에 가해지는 충격을 제한합니다. 충돌 감지 기능 및 TCP 힘 제한 기능을 통해 작업자와 로봇 간의 접촉 사고 발생 시 작업자의 신체에 가해지는 충격을 제한할 수 있습니다.
 
@@ -103,7 +103,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 * 충돌 감지 기능에 대한 자세한 내용은 **(2.2 협동로봇 충돌감지 모드)** 를 참조하십시오
 
 [__SOURCE](2-cobot-safety-function/1-collaborative-operation-mode/4-hand-guid.md)
-# 2.1.4 핸드 가이드
+### 2.1.4 핸드 가이드
 
 작업자가 로봇을 손으로 직접 움직여 위치나 경로를 교시할 수 있도록 하는 수동 조작 모드입니다. 로봇의 힘 제어 기능을 이용해 사람이 가하는 힘을 감지하고, 그 방향으로 로봇이 부드럽게 움직입니다. 복잡한 프로그래밍 없이도 작업을 설정할 수 있습니다.
 
@@ -112,7 +112,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 * 핸드 가이드에 대한 자세한 내용은 **(2.3 협동로봇 직접교시 모드)** 를 참조하십시오
 
 [__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/README.md)
-# 2.2 협동로봇 충돌감지 모드
+## 2.2 협동로봇 충돌감지 모드
 
 로봇이 비정상적인 조건에서 동작하게 되거나 이상 동작하게 될 때의 안전 장치로 충돌감지 기능이 있습니다. 감지 모드를 설정하고 자동 튜닝을 실행하여 현재 작업에 맞는 최적 충돌 감지 민감도를 자동 설정할 수 있습니다.
 
@@ -121,7 +121,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 2. 로봇 언어 명령문: 로봇 프로그램 동작 시 구간 별로 충돌감지 실행 여부를 설정하기 위하여 로봇 언어 명령문을 사용. 
 
 [__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/1-cobot-collision-detection-setup.md)
-# 2.2.1 협동로봇 충돌감지 제어기 설정
+### 2.2.1 협동로봇 충돌감지 제어기 설정
 
 1.  운전 방식을 수동 모드로 설정하십시오.
 
@@ -143,7 +143,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 {% endhint %}
 
 [__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/2-cobot-collision-detection-roblang.md)
-# 2.2.2 충돌감지 로봇 명령어(cobot_coldet)
+### 2.2.2 충돌감지 로봇 명령어(cobot_coldet)
 
 ### 설명
 
@@ -162,7 +162,7 @@ ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 
 cobot_coldet.on </br>
 cobot_coldet.off
 [__SOURCE](2-cobot-safety-function/2-cobot-collision-detection-mode/3-cobot-collision-detection-autotune.md)
-# 2.3.3 협동로봇 충돌감지 자동 튜닝 모드
+### 2.3.3 협동로봇 충돌감지 자동 튜닝 모드
 
 1.  운전 방식을 수동 모드로 설정하십시오.
 
@@ -194,7 +194,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 {% endhint %}
 
 [__SOURCE](2-cobot-safety-function/3-cobot-direct-teaching-mode/README.md)
-# 2.3 협동로봇 직접교시 모드
+## 2.3 협동로봇 직접교시 모드
 
 로봇의 직접교시(Direct Teaching)는 로봇 프로그래밍에 대한 전문적인 지식이 없는 사용자도 로봇을 직접 움직여 원하는 동작을 가르칠 수 있는 직관적인 방식입니다. 이는 복잡한 티치 펜던트 조작 대신 작업자가 직접 로봇 팔 끝을 잡고 경로를 안내하여 작업 경로와 위치를 설정하는 것을 의미합니다.
 
@@ -203,7 +203,7 @@ job 기준으로 100 ~ 200회 사이로 설정하는 것을 권장합니다.
 2. 콕핏 버튼: 로봇 TP에서 설정한 직접교시 모드를 실행 
 
 [__SOURCE](2-cobot-safety-function/3-cobot-direct-teaching-mode/1-cobot-direct-teaching-setup.md)
-# 2.3.1 협동로봇 직접교시 제어기 설정
+### 2.3.1 협동로봇 직접교시 제어기 설정
 
 1.  운전 방식을 수동 모드로 설정하십시오.
 
